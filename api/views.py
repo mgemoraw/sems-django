@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User as AuthUser, Group
-from rest_framework import generics
+from rest_framework import generics, renderers
 from .serializers import AuthUserSerializer, GroupSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 
@@ -14,8 +14,8 @@ from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from django.db import transaction
 from datetime import timedelta
-from .models import User, Role, Department
-from .serializers import UserSerializer, RoleSerializer, UserCreateSerializer, UserLoginSerializer, RoleCreateSerializer, PasswordCreateSerializer
+from .models import User, Role, Department, Question
+from .serializers import UserSerializer, RoleSerializer, UserCreateSerializer, UserLoginSerializer, RoleCreateSerializer, PasswordCreateSerializer, QuestionSerializer
 from .authentication import create_access_token, authenticate_user
 from rest_framework.authtoken.models import Token 
 
@@ -29,10 +29,29 @@ class AuthUserViewSet(viewsets.ModelViewSet):
     serializer_class = AuthUserSerializer
     permission_classes = [permissions.IsAuthenticated]
 
+    # @action(detail=True, renderer_classes=[renderers.StaticHTMLRenderer])
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
+
 class GroupsViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all().order_by('name')
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all().order_by('username')
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+
+class QuestionsViewSet(viewsets.ModelViewSet):
+    queryset = Question.objects.all().order_by('id')
+    serializer_class = QuestionSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
 
 @swagger_auto_schema(
     method='post',

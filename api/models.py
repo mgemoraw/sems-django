@@ -27,8 +27,8 @@ class User(models.Model):
     
     department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, related_name='users')
 
-    tests = models.ForeignKey('Test', null=True, on_delete=models.CASCADE, related_name='user_tests')
-    emails = models.ForeignKey('Mail', null=True, on_delete=models.CASCADE, related_name='user_emails')
+    # tests = models.ForeignKey('Test', null=True, on_delete=models.CASCADE, related_name='user_tests')
+    # emails = models.ForeignKey('Mail', null=True, on_delete=models.CASCADE, related_name='user_emails')
 
     def __str__(self):
         return self.username
@@ -50,40 +50,63 @@ class University(models.Model):
     media_address = models.TextField()
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
-
+    
+    
+    def __str__(self):
+        return self.name
 
 class Department(models.Model):
+    faculty = models.ForeignKey('Faculty', on_delete=models.CASCADE, null=True, related_name='department_faculty')
     name = models.CharField(max_length=100, unique=True)
     description = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(default=timezone.now)
+    
 
-    tests = models.ForeignKey('Test', on_delete=models.CASCADE, related_name='department_tests')
-    questions = models.ForeignKey('Question', on_delete=models.CASCADE, related_name='department_questions')
-    modules = models.ForeignKey('Module', on_delete=models.CASCADE, related_name='department_modules')
+    # tests = models.ForeignKey('Test', on_delete=models.CASCADE,null=True, related_name='department_tests')
+    # questions = models.ForeignKey('Question', on_delete=models.CASCADE,null=True, related_name='department_questions')
+    # modules = models.ForeignKey('Module', on_delete=models.CASCADE, null=True, related_name='department_modules')
 
+    def __str__(self):
+        return self.name
+
+class College(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField()
+    university = models.ForeignKey('University', on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.name
+    
 
 class Chair(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    faculty = models.CharField(max_length=255)
+    faculty = models.ForeignKey('Faculty', on_delete=models.CASCADE, null=True)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.name
 
 class Faculty(models.Model):
     name = models.CharField(max_length=100, unique=True)
     code = models.CharField(max_length=20, null=True, blank=True)
-    college = models.CharField(max_length=255, null=True, blank=True)
-    university = models.CharField(max_length=255, null=True, blank=True)
+    college = models.ForeignKey('College', on_delete=models.CASCADE, null=True, blank=True)
+    university = models.ForeignKey('University', on_delete=models.CASCADE, null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.name
 
 class Choice(models.Model):
-    question = models.ForeignKey('Question', on_delete=models.CASCADE, related_name='choices')
+    question = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='choices')
     label = models.CharField(max_length=10)
     content = models.TextField()
     is_answer = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name
 
 
 class Course(models.Model):
@@ -93,17 +116,23 @@ class Course(models.Model):
     name = models.CharField(max_length=255)
     credit_hour = models.IntegerField()
 
-    questions = models.ForeignKey('Question', on_delete=models.CASCADE, related_name='course_questions')
+    questions = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='course_questions')
+
+    def __str__(self):
+        return self.name
 
 
 class Module(models.Model):
     name = models.CharField(max_length=255)
     department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, blank=True)
-    courses = models.ForeignKey('Course', on_delete=models.CASCADE, related_name='module_courses')
+    # courses = models.ForeignKey('Course', on_delete=models.CASCADE, null=True, related_name='module_courses')
+
+    def __str__(self):
+        return self.name
 
 
 class Question(models.Model):
-    department = models.ForeignKey('Department', on_delete=models.CASCADE, related_name='department')
+    department = models.ForeignKey('Department', on_delete=models.CASCADE, null=True, related_name='department')
     course = models.ForeignKey('Course', on_delete=models.SET_NULL, null=True, blank=True)
     content = models.TextField()
     options = models.JSONField()  # Store as JSON array
@@ -129,32 +158,43 @@ class Question(models.Model):
             'updated_at': str(self.updated_at),
         }
 
+    def __str__(self):
+        return self.content
 
 class Test(models.Model):
-    user = models.ForeignKey('User', on_delete=models.CASCADE)
-    department = models.ForeignKey('Department', on_delete=models.CASCADE)
+    user = models.ForeignKey('User', on_delete=models.CASCADE, null=True)
+    department = models.ForeignKey('Department', null=True, on_delete=models.CASCADE)
     score = models.FloatField()
     total_questions = models.IntegerField()
     correct_answers = models.IntegerField()
     started_at = models.DateTimeField(default=timezone.now)
     completed_at = models.DateTimeField(null=True, blank=True)
 
-    responses = models.ForeignKey('UserResponse', on_delete=models.CASCADE, related_name='test_responses')
+    responses = models.ForeignKey('UserResponse',null=True, on_delete=models.CASCADE, related_name='test_responses')
+
+    def __str__(self):
+        return f"[{self.id}] - {self.score}"
 
 
 class UserResponse(models.Model):
-    test = models.ForeignKey('Test', on_delete=models.CASCADE, related_name='user_responses')
-    question = models.ForeignKey('Question', on_delete=models.CASCADE)
+    test = models.ForeignKey('Test', on_delete=models.CASCADE, null=True,related_name='user_responses')
+    question = models.ForeignKey('Question', null=True, on_delete=models.CASCADE)
     selected_option = models.CharField(max_length=10)
     is_correct = models.BooleanField()
 
+    def __str__(self):
+        return f"[{self.question}] - {self.is_correct}"
+
 
 class Mail(models.Model):
-    user = models.ForeignKey('User', on_delete=models.CASCADE)
+    user = models.ForeignKey('User', null=True,on_delete=models.CASCADE)
     sender = models.CharField(max_length=255)
     receiver = models.CharField(max_length=255)
     send_at = models.DateTimeField(default=timezone.now)
     received_at = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.id
 
 
 class CourseAssignment(models.Model):
