@@ -48,7 +48,7 @@ JAZZMIN_SETTINGS = {
         {"name": "Home",  "url": "admin:index", "permissions": ["auth.view_user"]},
 
         # external url that opens in a new window (Permissions can be added)
-        {"name": "Support", "url": "https://github.com/mgemoraw/sems-api", "new_window": True},
+        {"name": "Support", "url": "https://github.com/mgemoraw/sems-django", "new_window": True},
 
         # model admin to link to (Permissions checked against model)
         {"model": "auth.User"},
@@ -63,7 +63,7 @@ JAZZMIN_SETTINGS = {
 
     # Additional links to include in the user menu on the top right ("app" url type is not allowed)
     "usermenu_links": [
-        {"name": "Support", "url": "https://github.com/mgemoraw/sems-api", "new_window": True},
+        {"name": "Support", "url": "https://github.com/mgemoraw/sems-django", "new_window": True},
         {"model": "auth.user"}
     ],
 
@@ -84,7 +84,7 @@ JAZZMIN_SETTINGS = {
     "hide_models": [],
 
     # List of apps (and/or models) to base side menu ordering off of (does not need to contain all apps/models)
-    "order_with_respect_to": ["auth", "books", "books.author", "books.book"],
+    "order_with_respect_to": ["auth", "courses", "users.username", "courses.name"],
 
     # Custom links to append to app groups, keyed on app name
     "custom_links": {

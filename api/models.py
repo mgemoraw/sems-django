@@ -110,13 +110,13 @@ class Choice(models.Model):
 
 
 class Course(models.Model):
-    module_name = models.CharField(max_length=255)
+    # module_name = models.CharField(max_length=255)
     module = models.ForeignKey('Module', on_delete=models.SET_NULL, null=True, blank=True)
     code = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=255)
     credit_hour = models.IntegerField()
 
-    questions = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='course_questions')
+    # questions = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='course_questions')
 
     def __str__(self):
         return self.name
