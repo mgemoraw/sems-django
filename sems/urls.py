@@ -41,6 +41,7 @@ router = routers.DefaultRouter()
 # router.register(r'users', views.UserViewSet)  # Example viewset
 
 urlpatterns = [
+    path('', include('base.urls')),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     # Swagger UI

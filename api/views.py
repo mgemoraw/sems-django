@@ -45,7 +45,6 @@ class UserViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 
-
 class QuestionsViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all().order_by('id')
     serializer_class = QuestionSerializer
