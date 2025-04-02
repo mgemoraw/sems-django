@@ -1,6 +1,53 @@
 from os import write
 from docx2python import docx2python
 import re
+import json
+
+def extract_questions(docx_path):
+    questions = {}
+
+    # read docx document
+    document = docx2python(docx_path)
+    print(dir(document))
+    # save images to current directory
+    with docx2python(docx_path) as docx_content:
+        docx_content.save_images("./")
+
+    # get document body
+    # print(document.body[2])
+    for section in document.body:
+        for page in section:
+            for paragraphs in page:
+                for line in paragraphs:
+                    if not line:
+                        continue
+
+                    # check if the line is a numbered bullet
+                    if re.match(r'^\d+\)', line):
+                        print("Question:", line)
+                    
+                    elif re.match(r'^[A-Za-z]\)', line):
+                        print("Choice:", line)
+                    elif "[IMAGE" in line.upper():
+                        print("Image placeholder", line)
+
+                    elif isinstance(line, list) and line and isinstance(paragraphs[0],list):
+                        table = []
+                        row_text = [' '.join(cell).strip() for cell in row if isinstance(cell, list)]
+                        print("Table: ", row_text)
+                    else:
+                        print("Text: ", line)
+                
+    # extract tables
+    print("--------Tables------")
+    print(hasattr(document, 'tables'))
+
+    # for table in document.table:
+        # print("Table: ")
+        # for row in table:
+        #     row_text = [' '.join(cell).strip() for cell in row]
+        #     print("\tRow: ", row_text)
+
 
 def extract_bullets(docx_path):
     # Extract text from the .docx file
@@ -38,11 +85,22 @@ def extract_bullets(docx_path):
 
     return numbered_bullets, lettered_bullets
 
-# Example usage
-# document = docx2python('sample.docx')
 
-docx_file = "sample.docx"  # Replace with your actual .docx file path
-numbered, lettered = extract_bullets(docx_file)
+if __name__=='__main__':
+    docx_path = "sample.docx"
 
-print("Numbered Bullets:", numbered)
-print("Lettered Bullets:", lettered)
+
+    # call extract questions function
+    extract_questions(docx_path=docx_path)
+
+
+    # Example usage
+    # document = docx2python('sample.docx')
+
+    docx_file = "sample.docx"  # Replace with your actual .docx file path
+    # numbered, lettered = extract_bullets(docx_file)
+
+    # print("Numbered Bullets:", numbered)
+    # print("Lettered Bullets:", lettered)
+
+
