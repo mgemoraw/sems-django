@@ -73,7 +73,10 @@ def extract_questions(docx_path):
                         questions[qno-1]['image'] = line
                         # print(f"Image placeholder: {line}")
                         continue
-
+                    elif line.lower().startswith("answer"):
+                        pos = line.find(':')
+                        answer = line[pos+1]
+                        questions[qno-1]['answer'] = answer
                     # Extract metadata (e.g., course name, module name)
                     elif line.lower().startswith('course name'):
                         course_name = line.split(':', 1)[1].strip()
