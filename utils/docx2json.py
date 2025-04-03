@@ -42,79 +42,86 @@ def extract_questions(docx_path):
                 # print("--------paragraph------")
                 # print(paragraphs)
                 for line in paragraphs:
-                    if not line or len(line.strip()) == 0:
-                        continue
+                    # print(line)
+                    line = line.strip()
+                    try:
+                        if not line or len(line.strip()) < 2:
+                            continue
 
-                    # check if the line is a numbered bullet
-                    if re.match(r'^\d+[.)]', line):
-                        # print("question:", line)
-                        question = {'qno': qno+1, 'department': department, 'module': module_name, 'course': course_name, 'content': line.split(')', 1)[1].strip(), 'options': [], 'image': None, 'answer': None}
-                        # # options = []
-                        questions.append(question)
-                        qno += 1
-                        continue
+                        # check if the line is a numbered bullet
+                        if re.match(r'^\d+[.)]', line):
+                            # print("question:", line)
+                            question = {'qno': qno+1, 'department': department, 'module': module_name, 'course': course_name, 'content': line.split(')', 1)[1].strip(), 'options': [], 'image': None, 'answer': None}
+                            # # options = []
+                            questions.append(question)
+                            qno += 1
+                            # continue
 
+                        elif re.match(r'^[A-Za-z][.)]', line):
+                            # if questions[qno-1].get('options') is None:
+                            #     questions[qno-1]['options'] = []
+                            option_label = line[0]
+                            option_content = line[2:].strip()
 
-                    elif re.match(r'^[A-Za-z]\)', line):
-                        # if questions[qno-1].get('options') is None:
-                        #     questions[qno-1]['options'] = []
-                        option_label = line[0]
-                        option_content = line[2:].strip()
+                            option = {'label': option_label, 'content': option_content, 'image': None}
+                            questions[qno-1]['options'].append(option)
+                            
+                            # continue
 
-                        option = {'label': option_label, 'content': option_content, 'image': None}
-                        questions[qno-1]['options'].append(option)
+                        elif "[IMAGE" in line.upper():
+                            if 'image' not in question:
+                                question['image'] = []
+                            question['image'].append(line)
+                            questions[qno-1]['image'] = line
+                            # print(f"Image placeholder: {line}")
+                            # continue
+
+                        elif line.lower().startswith('answer'):
+                            pos = line.find(':')
+                            # answer = line[pos+1]
+                            answer = line.strip().split(':')[1]
+                            questions[qno-1]['answer'] = answer
+                            print(line)
                         
-                        # print(f"Choice: {line}")
-                        continue
-                    elif "[IMAGE" in line.upper():
-                        if 'image' not in question:
-                            question['image'] = []
-                        question['image'].append(line)
-                        questions[qno-1]['image'] = line
-                        # print(f"Image placeholder: {line}")
-                        continue
-                    elif line.lower().startswith("answer"):
-                        pos = line.find(':')
-                        answer = line[pos+1]
-                        questions[qno-1]['answer'] = answer
-                        print(line)
-                    # Extract metadata (e.g., course name, module name)
-                    elif line.lower().startswith('course name'):
-                        course_name = line.split(':', 1)[1].strip()
-                        # questions[qno-1]['course'] = course_name
-                        # print(f"Course Name: {course_name}")
-                    elif line.lower().startswith('module name'):
-                        module_name = line.split(':', 1)[1].strip()
-                        # questions[qno-1]['module'] = module_name
-                        # print(f"Module Name: {module_name}")
-                    elif line.lower().startswith('department'):
-                        department = line.split(':', 1)[1].strip()
-                        # print(f"Department: {department}")
+                        # Extract metadata (e.g., course name, module name)
+                        elif line.lower().startswith('course name'):
+                            course_name = line.split(':', 1)[1].strip()
+                            # questions[qno-1]['course'] = course_name
+                            # print(f"Course Name: {course_name}")
 
-                        # questions[qno-1]['department'] = department
-                    elif line.lower().startswith('course code'):
-                        course_code = line.split(':', 1)[1].strip()
-                        # print(f"Course Code: {course_code}")
-                        # questions[qno-1]['course_code'] = course_code
-                        
-                    elif line.lower().startswith('university'):
-                        university = line.split(':', 1)[1].strip()
-                        # print(f"University: {university}")
-                    elif line.lower().startswith('faculty'):
-                        faculty = line
-                        # faculty = line.split(':', 1)[1].strip()
-                        # print(f"Faculty: {faculty}")
-                    elif line.lower().startswith('exam year'):
-                        exam_year = line.split(':', 1)[1].strip()
-                        # print(f"Exam Year: {exam_year}")
+                        elif line.lower().startswith('module name'):
+                            module_name = line.split(':', 1)[1].strip()
+                            # questions[qno-1]['module'] = module_name
+                            # print(f"Module Name: {module_name}")
+                        elif line.lower().startswith('department'):
+                            department = line.split(':', 1)[1].strip()
+                            # print(f"Department: {department}")
+                            # questions[qno-1]['department'] = department
 
-                    # Append the question and its options
-                    # if question:
-                    #     if options:
-                    #         question['options'] = options
-                    #     questions.append(question)
-            
-                        
+                        elif line.lower().startswith('course code'):
+                            course_code = line.split(':', 1)[1].strip()
+                            # print(f"Course Code: {course_code}")
+                            # questions[qno-1]['course_code'] = course_code
+                            
+                        elif line.lower().startswith('university'):
+                            university = line.split(':', 1)[1].strip()
+                            # print(f"University: {university}")
+
+                        elif line.lower().startswith('faculty'):
+                            faculty = line
+                            # faculty = line.split(':', 1)[1].strip()
+                            # print(f"Faculty: {faculty}")
+                        elif line.lower().startswith('exam year'):
+                            exam_year = line.split(':', 1)[1].strip()
+                            # print(f"Exam Year: {exam_year}")
+
+                    
+                        else:
+                            print("TEXT", line)
+                            
+                    except Exception as e:
+                        print(e)
+  
 
     # extract tables
     # print("--------Tables------")
