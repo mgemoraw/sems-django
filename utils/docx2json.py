@@ -4,43 +4,116 @@ import re
 import json
 
 def extract_questions(docx_path):
-    questions = {}
+    questions = []
 
     # read docx document
     document = docx2python(docx_path)
-    print(dir(document))
+    # print(dir(document))
     # save images to current directory
     with docx2python(docx_path) as docx_content:
         docx_content.save_images("./")
 
     # get document body
     # print(document.body[2])
+    module_name = None
+    course_name = None
+    department = None
+    course_code = None
+    university = None 
+    faculty = None
+    exam_year = None
+    qno = 0
+    # print(document.body[0][0][0])
+    # print(document.body[1][0][0])
+    # print(document.body[2][0][0])
+    print(dir(document))
+    # print(document.)
     for section in document.body:
+        print("----section---")
         for page in section:
+            print('-----page----')
             for paragraphs in page:
+                question = {}
+                options = []
+
+                print("--------paragraph------")
+                print(paragraphs)
                 for line in paragraphs:
-                    if not line:
+                    if not line or len(line.strip()) == 0:
                         continue
 
                     # check if the line is a numbered bullet
                     if re.match(r'^\d+\)', line):
-                        print("Question:", line)
-                    
-                    elif re.match(r'^[A-Za-z]\)', line):
-                        print("Choice:", line)
-                    elif "[IMAGE" in line.upper():
-                        print("Image placeholder", line)
+                        print("question:", line)
+                        question = {'qno': qno+1, 'department': department, 'module': module_name, 'course': course_name, 'content': line.split(')', 1)[1].strip(), 'options': [], 'image': None, 'answer': None}
+                        # # options = []
+                        questions.append(question)
+                        qno += 1
+                        continue
 
-                    elif isinstance(line, list) and line and isinstance(paragraphs[0],list):
-                        table = []
-                        row_text = [' '.join(cell).strip() for cell in row if isinstance(cell, list)]
-                        print("Table: ", row_text)
-                    else:
-                        print("Text: ", line)
-                
+
+                    elif re.match(r'^[A-Za-z]\)', line):
+                        # if questions[qno-1].get('options') is None:
+                        #     questions[qno-1]['options'] = []
+                        option_label = line[0]
+                        option_content = line[2:].strip()
+
+                        option = {'label': option_label, 'content': option_content, 'image': None}
+                        questions[qno-1]['options'].append(option)
+                        
+                        # print(f"Choice: {line}")
+                        continue
+                    elif "[IMAGE" in line.upper():
+                        if 'image' not in question:
+                            question['image'] = []
+                        question['image'].append(line)
+                        questions[qno-1]['image'] = line
+                        # print(f"Image placeholder: {line}")
+                        continue
+
+                    # Extract metadata (e.g., course name, module name)
+                    elif line.lower().startswith('course name'):
+                        course_name = line.split(':', 1)[1].strip()
+                        # questions[qno-1]['course'] = course_name
+                        # print(f"Course Name: {course_name}")
+                    elif line.lower().startswith('module name'):
+                        module_name = line.split(':', 1)[1].strip()
+                        # questions[qno-1]['module'] = module_name
+                        # print(f"Module Name: {module_name}")
+                    elif line.lower().startswith('department'):
+                        department = line.split(':', 1)[1].strip()
+                        # print(f"Department: {department}")
+
+                        # questions[qno-1]['department'] = department
+                    elif line.lower().startswith('course code'):
+                        course_code = line.split(':', 1)[1].strip()
+                        # print(f"Course Code: {course_code}")
+                        # questions[qno-1]['course_code'] = course_code
+                        
+                    elif line.lower().startswith('university'):
+                        university = line.split(':', 1)[1].strip()
+                        print(f"University: {university}")
+                    elif line.lower().startswith('faculty'):
+                        # faculty = line.split(':', 1)[1].strip()
+                        print(f"Faculty: {faculty}")
+                    elif line.lower().startswith('exam year'):
+                        exam_year = line.split(':', 1)[1].strip()
+                        print(f"Exam Year: {exam_year}")
+
+                    # Append the question and its options
+                    # if question:
+                    #     if options:
+                    #         question['options'] = options
+                    #     questions.append(question)
+            
+                        
+
     # extract tables
     print("--------Tables------")
     print(hasattr(document, 'tables'))
+
+    with open('questions.json', 'w') as file:
+        json.dump(questions, file)
 
     # for table in document.table:
         # print("Table: ")
