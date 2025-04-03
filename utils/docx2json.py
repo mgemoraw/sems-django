@@ -77,6 +77,7 @@ def extract_questions(docx_path):
                         pos = line.find(':')
                         answer = line[pos+1]
                         questions[qno-1]['answer'] = answer
+                        print(line)
                     # Extract metadata (e.g., course name, module name)
                     elif line.lower().startswith('course name'):
                         course_name = line.split(':', 1)[1].strip()
