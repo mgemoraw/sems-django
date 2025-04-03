@@ -46,7 +46,7 @@ def extract_questions(docx_path):
                         continue
 
                     # check if the line is a numbered bullet
-                    if re.match(r'^\d+\)', line):
+                    if re.match(r'^\d+[.)]', line):
                         # print("question:", line)
                         question = {'qno': qno+1, 'department': department, 'module': module_name, 'course': course_name, 'content': line.split(')', 1)[1].strip(), 'options': [], 'image': None, 'answer': None}
                         # # options = []
