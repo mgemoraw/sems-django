@@ -2,6 +2,7 @@ from os import write
 from docx2python import docx2python
 import re
 import json
+import sys 
 
 def extract_questions(docx_path):
     questions = []
@@ -26,25 +27,27 @@ def extract_questions(docx_path):
     # print(document.body[0][0][0])
     # print(document.body[1][0][0])
     # print(document.body[2][0][0])
-    print(dir(document))
+    # print(dir(document))
     # print(document.)
+
+
     for section in document.body:
-        print("----section---")
+        # print("----section---")
         for page in section:
-            print('-----page----')
+            # print('-----page----')
             for paragraphs in page:
                 question = {}
                 options = []
 
-                print("--------paragraph------")
-                print(paragraphs)
+                # print("--------paragraph------")
+                # print(paragraphs)
                 for line in paragraphs:
                     if not line or len(line.strip()) == 0:
                         continue
 
                     # check if the line is a numbered bullet
                     if re.match(r'^\d+\)', line):
-                        print("question:", line)
+                        # print("question:", line)
                         question = {'qno': qno+1, 'department': department, 'module': module_name, 'course': course_name, 'content': line.split(')', 1)[1].strip(), 'options': [], 'image': None, 'answer': None}
                         # # options = []
                         questions.append(question)
@@ -92,13 +95,14 @@ def extract_questions(docx_path):
                         
                     elif line.lower().startswith('university'):
                         university = line.split(':', 1)[1].strip()
-                        print(f"University: {university}")
+                        # print(f"University: {university}")
                     elif line.lower().startswith('faculty'):
+                        faculty = line
                         # faculty = line.split(':', 1)[1].strip()
-                        print(f"Faculty: {faculty}")
+                        # print(f"Faculty: {faculty}")
                     elif line.lower().startswith('exam year'):
                         exam_year = line.split(':', 1)[1].strip()
-                        print(f"Exam Year: {exam_year}")
+                        # print(f"Exam Year: {exam_year}")
 
                     # Append the question and its options
                     # if question:
@@ -109,18 +113,14 @@ def extract_questions(docx_path):
                         
 
     # extract tables
-    print("--------Tables------")
-    print(hasattr(document, 'tables'))
+    # print("--------Tables------")
+    # print(hasattr(document, 'tables'))
 
     with open('questions.json', 'w') as file:
+        print("Dumping data to json format...")
         json.dump(questions, file)
 
-    # for table in document.table:
-        # print("Table: ")
-        # for row in table:
-        #     row_text = [' '.join(cell).strip() for cell in row]
-        #     print("\tRow: ", row_text)
-
+  
 
 def extract_bullets(docx_path):
     # Extract text from the .docx file
@@ -160,20 +160,16 @@ def extract_bullets(docx_path):
 
 
 if __name__=='__main__':
-    docx_path = "sample.docx"
+    # docx_path = "sample.docx"
 
+    if len(sys.argv) != 2:
+        print("You have to enter name of docx file ")
+        sys.exit(0)
+    else:
+        docx_path = f"./{sys.argv[1]}.docx"
 
-    # call extract questions function
-    extract_questions(docx_path=docx_path)
+        # call extract questions function
+        extract_questions(docx_path=docx_path)
 
-
-    # Example usage
-    # document = docx2python('sample.docx')
-
-    docx_file = "sample.docx"  # Replace with your actual .docx file path
-    # numbered, lettered = extract_bullets(docx_file)
-
-    # print("Numbered Bullets:", numbered)
-    # print("Lettered Bullets:", lettered)
-
+        print("json file saved to {}.json".format(sys.argv[1]))
 
