@@ -1,1 +1,100 @@
-[{"qno": 1, "department": "Hydraulic and Water Resources Engineering", "module": null, "course": "Fluid Mechanics", "content": "Which of the following is the basic principle of fluid mechanics?", "options": [{"label": "A", "content": "Momentum principle", "image": null}, {"label": "B", "content": "Energy equation", "image": null}, {"label": "C", "content": "Continuity equatio", "image": null}, {"label": "D", "content": "All of the above mentioned", "image": null}], "image": null, "answer": null}, {"qno": 2, "department": "Hydraulic and Water Resources Engineering", "module": null, "course": "Fluid Mechanics", "content": "Which of the following fluid properties is independent of the sample size?", "options": [{"label": "A", "content": "Extensive property", "image": null}, {"label": "B", "content": "Intensive Property", "image": null}, {"label": "C", "content": "Chemical Property", "image": null}, {"label": "D", "content": "Physical Property", "image": null}], "image": null, "answer": null}, {"qno": 3, "department": "Hydraulic and Water Resources Engineering", "module": null, "course": "Hydraulics", "content": "Which of the following is not true about an open channel flow?", "options": [{"label": "A", "content": "It is a fluid flow through some confined section with a free surface in contact with the atmosphere.", "image": null}, {"label": "B", "content": "It is a flow where the surface will have constant atmospheric pressure everywhere.", "image": null}, {"label": "C", "content": "It is a flow of water in a channel with freely flowing open ends.", "image": null}, {"label": "D", "content": "It is a flow mainly driven by the force balance between gravity and friction forces.", "image": null}, {"label": "E", "content": "None of the above", "image": null}], "image": null, "answer": null}]
+[
+    {
+        "qno": 1,
+        "department": "Hydraulic and Water Resources Engineering",
+        "module": null,
+        "course": "Fluid Mechanics",
+        "content": "Which of the following is the basic principle of fluid mechanics?",
+        "options": [
+            {
+                "label": "A",
+                "content": "Momentum principle",
+                "image": null
+            },
+            {
+                "label": "B",
+                "content": "Energy equation",
+                "image": null
+            },
+            {
+                "label": "C",
+                "content": "Continuity equatio",
+                "image": null
+            },
+            {
+                "label": "D",
+                "content": "All of the above mentioned",
+                "image": null
+            }
+        ],
+        "image": null,
+        "answer": null
+    },
+    {
+        "qno": 2,
+        "department": "Hydraulic and Water Resources Engineering",
+        "module": null,
+        "course": "Fluid Mechanics",
+        "content": "Which of the following fluid properties is independent of the sample size?",
+        "options": [
+            {
+                "label": "A",
+                "content": "Extensive property",
+                "image": null
+            },
+            {
+                "label": "B",
+                "content": "Intensive Property",
+                "image": null
+            },
+            {
+                "label": "C",
+                "content": "Chemical Property",
+                "image": null
+            },
+            {
+                "label": "D",
+                "content": "Physical Property",
+                "image": null
+            }
+        ],
+        "image": null,
+        "answer": null
+    },
+    {
+        "qno": 3,
+        "department": "Hydraulic and Water Resources Engineering",
+        "module": null,
+        "course": "Hydraulics",
+        "content": "Which of the following is not true about an open channel flow?",
+        "options": [
+            {
+                "label": "A",
+                "content": "It is a fluid flow through some confined section with a free surface in contact with the atmosphere.",
+                "image": null
+            },
+            {
+                "label": "B",
+                "content": "It is a flow where the surface will have constant atmospheric pressure everywhere.",
+                "image": null
+            },
+            {
+                "label": "C",
+                "content": "It is a flow of water in a channel with freely flowing open ends.",
+                "image": null
+            },
+            {
+                "label": "D",
+                "content": "It is a flow mainly driven by the force balance between gravity and friction forces.",
+                "image": null
+            },
+            {
+                "label": "E",
+                "content": "None of the above",
+                "image": null
+            }
+        ],
+        "image": null,
+        "answer": null
+    }
+]

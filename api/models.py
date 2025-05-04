@@ -1,12 +1,11 @@
 import base64
 from django.db import models
-
-# Create your models here.
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils import timezone
 
-
-class User(models.Model):
+# Create your models here.
+class User(AbstractUser):
     USER_ROLES = [
         ('user', 'USER'),
         ('student', 'STUDENT'),
@@ -19,16 +18,16 @@ class User(models.Model):
 
     username = models.CharField(max_length=50, unique=True)
     email = models.EmailField(max_length=100, unique=True)
-    password_hash = models.CharField(max_length=255, default='User#123')
+    password = models.CharField(max_length=255, default='User#123')
     role = models.CharField(max_length=20, choices=USER_ROLES, default='student')
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
-    department_name=models.CharField(max_length=100, default=None)
+    department_name=models.CharField(max_length=100, null=True, blank=True)
     
     department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, related_name='users')
 
-    # tests = models.ForeignKey('Test', null=True, on_delete=models.CASCADE, related_name='user_tests')
-    # emails = models.ForeignKey('Mail', null=True, on_delete=models.CASCADE, related_name='user_emails')
+    tests = models.ForeignKey('Test', null=True, on_delete=models.CASCADE, related_name='user_tests')
+    emails = models.ForeignKey('Mail', null=True, on_delete=models.CASCADE, related_name='user_emails')
 
     def __str__(self):
         return self.username
@@ -63,9 +62,9 @@ class Department(models.Model):
     updated_at = models.DateTimeField(default=timezone.now)
     
 
-    # tests = models.ForeignKey('Test', on_delete=models.CASCADE,null=True, related_name='department_tests')
-    # questions = models.ForeignKey('Question', on_delete=models.CASCADE,null=True, related_name='department_questions')
-    # modules = models.ForeignKey('Module', on_delete=models.CASCADE, null=True, related_name='department_modules')
+    tests = models.ForeignKey('Test', on_delete=models.CASCADE,null=True, related_name='department_tests')
+    questions = models.ForeignKey('Question', on_delete=models.CASCADE,null=True, related_name='department_questions')
+    modules = models.ForeignKey('Module', on_delete=models.CASCADE, null=True, related_name='department_modules')
 
     def __str__(self):
         return self.name
@@ -104,6 +103,7 @@ class Choice(models.Model):
     label = models.CharField(max_length=10)
     content = models.TextField()
     is_answer = models.BooleanField(default=False)
+    image = models.BinaryField(null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -160,6 +160,72 @@ class Question(models.Model):
 
     def __str__(self):
         return self.content
+
+
+class ModelExam(models.Model):
+    title = models.CharField(max_length=255)
+    department = models.ForeignKey(Department, on_delete=models.CASCADE)
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    # Many to Many relationship to questions
+    questions = models.ManyToManyField(Question, blank=True)
+
+    # Exam timings
+    duration_minutes = models.PositiveIntegerField(help_text="Duration of the exam in minutes.")
+    exam_start = models.DateTimeField(null=True, blank=True)
+    exam_end = models.DateTimeField(null=True, blank=True)
+
+    hide = models.BooleanField(default=False)  # Whether the exam is hidden from students
+
+    # Tracking the exam status
+    started_at = models.DateTimeField(null=True, blank=True)  # When the student starts the exam
+    completed_at = models.DateTimeField(null=True, blank=True)  # When the student completes the exam
+
+    # ForeignKey to responses from students, relation to a student's answers
+    user_responses = models.ManyToManyField('UserExamResponse', blank=True)
+
+    def __str__(self):
+        return self.title
+
+    def is_active(self):
+        """ Check if the exam is within the allowed start/end time range """
+        return self.exam_start <= timezone.now() <= self.exam_end
+
+    def start_exam(self, user):
+        """ Start the exam for the user, and set the `started_at` field. """
+        self.started_at = timezone.now()
+        self.save()
+
+        # Create a UserResponse for this user if needed
+        if not self.user_responses.filter(user=user).exists():
+            response = UserResponse.objects.create(user=user, exam=self)
+            self.user_responses.add(response)
+            self.save()
+
+    def end_exam(self, user):
+        """ End the exam for the user, save the completion time. """
+        self.completed_at = timezone.now()
+        self.save()
+
+        # You could save the responses here if needed
+        user_response = self.user_responses.filter(user=user).first()
+        if user_response:
+            user_response.save_responses()
+
+
+class UserExamResponse(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    exam = models.ForeignKey(ModelExam, on_delete=models.CASCADE)
+    responses = models.JSONField(default=dict, blank=True)  # Store the responses as a JSON object
+
+    def save_responses(self):
+        """ Save or update responses for the user when they submit the exam. """
+        # Implement logic to save each question's response (e.g., selected answers)
+        pass
+
+    def __str__(self):
+        return f"{self.user} - {self.exam.title}"
 
 class Test(models.Model):
     user = models.ForeignKey('User', on_delete=models.CASCADE, null=True)

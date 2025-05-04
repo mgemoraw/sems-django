@@ -1,0 +1,4102 @@
+[
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Many manufacturers recommend that valves be ground with an interference angle",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "valve margin and valve face angles"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "valve face and valve seat angles"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "valve guide and valve face angles"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "valve head and margin angles"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Camshaft bearings in a cam-in block engine are being discussed",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Piston ring end gap can be increased by ______________",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "filing the ring to make the gap larger"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "installing oversize rings"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "sleeving the cylinder"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "knurling the piston"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "To check a crankshaft journal for taper and out-of-round, the journal should be measured in at least how many locations?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "One"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Two"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Four"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Six"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Piston ring side clearance is a measure taken between the ______ and the _______",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "piston (side skirt"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "piston pin; piston pin retainer (clip"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "piston ring; piston ring land"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "compression ring; oil control ring"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A misaligned connecting rod causes what type of engine wear?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Cylinder taper"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Barrel-shaped cylinders"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Ridge wear"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Angle wear on the piston skirt"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "If the bore of an engine is increased without any other changes except for the change to proper size replacement pistons, the displacement will ______________ and the compression ratio will ______________",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "increase; increase"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "increase; decrease"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "decrease; increase"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "decrease; decrease"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which statement is true about thermostats?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The temperature marked on the thermostat is the temperature at which the thermostat should be fully open"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Thermostats often cause overheating"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The temperature marked on the thermostat is the temperature at which the thermostat should start to open"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Both a and b"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "When aligning the timing marks on an overhead valve (cam-in-block",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 12 o\u2019clock position and the mark on the crankshaft should be at the 6 o\u2019clock position"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 12 o\u2019clock position and the mark on the crankshaft should be at the 12 o\u2019clock position"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 6 o\u2019clock position and the mark on the crankshaft should be at the 12 o\u2019clock position"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 6 o\u2019clock position and the mark on the crankshaft should be at the 6 o\u2019clock position"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Before the valves are removed from the cylinder head, what operation is NOT needed to be done?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Remove valve locks (keepers"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Remove cylinder head(s"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Remove burrs from the stem of the valve(s"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Remove the valve stem seals"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Two technicians are diagnosing a problem with an OHV V-8 with flat-bottom lifters",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following is false about integral frame type?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "There is no frame and all the assembly units are attached to the body"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It is cheaper and due to less weight it is most economical"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Repairing is difficult"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Half frame is fixed in the front end on which engine and front suspension is mounted"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following is not a type of independent suspension system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Macpherson strut"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Double wishbone"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Twist Beam strut"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Multi-link"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The main function of master cylinder is to",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Adjust the extent of brake pedal free ply"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Boost the force applied by brake pedal"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Ensure that all the wheel brakes are supplied with the same of fluid pressure"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Convert brake pedal force to hydraulic pressure"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "From the tire number P222/75R16, what does the number 222 indicates",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Aspect ratio"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rim diameter"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Load range"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Tire width"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The following are signs of a worn steering linkage EXCEPT",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Vehicle pulling to one side while driving"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Steering drifting during turns"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Vibrations in steering wheel"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Uniform tire wear"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "In a front Double Wishbone suspension, which component allows the front steering knuckle to rotate on its axis?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Lower control arm"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Ball joints"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Rubber bushings"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Upper control arm"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "___________ is welded on the axle housing to provide a flat surfaces to contact the spring and has a hole drilled through it to receive the head of the center bolt",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Shackle"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Saddle"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Bushing"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Rebound clips"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following is not advantage of rubber spring over conventional springs?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Self-damping properties"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Fixed spring rate"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Space-saving"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Vibration damping & noise reduction"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following is true about Ackerman steering system",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Consists of sliding pairs"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Subject to more wear and tear"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Steering gear mechanism is placed on the back of the front wheel axle"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Steering gear mechanism is placed on the front of the front wheel axle"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one the following is dead axle?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The rear axle of a front wheel drive"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The rear axle of a rear wheel drive"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The front axle of a four wheel drive"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The front axle of all wheel drive"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following is not true about Tubeless tires",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Less maintenance is required as probability of puncture is low"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Less costly"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Lighter than tubed"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "More traction with the ground"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Why the fuse or relays are numbered?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "For identification of which relay is used for which circuit"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To replace the fuse or the relay based on that number"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To buy the fuse or relay using number"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The above all are right"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which h one of the following is not a part of distributor less ignition system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ignition coil"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Spark plug"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Contact point"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Igniter"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "An open fault in the pull in winding of a star solenoid switch will cause",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The battery to run down"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The solenoid plunger will never move out"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The solenoid to move in and out, or chatter"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Excessively high current draw from the starter"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which tester used to determined battery state to charge by measuring the specific gravity of the electrolyte?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Peak load tester"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Leakage tester"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Hydrometer tester"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Drive tester"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which system used to handle the load of the lights, ignition, radio and other electrical and electronic equipment's while the engine is running?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Starting system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Charging system"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Ignition system"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Head light system"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A component composed of two cores, a field coil slip rings and use as a polarity?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Charging system Rotor"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Filed coil housing"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Stator coil"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Diode"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "When performing a battery capacity (heavy-load",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "12"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "10"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "9"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "8"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which of the following is correct current path during ignition switch start position?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Battery \u2013ignition switch-terminal 50-hold in-ground"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Battery-ignition switch \u2013terminal 50-pull in coil-terminal C-filed coil \u2013armature-ground"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Battery \u2013ignition switch- terminal D-hold in-ground"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A and B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which of the following is taken as continuous (Permanent",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Starter motor"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Ignition coil"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Head lamp"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Where in an AC system would you expect finding a high-pressure liquid?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Between the compressor and the Thermal expansion Valve"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Between the Thermal expansion Valve and the Evaporator"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Between the compressor and the condenser"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Between the Condenser and the Thermal expansion Valve"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The main components of the Air conditioning system are",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Thermistor, condenser, flow control and an evaporator"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Fan blower, condenser, flow control and an evaporator"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Compressor, condenser, flow control device and an evaporator"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Drainage, condenser, flow control and an evaporator"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The two major functions of the compressor are to circulate refrigerant and to compress ____________",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Low-pressure refrigerant vapor into hot, high temperature vapor"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "High-pressure refrigerant vapor into high-temperature, low temperature liquid"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Low-pressure refrigerant liquid into hot, high temperature vapor"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Low-pressure refrigerant liquid into hot, high temperature liquid"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "On a manual air conditioning system without automatic control, the compressor clutch does not operate",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one is the function of an orifice tube in an A/C system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Regulates the flow of refrigerant into the evaporator"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Regulates the flow of refrigerant into the compressor"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Regulates the flow of refrigerant into the condenser"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Regulates the flow of coolant into the heater core"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "On an A/C compressor the magnetic clutch:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Traps magnetic particles that might damage the system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Cycles on and off to drive the compressor as needed"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Cannot be replaced separately from the compressor"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Contains lubricant for the compressor"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Technician A says a defective resistor trio can cause a no high blower condition",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "If a cooling system operates at too cool an operating temperature, the engine will do which of the following?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Have more torque"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Have less efficiency"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Have ignition detonate"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Produce higher emissions"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What high-side and low-side pressure gauge readings would a technician find if the condenser fan were inoperative?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "High-side high and low-side low"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "High-side low and low-side high"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both high-side high and low-side are low"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Both high-side high and low-side are high"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "If the vehicle is moving at high altitude, generally over 5,000 feet (1,500 meters",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Reduce fuel delivery and retard the ignition timing"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Increase fuel delivery and advance the ignition timing"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Reduce fuel delivery and advance the ignition timing"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Increase fuel delivery and retard the ignition timing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which airflow sensor has a dampening chamber?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A vane airflow"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A hot wire MAF"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A hot film MAF"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A Karman Vortex"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The voltage output of a zirconia oxygen sensor when the exhaust stream is lean (excess oxygen",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Relatively high (close to 1 volt"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "About in the middle of the voltage range"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Relatively low (close to 0 volt"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Either a or b, depending on atmospheric pressure"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A P0118 DTC is being discussed",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Acceleration enrichment is used for what purpose?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "reduce fuel consumption"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "reduce exhaust emissions"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "provide maximum torque"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "provide minimum fuel economy"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "When an emission related malfunction occurs that illuminates the MIL, vehicle-operating parameters are to be stored in the Engine Control Module (ECM",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "DTC"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Freeze Frame Data"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Active Stored Data"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Continuous Data"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The purpose of Supercharging is to",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Increase compression ratio"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Utilize exhaust gas energy"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Increase charge density"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Increase speed of engine"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following statement is true while comparing CI and SI engines?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "SI engines are relatively noisy"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The pressure drop inside the cylinder during intake stroke is more on CI engine"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The pressure drop inside the cylinder during intake stroke is more on SI engine"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "SI engines have more running costs"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "To which of the following the number of radial holes equal in a distributor type fuel injection pump?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To the float valve"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To the number of the engine cylinder"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To the number of gears"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To the number of governors"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following statement is true regarding to ignition delay, diesel knock and cetane number?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The higher the cetane number the shorter the ignition delay and the higher diesel knock probability"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The higher the cetane number the longer the ignition delay and the higher diesel knock probability"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The higher the cetane number the shorter the ignition delay and the lower diesel knock probability"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The lower the cetane number the shorter the ignition delay and the lower diesel knock probability"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "For the diesel engine to have high thermal efficiency;",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Lower compression ratio is required"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Heat loss during combustion must be low"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Good scavenging of the intake air is required"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What is the function of a diesel engine's glow plugs?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To ignite the fuel-air mixture"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To preheat the combustion chamber"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To regulate fuel flow"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To cool the engine"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What is the function of the diesel fuel filter in the engine?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To regulate fuel flow"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To filter out impurities from the fuel"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To filter out impurities from the air"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To mix fuel and air"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "With EFI (ELECTRONIC FUEL INJECTION",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "sharp start and stop is not possible"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "very high injection pressure can be obtained"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "sudden cylinder cut-off is impossible"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "diagnostic properties are poor"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A noisy valve train is being diagnosed",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Technician A says that black exhaust smoke is an indication of a too-rich air-fuel mixture",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A cylinder head should be removed by loosening the head bolts in which order? a",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Any order as long as all bolts are removed"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "In the same order as the tightening sequence"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "In the reverse order of the tightening sequence"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Loosen each a quarter of a turn and then one-half a turn in the same order as the tightening sequence"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which statement is true about surface finish?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Cast-iron surfaces should be smoother than aluminum surfaces"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The rougher the surface is, the higher the micro inch finish measurement"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The smoother the surface is, the higher the micro inch finish measurement"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A cylinder head should be a lot smoother than a crankshaft journal"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "When aligning the timing marks on an overhead valve (cam-in-block",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 12 o\u2019clock position and the mark on the crankshaft should be at the 6 o\u2019clock position"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 12 o\u2019clock position and the mark on the crankshaft should be at the 12 o\u2019clock position"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 6 o\u2019clock position and the mark on the crankshaft should be at the 12 o\u2019clock position"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The timing mark on the camshaft should be at the 6 o\u2019clock position and the mark on the crankshaft should be at the 6 o\u2019clock position"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "An aluminum cylinder head is checked for warpage using a straight edge and a feeler (thickness",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The feeler gauge shown is thinner than specification",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Piston ring side clearance is a measure taken between the ______ and the _______",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "piston (side skirt"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "piston pin; piston pin retainer (clip"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "piston ring; piston ring land"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "compression ring; oil control ring"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which axles require a Locking Hub?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Front drive axle of a rear-wheel drive axle"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Front drive axle of a four-wheel drive axle"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Rear drive axle of a two-wheel drive axle"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Rear drive axle of a front-wheel drive axle"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The drive shafts are connected to the differential and wheel hubs through universal joints because the universal joints",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Compensate for variations in the relative positions of the differential and the wheels which result from bumpy road surface or other similar driving conditions"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Absorb any difference in speed between the left and right wheels when the vehicle is turning"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Absorb the vibrations transferred from the surface of the road"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Why are the helical gears used commonly in transmission over spur gears?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Low noise level and high strength"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Low noise level and low cost"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Low cost and high strength"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Low noise level and economy"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "In which of the configuration of epicyclic gearbox output will be forward and fast output speed?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Sun gear driving, ring gear driven, planet carrier stationary"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Sun gear driven, ring gear stationary, planet carrier driving"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Sun gear stationary, ring gear stationary, planet carrier driving"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Sun gear stationary, ring gear driven, planet carrier driving"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which of the following is the disadvantage of the cone clutch?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "It is silent in operation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It becomes difficult to disengage the clutch when the cone angle is less than 20\u00b0"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The normal force on the contact surface is larger than the axial force"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Same torque can be transmitted for the same size as the plate clutch"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What is running resistance of the vehicle?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Rolling resistance"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Aerodynamic resistance"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Sum of rolling and aerodynamic resistance"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Traction force"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A four-cylinder four-stroke spark ignition engine has a maximum engine speed of 6,000 rpm",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "50 times"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "25 times 2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "100 times"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "75 times"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A four-stroke diesel engine has stroke length and engine speed of 80 mm and 6000 rpm respectively",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "15 m/s"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "14 m/s"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "16 m/s"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "13 m/s"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following develop high fuel pressure in common rail diesel injection system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Inline injection pump"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Distributor injection pump"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "High pressure pump"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Injector"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which device is used to maintain high fuel pressure in fuel line of inline injection pump fuel system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Delivery valve"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Control rack"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Spill ring"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Helix groove"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Any of the following methods can be used to find a refrigerant leak except",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Using a Refrigerant identifier to check for leaks"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Spraying Soapy Water on suspected leaks and watching for bubbles"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Adding leak detection dye to the refrigerant"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Using an Electronic Leak Detector to check hoses, connections and components"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Where is the LOW SIDE (low pressure",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Between the compressor outlet and condenser inlet"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Between the compressor outlet and evaporator inlet"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Between the evaporator inlet and compressor inlet"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Between the evaporator outlet and compressor inlet"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The MAGNETIC CLUTCH on an A/C compressor:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Traps magnetic particles that might damage the system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Cycles on and off to drive the compressor as needed"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Cannot be replaced separately from the compressor"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Contains lubricant for the compressor"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The over-all curvature of the leaf spring is called",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Camber"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Nip"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Inter-leaf"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Master leaf"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following is true about Ackerman steering system",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Consists of sliding pairs"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Subject to more wear and tear"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Steering gear mechanism is placed on the back of the front wheel axle"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Steering gear mechanism is placed on the front of the front wheel axle"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which one of the following is not a type of independent suspension system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Macpherson strut"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Double wishbone"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Twist Beam"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Multi-link"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "____________ Chassis has half portion of the engine is in the driver cabin and the remaining half is outside the cabin?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Forward control"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Semi-forward control"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Full-Forward control"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "B and C"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A VARIABLE orifice tube does what?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Improves low speed cooling"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Improves high speed cooling"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Has no effect on cooling performance"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Filters out contaminants"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The tendency to detonate during combustion process increases rapidly with?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Atmospheric Humidity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Water-Alcohol Injection"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Deposit accumulation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Optical sensors used for the displacement measurement works on the principal that:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Intensity of light increases with distance"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Intensity of light remains constant with distance"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Intensity of light increases with time"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Intensity of light decreases with distance"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The frictional force is directly proportional to?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Applied load"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Type of surface used"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The normal force"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The horizontal load"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What is meant by closed system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "System has both heat and work transfer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "System has only mass transfer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "System has heat transfer but not work transfer"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A and B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "How exhaust gas recirculation (EGR",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "By reducing the combustion temperature inside the combustion chamber"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "By reducing the exhaust temperature inside the exhaust manifold"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "By reducing the combustion temperature inside the combustion chamber"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "By reducing the exhaust temperature inside the exhaust manifold"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which type of vehicle consists of two or more rigid sections connected together?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Split\u2010level bus"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Articulated bus"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Double decker"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Single decker"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "The following is also known as flywheel or coupling",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Fluid clutch"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Cone clutch"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Centrifugal clutch"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Technician A says that the paper test could detect a burned valve",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Two technicians are discussing oil leaks",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Technician A says a supercharger uses an intercooler to keep the engine's oil cool",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "A wet compression test is being performed on a four-cylinder engine",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Worn piston rings"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A faulty valve"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A hole in the piston"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Excessive carbon buildup on"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Two technicians are discussing how to perform a road test to verify the customer's concerns about noise from the engine",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians A and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician A nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Technician A says that the first step in the diagnostic process is to verify the problem (concern",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians a and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician a nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which item is not important to know before starting the diagnosis of an engine performance problem?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "List of previous repairs"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The brand of engine oil used"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The temperature of the engine when the problem occurs"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Technician A says that if the opposite DTC can be set, the problem is the component itself",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians a and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician a nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Technician a says that knowing if there are any stored diagnostic trouble codes may be helpful when checking for related technical service bulletins",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Technician A only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Technician B only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both Technicians a and B"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Neither Technician a nor B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What are the elements of drug testing programs is composed?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Testing"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Record Retention"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Employee Assistance Program"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What are the most popular types of cover offered by insurance companies in Ethiopia include?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The Road Traffic Act (Ethiopian Third Party Risks"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Third Party Only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Third Party, Fire, and Theft Cover"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "What is the purpose Fleet Management?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Fleet Management Systems optimize processes and improve efficiency of adopters"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Growing popularity of mobile devices are expected to drive the market"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Increasing expenditures on maintenance"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Automotive Engineering",
+        "course_name": "",
+        "content": "Which is not a complex system for fleet management is built of different segments?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Operational Fleet Monitoring and Management"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Vehicle Dispatch"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Driver unscheduled"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Condition based maintenance"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    }
+]

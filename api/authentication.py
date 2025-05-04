@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 # from django.conf import settings
 from django.contrib.auth import authenticate
 from jose import jwt
-from requests import Session
+# from requests import Session
 from sems import SECRET_KEY, ALGORITHM
 from .models import User
 

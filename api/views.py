@@ -1,8 +1,8 @@
 from django.contrib.auth.models import User as AuthUser, Group
 from rest_framework import generics, renderers
-from .serializers import AuthUserSerializer, GroupSerializer
+from .serializers import AuthUserSerializer, CourseSerializer, DepartmentSerializer, GroupSerializer, ModelExamSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
-
+from django.contrib.auth import authenticate
 
 from django.contrib.auth.hashers import make_password
 from django.http import JsonResponse
@@ -14,35 +14,63 @@ from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from django.db import transaction
 from datetime import timedelta
-from .models import User, Role, Department, Question
-from .serializers import UserSerializer, RoleSerializer, UserCreateSerializer, UserLoginSerializer, RoleCreateSerializer, PasswordCreateSerializer, QuestionSerializer
+from .models import Course, ModelExam, User, Role, Department, Question, Test, UserResponse, Module
+from .serializers import UserSerializer, RoleSerializer, UserCreateSerializer, UserLoginSerializer, RoleCreateSerializer, PasswordCreateSerializer, QuestionSerializer, TestSerializer
 from .authentication import create_access_token, authenticate_user
 from rest_framework.authtoken.models import Token 
-
+from rest_framework.response import Response
 from drf_yasg.utils import swagger_auto_schema
 
 # Create your views here.
+# Greet View
+class GreetView(APIView):
+    def get(self, request):
+        return Response({"Greet": "Greetings "}, status=status.HTTP_200_OK)
 
+    def post(self, request):
+        return Response({"data": None})
 
+# User authentication viewset
 class AuthUserViewSet(viewsets.ModelViewSet):
-    queryset = AuthUser.objects.all().order_by('-date_joined')
-    serializer_class = AuthUserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAdminUser]
 
     # @action(detail=True, renderer_classes=[renderers.StaticHTMLRenderer])
-    def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+    # def perform_create(self, serializer):
+    #     serializer.save(owner=self.request.user)
 
 class GroupsViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all().order_by('name')
     serializer_class = GroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAdminUser]
 
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('username')
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAdminUser]
+
+    # def list(self, request):
+    #     # /api/users
+    #     users  = User.objects.all()
+    #     serializer = UserSerializer(users, many=True)
+
+    #     return Response(serializer.data, status=status.HTTP_200_OK)
+    
+
+    # def create(self, request): #api/users/
+    #     pass 
+
+    # def retrieve(sef, request, pk=None): #/api/users/<int:id>
+    #     pass 
+
+
+    # def destroy(self, request):
+    #     pass
+
+    # def update(self, request, pk=None):
+    #     pass
 
 
 class QuestionsViewSet(viewsets.ModelViewSet):
@@ -51,12 +79,78 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 
+class TestsViewSet(viewsets.ModelViewSet):
+    queryset = Test.objects.all().order_by('id')
+    serializer_class = TestSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class DepartmentsViewSet(viewsets.ModelViewSet):
+    queryset = Department.objects.all().order_by('name')
+    serializer_class = DepartmentSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class UserRolesViewSet(viewsets.ModelViewSet):
+    queryset = Role.objects.all()
+    serializer_class = RoleSerializer
+    permission_classes = [permissions.IsAdminUser]
+
+class CouresViewSet(viewsets.ModelViewSet):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+
+
+class ModelExamViewSet(viewsets.ModelViewSet):
+    queryset = ModelExam.objects.all()
+    serializer_class = ModelExamSerializer
+
+    # def create(self, request, *args, **kwargs):
+    #     serializer = self.get_serializer(data=request.data) 
+
+    #     # validate the data
+    #     serializer.is_valid(raise_exception=True)
+
+    #     # save the object, pass user as created by
+    #     exam = serializer.save(created_by=request.user)
+
+
+    #     # Return the created object
+    #     return Response(self.get_serializer(exam).data, status=status.HTTP_201_CREATED)
+
+    @action(detail=True, methods=['post'])
+    def start_exam(self, request, pk=None):
+        exam = self.get_object()
+        user = request.user
+        # Logic to start the exam
+        exam.start_exam(user)
+        return Response({'status': 'Exam started'})
+
+    @action(detail=True, methods=['post'])
+    def end_exam(self, request, pk=None):
+        exam = self.get_object()
+        user = request.user
+        # Logic to end the exam
+        exam.end_exam(user)
+        return Response({'status': 'Exam ended'})
+
+    @action(detail=True, methods=['get'])
+    def questions(self, request, pk=None):
+        exam = self.get_object()
+        questions = exam.questions.all()
+        # Return the exam questions in response
+        return Response({'questions': questions})
+
 
 @swagger_auto_schema(
     method='post',
     request_body=UserLoginSerializer,  # Specify the serializer for the request body
     responses={200: 'Login successful!', 400: 'Invalid credentials'}
 )
+
 @api_view(['POST'])
 def signup_view(request):
     data = {}
@@ -92,15 +186,15 @@ class UserLoginViewSet(viewsets.ModelViewSet):
 @api_view(['POST'])
 def login_view(request):
 
-    serializer = UserLoginSerializer(data=request.data)
+    serializer = AuthUserSerializer(data=request.data)
 
     if serializer.is_valid():
         username = serializer.validated_data['usrename']
         password = serializer.validated_data['password']
         
         # authenticate user
-        user = authenticate_user(username, password)
-
+        user = authenticate(username=username, password=password)
+    
         if not user:
             return JsonResponse({'detail': "Invalid credentials"}, status=400)
         
@@ -116,19 +210,9 @@ def login_view(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
-
-# Greet View
-class GreetView(APIView):
-    def get(self, request):
-        return Response({"Greet": "Greetings "}, status=status.HTTP_200_OK)
-
-    def post(self, request):
-        return Response({"data": None})
-
-
 # User Registration View
 class UserRegisterView(APIView):
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     def post(self, request):
         data = request.data

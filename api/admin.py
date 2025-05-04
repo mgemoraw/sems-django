@@ -1,13 +1,20 @@
 from django.contrib import admin
-from .models import User, University, Department, Role, RoleAssignment, UserResponse, Question, Chair, Faculty, Choice, Course, CourseAssignment, Test, Module, Mail, College
+from .models import User, University, Department, Role, RoleAssignment, UserResponse, Question, Chair, Faculty, Choice, Course, CourseAssignment, Test, Module, Mail, College, ModelExam, UserExamResponse
 
 
-
+# Register your models here.
 
 class UserAdmin(admin.ModelAdmin):
     list_display=('username', 'email', 'role') 
 
-# Register your models here.
+class ModelExamAdmin(admin.ModelAdmin):
+    list_display = ('title', 'department', 'exam_start', 'exam_end', 'created_by', 'hide')
+    list_filter = ('created_by', 'department', 'exam_start', 'exam_end')
+    search_fields = ['title']
+
+admin.site.register(ModelExam, ModelExamAdmin)
+admin.site.register(UserExamResponse)
+
 admin.site.register(User)
 admin.site.register(Role)
 admin.site.register(RoleAssignment)

@@ -1,0 +1,1191 @@
+[
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "The weak entity relationship set is represented in E-R diagram as ?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Double diamonds"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Double rectangle"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Dashed lines"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Diamond"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "In the __________ normal form, a composite attribute is converted to individual attributes?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "First"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Second"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Third"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Fourth"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Is an attribute which can be further to be divide?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Composite"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Null"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Derived"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Multiple value"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "A functional dependency is a relationship between or among?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Tables"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rows"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Relations"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Attributes"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "The entity set person is classified as student and employee",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Generalization"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Specialization"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Inheritance"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Constraint generalization"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Describes no attribute of a primary key can be null?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Domain Integrity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Entity Integrity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Referential Integrity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Enterprise Integrity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Which  of the following is not a Structural thing?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Classes   interfaces"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "collaborations"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "activity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "nodes"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "c"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Software is defined as ___________",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "set of programs, documentation & configuration of data"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "set of programs"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "documentation and configuration of data"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the mentioned"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "At Conceptual level Class diagrams should include",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "operations only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "attributes only"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "both operations and attributes"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "none of the mentioned"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Constraints can be represented in UML by",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "{text}"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "[text]"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Constraint"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the mentioned"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "What is an object?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "An object is an instance of a class"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "An object includes encapsulation of data"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "An object is not an instance of a class"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the mentioned"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Which of the following statement(s",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Interaction diagrams are at their best when they deal with one main design flow and not multiple variants that can happen"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Interaction diagrams are good at designing part or all of one use case\u2019s functionality across multiple objects"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Interaction diagrams allow the analyst to show iteration and conditional execution for messaging between objects"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the mentioned"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "UML interfaces are used to:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "specify required services for types of objects"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "program in Java, but not in C++ or Smalltalk"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "define executable logic to reuse across classes"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "define an API for all classes"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Which of the following is not a project management goal?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Avoiding customer complaints"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Keeping overall costs within budget"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Delivering the software to the customer at the agreed time"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Maintaining a happy and well-functioning development team"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "What is the first step in project planning?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Determine the budget"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Determine project constraints"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Inspect the deliverables"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Establish the objectives and scope"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "A project is anything which is",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Not implicitly expressed"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Not a physical objective"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Implicitly expressed"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Social acceptability"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Process framework activities are populated with",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Milestones"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "QA Points"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Work Products"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Which of the following is not an effective software project management focus?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "People"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Popularity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Product"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Process"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "The reason for software bugs and failures is due to",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Software developers"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Software companies"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Both (A"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "According to the Project Management Institute (PMI",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Skills, Tools"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Skills, Analysis"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Tools, Analysis"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Analysis, Theories"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "During project estimation, project manager estimates following",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Project duration"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Project effort"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Project cost"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "What is system analysis?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Collecting facts and information"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Interpreting facts"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Identifying the problems"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "System study involves",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "study of an existing system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "documenting the existing system"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "identifying current deficiencies and establishing new goals"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "In top-down analysis and design",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "each succeeding phase is more detailed than the phase before it"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "each succeeding phase is as detailed as the phase before it"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "each succeeding phase is less detailed than the phase before it"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "The _____ symbol is used in a flowchart to represent a calculation task",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Input"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Output"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Process"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Start"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "System prototyping helps the designer in",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Making the programmers understand how the system will function"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Communicating to the user, quickly, how the system, when developed, will look like and get a feedback"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Giving a demo of the software, to the system manager to whom he reports"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A and B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "The conditions immediately outside a system is called",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The boundary"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The interface"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The environment"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The protocols"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Which of the following is not a characteristic of a system",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "operates for some purpose"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "has homogeneous components"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "has interacting components"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "operates within a boundary"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Software Engineering",
+        "course_name": "",
+        "content": "Which of the following is not a factor in the failure of a systems development project?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "inadequate user involvement"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "failure of systems integration"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "size of company"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "continuation of a project that should have been cancelled"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    }
+]

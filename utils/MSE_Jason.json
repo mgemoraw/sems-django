@@ -1,0 +1,3938 @@
+[
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What are the four key components of the Materials Science and Engineering tetrahedron?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Density, volume, mass, and shape"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Composition, microstructure, properties, and performance"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Conductivity, resistance, voltage, and current"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Elasticity, plasticity, hardness, and toughness"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which class of material is known for its high strength-to-weight ratio?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Metals"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Ceramics"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Polymers"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Composites"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which material class typically exhibits the highest thermal conductivity?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ceramics"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Polymers"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Metals"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Composites"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Fracture toughness typically increases with",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Increasing temperature"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Reducing grain size"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Increasing loading rate"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Increasing defect concentration"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What type of failure occurs suddenly and without warning, often at stress levels below the material's ultimate strength?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Fatigue failure"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Creep failure"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Ductile failure"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Brittle failure"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which material has the highest specific heat capacity?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Aluminum"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Water"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Iron"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Copper"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The number of atoms in a unit cell of BCC, FCC and HCP metals respectively are:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "2, 6, 4"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "4, 2, 6"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "2, 4, 6"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "6, 4, 2"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The coordination number of FCC structure is",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "8"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "12"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "6"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "4"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The area under the stress-strain graph is a measure of materials",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Toughness"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Ductility"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Hardness"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Yield strength"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which of the following is an extensive property of a system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Temperature"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Pressure"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Mass"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Internal energy"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which of the following equations represents the first law of thermodynamics?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "\u0394S = Q/T"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "\u0394E = Q + W"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "\u0394H = \u0394E + P\u0394V"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "\u0394G = \u0394H \u2013 T\u0394S"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which of the following is not a type of thermodynamic system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Open system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Closed system"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Adiabatic system"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Isobaric system"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which of the following is a state function?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Heat"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Work"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Enthalpy"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Entropy"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What does Gibbs free energy represent in thermodynamics?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Maximum useful work that can be obtained from a system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Total energy content of a system"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Heat content at constant pressure"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Energy content at absolute zero"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The equation of state for an ideal gas is:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "PV = nRT"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "PV = \u03b3nRT"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "PV = RT/\u03b3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "PV = RT"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the change in internal energy of a system that absorbs 100 J of heat and performs 50 J of work?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "50 J"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "100 J"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "150 J"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "200 J"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The effective number of lattice points in the unit cell of a Simile cubic, body centered cubic, and  face centered cubic space lattices, respectively, are",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "1 ,2,2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "1,2,4"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "2,3,4"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "2,4,4"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following crystal system does not exhibit rotational symmetry operation?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Tetragonal"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Cubic"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Monoclinic"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Triclinic"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Crystals can exhibit defects in their atomic structure; the simultaneous presence of both cation and anion vacancies in the material is known as",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Interstitial defect"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Substitution defect"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Schottky defect"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Frenkel defect"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the primary cause of crystal imperfections in materials?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Thermal expansion"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Plastic deformation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Atomic vibration"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Surface tension"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which property is uniquely determined by the crystal structure of a material?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Electrical conductivity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Density"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Thermal expansion coefficient"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Hardness"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "A material with a face-centered cubic (FCC) crystal structure has Miller indices (101) and [121]. If the material changes its structure to a hexagonal (hex) crystal system, what will be its corresponding Miller indices?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Plane (101) FCC \u2192Plane (\u00af1011) hex and Direction [121] FCC \u2192 Direction [0\u00af111) hex"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Plane (101) FCC \u2192Plane (10\u00af11) hex and Direction [121] FCC \u2192 Direction [01\u00af11) hex"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Plane (101) FCC \u2192Plane (101\u00af1) hex and Direction [121] FCC \u2192 Direction [011\u00af1) hex"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Plane (101) FCC \u2192Plane (01\u00af11) hex and Direction [121] FCC \u2192 Direction [10\u00af11) hex"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which crystal system would be least suitable for applications requiring uniform thermal conductivity in all directions?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Cubic"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Trigonal"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Orthorhombic"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Hexagonal"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "For a two-dimensional free electron gas, the electronic density n, and the Fermi energy EF, are related by",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "n=(2mE_f )^(3/2)/(3\u03c0^2 \u045b^3 )"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "n=(mE_f)/(\u03c0\u045b^2 )"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "n=(mE_f)/(2\u03c0\u045b^2 )"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "n=(2^(1/3) \u3016(mE_f)\u3017^(1/3))/\u03c0\u045b"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which of the following materials typically exhibits strong ferromagnetism at room temperature?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Copper"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Aluminum"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Iron"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Silver"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The Hall coefficient, RH, of sodium depends on",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The effective charge carrier mass and carrier density"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The charge carrier density and relaxation time"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The charge carrier density only"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The effective charge carrier mass"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "A phosphorous doped silicon semiconductor (doping density: 1017/cm3) is heated from 100 oC to 200 oC. Which one of the following statements is CORRECT?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Position of Fermi level moves towards conduction band"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Position of dopant level moves towards conduction band"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Position of Fermi level moves towards middle of energy gap"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Position of dopant level moves towards middle of energy gap"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "In order to estimate the specific heat of phonons, the appropriate method to apply would be",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Einstein model for acoustic phonons and Debye model for optical phonons"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Einstein model for optical phonons and Debye model for acoustic phonons"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Einstein model for both optical and acoustic phonons"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Debye model for both optical and acoustic phonons"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the approximate energy of a photon with a wavelength of 500 nm?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "4.14 eV"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "2.48 eV"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "3.48 eV"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "1.24 eV"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following demonstrate how to measure the band gap of a semiconductor using optical absorption spectroscopy",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Measure the current-voltage characteristics of the semiconductor."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Measure the temperature dependence of the semiconductor's resistance."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Measure the reflectivity of the semiconductor over a range of wavelengths."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Measure the capacitance-voltage characteristics of the semiconductor."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the crystal structure of silicon?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Face centered cubic"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Body centered cubic"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Diamond cubic"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Hexagonal close packed"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What are equilibrium carrier statistics in semiconductor?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Distribution of carriers at thermal equilibrium"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Generation of carriers due to applied voltage"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Recombination process in p-n junction"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Quantum tunneling effect"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "A p-n junction diode is used primary for",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Amplification of signal"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rectification of current"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Switching power"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Emitting light"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The equation J = nq\uf06dE describes",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Drift current density in semiconductor"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Carrier concentration in semiconductor"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Recombination rate in semiconductor"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Photo emission in semiconductor"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which semiconductor device is capable of amplifying signals?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Diode"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Transistor"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "LED"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Laser"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Evaluate the importance of doping in semiconductor device?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Doping decreases the conductivity of semiconductor"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Doping introduces free charge carriers in to semiconductor"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Doping makes semiconductor transparent to light"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Doping increases resistivity of semiconductor"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The minority carriers in an n-type semiconductor are",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Holes"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Valence electrons"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Conduction electrons"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Phonons"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the probability that a state at E << EF occupied?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "0"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "1"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "0.5"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "0.1"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following is not improved by grain size reduction?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Toughness"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Hardness"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Strength"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Plasticity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What happens to most metals on solidification?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Expand"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Elongate"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Shrink"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "No Change"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "At a higher undercooling solidification temperature",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Nuclei growth rate reduced"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rate of nuclei formation reduced"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Large grains can be formed"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Atomic diffusion increased"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following processes occurs at a lower temperature?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Recrystallization"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Grain growth"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Recovery"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Annealing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "A mechanism of strengthening a metal by increasing dislocation density is known as",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Grain size refinement"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Cold working"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Solid solution"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Recovery"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "A reaction in which a liquid phase transforms into two different solid phases",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Eutectic reaction"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Peritectic reaction"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Eutectoid reaction"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Peritectoid reaction"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The microstructure of hypoeutectoid steel composed of",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Proeutectoid \uf061  and pearlite"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Proeutectoid Fe3C and pearlite"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Pearlite"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Austenite"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The slowest cooling rate in the TTT diagram of eutectoid steel usually form",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Fine pearlite"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Course pearlite"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Martensite"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Bainite"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one is the most ductile steel?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Coarse pearlite"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Spheroidite"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Fine pearlite"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Bainite"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The first stage in Pyrometallurgy is\u00ac\u00ac\u00ac\u00ac\u00ac\u00ac\u00ac\u00ac",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Roasting"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Smelting"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Refining"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Crushing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which metal cannot be found as native ore?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ag"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Zn"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Pt"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Au"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the primary reducing agent used in iron extraction from it ore in blast furnace?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "CO"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "CO2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "H2"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "O2"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the purpose of flux in metallurgical process?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To reduce metal oxide"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To form slag with impurities"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To increase the melting point of the ore"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To enhance metal conductivity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The metal oxide which is difficult to be reduced by carbon is",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "ZnO"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "PbO"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Fe2O3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Al2O3"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which process involves the conversion of metal sulfide into metal oxide using oxygen?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Reduction"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Oxidation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Roasting"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Smelting"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the primary metal extracted using the Bayer\u2019s process?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Copper"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Aluminum"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Zinc"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Lead"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Matte smelting is used in the extraction of",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Pb"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Al"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Zn"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Cu"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Hard magnetic Ceramic material is characterized by",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "High coercive force and low residual magnetic induction."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Low coercive force and high residual magnetic induction."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Only low coercive force."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "High coercive force and high residual magnetic induction."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following one of the following statements is not correct regarding the features of ceramic?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ceramics are hard,strong and dense"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Ceramics are strongin compression than intension"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Ceramics have very poor dielectric properties"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Ceramics are weak in impact strength"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The dielectric strength of a ceramic material is the highest",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Current which can pass through it."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Voltage that can be applied to it."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Field (voltage per meter thickness) that can be with-stood by it."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Current density that can be transmitted by it."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Compared to metallic and polymer materials, ceramic materials generally has:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Large thermal expansion coefficient (\u03b1)"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Moderate melting point(Tm)"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Small thermal expansion coefficient (\u03b1)"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Small elastic modulus (E)"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which of the following Ceramics type generate electricity in response to applied load?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ferroelectric ceramic"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Piezoelectric ceramic"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Pyroelectric ceramic"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Refractory ceramic"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the  following ceramic product is mostly used as pigment in paints",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "TiO2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "SiO2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "UO2"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "ZrO2"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which forming technique is most suitable for creating complex ceramic shapes with high precision?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Slip casting"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Injection molding"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Tape casting"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Dry pressing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Design a ceramic composite that can be used for high-temperature applications. What combination would you choose?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Alumina and silicon carbide"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Silica and kaolin"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Zirconia and kaolin"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Alumina and kaolin"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following best explaine a Glass Ceramic solids?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Metallic, inorganic and amorphous solids"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Non-metallic, organic and amorphous solids"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Non-metallic, inorganic and amorphous solids"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Non-metallic, inorganic and crystalline solids"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following is the main constituents of glass ?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "SiO2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "B2O3"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Al2O3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Cr2O3"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following is not true about Zachariasen\u2019s rules for glass formation in an oxide AmOn",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "An oxygen atom is linked to no more than two atoms of A"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The oxygen coordination around A is small, say 3 or 4"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The cation polyhedra share corners, not edges, not faces"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "At least three corners are shared"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The glass-transition temperature (Tg) is defined as:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The temperature at which glass melts"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The temperature at which glass becomes brittle"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The temperature at which a glassy material transitions to a rubbery state"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The temperature at which crystallization occurs"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which type of glass is best suited for use in high-temperature applications?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Soda-lime glass"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Borosilicate glass"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Lead glass"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Aluminosilicate glass"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which method is commonly used to strengthen glass?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Annealing"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Laminating"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Tempering"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Sputtering"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Glass-ceramics are distinct from regular glass in that they:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Are fully amorphous"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Have a crystalline structure"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Are made from metals"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Have lower melting points"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which application benefits the most from the use of glass-ceramics?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Optical lenses"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Cookware"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Windows"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Fiber optics"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "To increase the electrical conductivity of glass, which additive is commonly used?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Lead oxide"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Boron oxide"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Alumina"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Potassium oxide"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "A ceramic sample which is kept in a furnace is sintered with a temperature increment which is given as a function of , where T is temperature in degree centigrade   what is the minimum sintering temperature  of the sample?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "273K"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "274K"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "372K"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "472K"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "In tape casting, what is the role of the doctor blade?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To mix the ceramic slurry"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To control the thickness of the tape"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To increase the drying rate"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To enhance the binder burnout"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following resulted in high theoretical density ceramic material?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Pure coarsening"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Coarsening followed by solidification."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Densification followed by grains growth"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Coarsening  with densification followed by grain growth"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "In a Vickers hardness test of a ceramic sample, an indentation is made with a load of 1000 N. if the diagonal length of the indentation is measured to be diagonal(d1)=0.55mm and diagonal d2=0.45mm.based on the given data the experimental hardness number and the yield stress of the ceramic sample respectively are ,",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "3708NHV,1236N/mm2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "7416NHV,2472N/mm2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "1854NHV,618N/mm2"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "927NHV,309N/mm2"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which one of the following statement express the second stages of ceramics sintering?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The pores between particles are reduce in size"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "contact points grow into neck\u2019s"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "particle bonding is initiated at contact points"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The grainboundaryies develop  between particles  in place of the necked region"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "In the Archimedes' method, the density of a ceramic sample is determined by measuring?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The mass of the sample in air and water"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The volume of water displaced by the sample"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The volume of the sample using a graduated cylinder"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The buoyancy of the sample in a liquid"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Assume that a cylindrical tungsten carbide ceramic sample with a diameter of 2 cm and a height of 4.8 cm has been prepared by Materials Science and Engineering students. The sample has a mass of 125 grams in air. When the sample submerged in water, the mass decreases to 110 grams due to the buoyancy effect. The density of water is 1 g/cm3.Based on the given experimental data, the volume and density of the sample respectively are,",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "30\u2009cm3, 4.2 g/cm3"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "15\u2009cm3, 8.33g/cm3"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "10\u2009cm3,  1 g/cm3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "25\u2009cm3, 4.25 g/cm3"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the main purpose of binder burnout in ceramic processing?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To improve mechanical strength"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To remove organic materials"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To enhance thermal conductivity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To increase electrical conductivity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "A polymer made of identical monomer units is called ______",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Homopolymer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Linear polymer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Copolymer"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Branched polymer"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What is the primary technique used to determine the molecular weight of polymers?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "NMR spectroscopy"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Gel permeation chromatography"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Mass spectrometry"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Infrared spectroscopy"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Amorphous polymers are characterized by:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Regular, ordered structure"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Highly crystalline regions"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Random arrangement of molecular chains"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Strong intermolecular forces"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Cross-linking in polymers results in",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Increased flexibility"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Decreased density"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Enhanced mechanical strength"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Higher melting point"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which characterization technique is best suited for distinguishing between amorphous and crystalline polymers?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Differential scanning calorimetry (DSC)"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Fourier-transform infrared spectroscopy (FTIR)"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Nuclear magnetic resonance (NMR)"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "X-ray diffraction (XRD)"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which type of polymerization mechanism involves the release of small molecules like water or alcohol?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Condensation polymerization"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Addition polymerization"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Radical polymerization"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Ionic polymerization"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The optical opacity of a polymer can be controlled by using ______",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Colorants"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Flame retardants"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Reinforcements"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Stabilizers"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which of the following byproduct is released when an amine reacts with acid chloride?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "HCl"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "H2O"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "NH3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "CO2"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The general term for this stereoregularity is tacticity  (i.e., \u201cto put in order\u201d in Greek. In the below, choose one which is not related with this tacticity.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Syndiotactic"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Isotactic"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Cotactic"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Atactic"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "In polyethylene processing, which stage of processing requires higher temperature?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Melting"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Moulding"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Sealing"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Dyeing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "The zone of extruders that homogenizes the melt and supply it to the die is_____.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Feed zone"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Metering zone"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Compression zone"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Die zone"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "An increase in which of the following factor will decrease extruder output?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Screw speed"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Length of metering section"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Viscosity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Chanel depth"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which step in the polymer processing sequence typically follows compounding?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Extrusion"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Injection"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Molding"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Polymerization"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What role do plasticizers play in polymer processing?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Improve thermal stability"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Enhance mechanical strength"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Increase flexibility"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Reduce material cost"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "Which skill is crucial for adjusting injection molding parameters during production?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Programming PLCs"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Operating extruders"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Setting mold temperatures"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Adjusting feed rates"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Material Science",
+        "course_name": "",
+        "content": "What action is necessary when encountering variations in polymer viscosity during extrusion?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Adjusting screw speed"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Changing die geometry"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Increasing barrel temperature"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Adding more additives"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    }
+]

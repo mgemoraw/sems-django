@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    'rest_framework_simplejwt',
 
 ]
 
@@ -107,13 +108,13 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     "DEFAULT_AUTHENTICATION_CLASSES": (
-    #   'rest_framework_simplejwt.authentication.JWTAuthentication',
-      'rest_framework.authentication.BasicAuthentication',
+      'rest_framework_simplejwt.authentication.JWTAuthentication',
+    #   'rest_framework.authentication.BasicAuthentication',
       'rest_framework.authentication.SessionAuthentication',
     ),
-    "DEFAULT_PERMISSION_CLASSES": (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
+    # "DEFAULT_PERMISSION_CLASSES": (
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ),
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',  # For JSON responses
         'rest_framework.renderers.BrowsableAPIRenderer',  # For HTML forms in the browser
@@ -173,3 +174,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
+
+# custom user model
+AUTH_USER_MODEL = 'api.User'

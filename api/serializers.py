@@ -2,31 +2,48 @@ import base64
 from rest_framework import serializers
 from django.contrib.auth.models import User as AuthUser, Group
 
-from .models import User, Role, University, Department, Chair, Faculty, Choice, Course, Module, Question, Test, UserResponse, Mail, CourseAssignment, RoleAssignment
+from .models import ModelExam, User, Role, University, Department, Chair, Faculty, Choice, Course, Module, Question, Test, UserResponse, Mail, CourseAssignment, RoleAssignment
 
 
 
 class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
+    groups = serializers.HyperlinkedRelatedField(
+        view_name='group-detail', 
+        queryset=Group.objects.all(), 
+        many=True,
+    )
     class Meta:
-        model = AuthUser
-        fields = ['url', 'username', 'email', 'groups']
+        model = User
+        fields = ['url', 'username', 'email', 'groups', 'password']
         extra_kwargs = {'password': {'write_only':True}}
         
     
     def create(self, validated_data):
-        user = AuthUser.objects.create_usre(**validated_data)
+        groups_data = validated_data.pop('groups', [])
+        user = User.objects.create_user(**validated_data)
+
+        # Assign groups after user is created
+        user.groups.set(groups_data)
+
+        
         return user
+    
+
+
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ['url', 'name']
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['id', 'username', 'email', 'password_hash', 'role', 'created_at', 'updated_at', 'department']
+# class UserSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = User
+#         fields = ['id', 'username', 'email', 'password', 'role', 'department']
 
+#     def create(self, validated_data):
+#         user = User.objects.create_user(**validated_data)
+#         return user
 
 class RoleSerializer(serializers.ModelSerializer):
     class Meta:
@@ -61,7 +78,7 @@ class FacultySerializer(serializers.ModelSerializer):
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Choice
-        fields = ['id', 'question', 'label', 'content', 'is_answer']
+        fields = ['id', 'question', 'label', 'content', 'is_answer', 'image_base64']
 
 
 class CourseSerializer(serializers.ModelSerializer):
@@ -123,7 +140,7 @@ class UserCreateSerializer(serializers.ModelSerializer):
         fields = ['username', 'email', 'password', 'role', 'department']
 
 
-class UserLoginSerializer(serializers.Serializer):
+class UserLoginSerializer(serializers.ModelSerializer):
     username = serializers.CharField(max_length=100)
     password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
 
@@ -131,7 +148,7 @@ class UserLoginSerializer(serializers.Serializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'role', 'department']
+        fields = ['id', 'username', 'email', 'role', 'password',  'department']
 
 
 class RoleSerializer(serializers.ModelSerializer):
@@ -146,12 +163,12 @@ class RoleCreateSerializer(serializers.ModelSerializer):
         fields = ['name', 'description']
 
 
-class PasswordCreateSerializer(serializers.Serializer):
+class PasswordCreateSerializer(serializers.ModelSerializer):
     old_password = serializers.CharField()
     new_password = serializers.CharField()
 
 
-class TokenSerializer(serializers.Serializer):
+class TokenSerializer(serializers.ModelSerializer):
     access_token = serializers.CharField()
     token_type = serializers.CharField()
     username = serializers.CharField()
@@ -159,6 +176,21 @@ class TokenSerializer(serializers.Serializer):
     department = serializers.CharField()
 
 
-class LoginSerializer(serializers.Serializer):
+class LoginSerializer(serializers.ModelSerializer):
     username = serializers.CharField(max_length=100)
     password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
+
+
+class ModelExamSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ModelExam
+        fields = ('title', 'department', 'exam_start', 'exam_end', 'duration_minutes', 'hide')
+
+        # Optional: mark read-only fields
+        read_only_fields = ('created_by', 'created_at')
+
+    def create(self, validated_data):
+        # Assign the created_by field using the context (viewset handles this)
+        user = self.context['request'].user
+        exam = ModelExam.objects.create(created_by=user, **validated_data)
+        return exam
