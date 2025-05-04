@@ -11,24 +11,23 @@ from rest_framework_simplejwt.views import (
 )
 
 router = routers.DefaultRouter()
-router.register(r'auth', AuthUserViewSet, basename='user')
-router.register(r'groups', GroupsViewSet, basename='group')
-router.register(r'departments', DepartmentsViewSet, basename='department')
-router.register(r'questions', QuestionsViewSet, basename='questions')
-router.register(r'tests', TestsViewSet, basename='test')
-router.register(r'roles', CouresViewSet, basename='role')
-router.register(r'courses', CouresViewSet, basename='course')
-router.register(r'exams', ModelExamViewSet, basename='exam')
+router.register(r'v1/auth', AuthUserViewSet, basename='v1-auth')
+router.register(r'v1/groups', GroupsViewSet, basename='v1-group')
+router.register(r'v1/departments', DepartmentsViewSet, basename='v1-department')
+router.register(r'v1/questions', QuestionsViewSet, basename='v1-questions')
+router.register(r'v1/tests', TestsViewSet, basename='v1-test')
+router.register(r'v1/roles', CouresViewSet, basename='v1-role')
+router.register(r'v1/courses', CouresViewSet, basename='v1-course')
+router.register(r'v1/exams', ModelExamViewSet, basename='v1-exam')
 
 
 
 
 
 urlpatterns = [
+    path('', include(router.urls)),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    # path('api/users/', include(router.urls)),
-
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     re_path('login', login_view, name='user_login'),
     re_path('signup/', signup_view, name='user_signup'),
@@ -47,4 +46,4 @@ urlpatterns = [
 ]
 
 
-urlpatterns += router.urls # path('', include(router.urls)),
+# urlpatterns += router.urls # path('', include(router.urls)),

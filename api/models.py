@@ -134,10 +134,12 @@ class Module(models.Model):
 class Question(models.Model):
     department = models.ForeignKey('Department', on_delete=models.CASCADE, null=True, related_name='department')
     course = models.ForeignKey('Course', on_delete=models.SET_NULL, null=True, blank=True)
+    module = models.ForeignKey('Module', on_delete=models.SET_NULL, null=True, blank=True)
     content = models.TextField()
     options = models.JSONField()  # Store as JSON array
     image = models.BinaryField(null=True, blank=True)
     answer = models.CharField(max_length=10)
+    exam_year = models.PositiveIntegerField(null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 

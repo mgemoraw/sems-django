@@ -105,6 +105,9 @@ DATABASES = {
 
 
 REST_FRAMEWORK = {
+    # versioning class
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning',
+
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -112,9 +115,9 @@ REST_FRAMEWORK = {
     #   'rest_framework.authentication.BasicAuthentication',
       'rest_framework.authentication.SessionAuthentication',
     ),
-    # "DEFAULT_PERMISSION_CLASSES": (
-    #     'rest_framework.permissions.IsAuthenticated',
-    # ),
+    "DEFAULT_PERMISSION_CLASSES": (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',  # For JSON responses
         'rest_framework.renderers.BrowsableAPIRenderer',  # For HTML forms in the browser

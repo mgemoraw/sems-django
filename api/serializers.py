@@ -99,11 +99,19 @@ class QuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Question
-        fields = ['id', 'department', 'course', 'content', 'options', 'image_base64', 'answer', 'created_at', 'updated_at']
+        fields = ['id', 'department', 'module', 'course', 'content', 'options', 'image_base64', 'answer', 'created_at', 'updated_at']
     def get_image_base64(self, obj):
         if obj.image:
             return base64.b64encode(obj.image).decode('utf-8')
         return None
+
+
+class QuestionUploadSerializer(serializers.Serializer):
+    department = serializers.ChoiceField(
+        choices=[(dept.id, dept.name) for dept in Department.objects.all()],
+        label="Select Department"
+    )
+    json_file = serializers.FileField()
 
 
 class TestSerializer(serializers.ModelSerializer):

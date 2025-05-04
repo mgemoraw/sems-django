@@ -1,6 +1,7 @@
+import json
 from django.contrib.auth.models import User as AuthUser, Group
 from rest_framework import generics, renderers
-from .serializers import AuthUserSerializer, CourseSerializer, DepartmentSerializer, GroupSerializer, ModelExamSerializer
+from .serializers import AuthUserSerializer, CourseSerializer, DepartmentSerializer, GroupSerializer, ModelExamSerializer, QuestionUploadSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.contrib.auth import authenticate
 
@@ -8,7 +9,7 @@ from django.contrib.auth.hashers import make_password
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, action
 from rest_framework.response import Response
-
+from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework import status, permissions, serializers, viewsets
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
@@ -77,8 +78,105 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all().order_by('id')
     serializer_class = QuestionSerializer
     permission_classes = [permissions.IsAuthenticated]
+    parser_classes = [MultiPartParser, FormParser]
 
+    def get_serializer_class(self):
+        if self.action == 'upload_json':
+            return QuestionUploadSerializer
+        return super().get_serializer_class()
+    
+    @action(detail=False, methods=['GET'], url_path="by_year")
+    def get_questions_by_exam_year(self, request):
+        year = request.query_params.get('exam_year', None)
+        if not year:
+            return Response({'detail': 'exam year is required'}, status=400)
+        
+        questions = self.queryset.filter(exam_year=year)
+        serializer = self.get_serializer(questions, many=True)
+        return Response(serializer.data)
 
+    @action(detail=False, methods=['get'], url_path='by_department')
+    def get_questions_by_department_name(self, request):
+        department = request.query_params.get('department', None)
+        if not department:
+            return Response({'detail': 'Department name is required'}, status=400)
+        
+        questions = self.queryset.filter(department__name__icontains=department)
+        serializer = self.get_serializer(questions, many=True)
+        return Response(serializer.data, status=200)
+    
+    @action(detail=False, methods=['get'], url_path='by_department_and_year')
+    def get_questions_by_department_and_year(self, request):
+        department = request.query_params.get('department', None)
+        exam_year = request.query_params.get('exam_year', None)
+
+        if not department or not exam_year:
+            return Response({"detail": "Both department_id and exam_year are required"}, status=400)
+
+        questions = self.queryset.filter(department__name__icontains=department, exam_year=exam_year)
+        serializer = self.get_serializer(questions, many=True)
+        return Response(serializer.data)
+    
+    @action(detail=False, methods=['get'], url_path='by_module')
+    def get_questions_by_department_and_module(self, request):
+        department = request.query_params.get('department', None)
+        module = request.query_params.get('module', None)
+
+        if (not department) or (not module):
+            return Response({'detail': 'Department and module are required'}, status=400)
+        
+        questions = self.queryset.filter(department__name__icontains=department, module__name__icontains=module)
+        serializer = self.get_serializer(questions, many=True)
+        return Response(serializer.data, status=200)
+
+    @action(detail=False, methods=['post'], url_path='upload-json', parser_classes=[MultiPartParser, FormParser])
+    def upload_json(self, request):
+        serializer = self.get_serializer_class()
+
+        department_id = request.query_params.get('department')
+        uploaded_file = request.FILES.get('json_file')
+
+        if not uploaded_file:
+            return Response({"detail": "json_file is required"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if uploaded_file.content_type != 'application/json':
+            return Response(
+                {"detail": f"Invalid file format: {uploaded_file.content_type}. Must be application/json."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # Get department
+        department = get_object_or_404(Department, id=department_id)
+
+        try:
+            data = uploaded_file.read()
+            questions_json = json.loads(data)
+        except Exception as e:
+            return Response({"detail": f"Error reading file: {str(e)}"}, status=status.HTTP_400_BAD_REQUEST)
+
+        created = []
+        for q in questions_json:
+            try:
+                question = Question.objects.create(
+                    department=department,
+                    course=None,
+                    content=q.get("content", "").encode("utf-8").decode(),
+                    options=q.get("options"),
+                    image=q.get("image", "").encode("utf-8") if q.get("image") else None,
+                    answer=q.get("answer", "").encode("utf-8").decode(),
+                    exam_year=q.get("exam_year", 2025),
+                )
+                created.append(question.id)
+            except Exception as e:
+                return Response({"detail": f"Error inserting question: {e}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+        return Response({
+            "message": f"{len(created)} questions inserted successfully",
+            "ids": created
+        }, status=status.HTTP_201_CREATED)
+    
+
+    
 class TestsViewSet(viewsets.ModelViewSet):
     queryset = Test.objects.all().order_by('id')
     serializer_class = TestSerializer
