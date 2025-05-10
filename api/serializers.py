@@ -34,7 +34,7 @@ class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
-        fields = ['url', 'name']
+        fields = ['id', 'name']
 
 # class UserSerializer(serializers.ModelSerializer):
 #     class Meta:
@@ -84,7 +84,7 @@ class ChoiceSerializer(serializers.ModelSerializer):
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
-        fields = ['id', 'module_name', 'module', 'code', 'name', 'credit_hour']
+        fields = ['id', 'module', 'code', 'name', 'credit_hour']
 
 
 class ModuleSerializer(serializers.ModelSerializer):
@@ -148,7 +148,7 @@ class UserCreateSerializer(serializers.ModelSerializer):
         fields = ['username', 'email', 'password', 'role', 'department']
 
 
-class UserLoginSerializer(serializers.ModelSerializer):
+class UserLoginSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=100)
     password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
 
