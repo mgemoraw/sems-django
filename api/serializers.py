@@ -1,10 +1,11 @@
 import base64
 from rest_framework import serializers
 from django.contrib.auth.models import User as AuthUser, Group
-
+from rest_framework import permissions
 from .models import ModelExam, User, Role, University, Department, Chair, Faculty, Choice, Course, Module, Question, Test, UserResponse, Mail, CourseAssignment, RoleAssignment
 
 
+# SErializer classes
 
 class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
     groups = serializers.HyperlinkedRelatedField(
@@ -14,7 +15,7 @@ class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
     )
     class Meta:
         model = User
-        fields = ['url', 'username', 'email', 'groups', 'password']
+        fields = ['url', 'username', 'department', 'faculty', 'email', 'groups', 'password']
         extra_kwargs = {'password': {'write_only':True}}
         
     
@@ -24,12 +25,9 @@ class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
 
         # Assign groups after user is created
         user.groups.set(groups_data)
-
         
         return user
     
-
-
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -113,6 +111,22 @@ class QuestionUploadSerializer(serializers.Serializer):
     )
     json_file = serializers.FileField()
 
+class ExamYearQuerySerializer(serializers.Serializer):
+    exam_year = serializers.CharField(required=True) 
+
+class ExamDepartmentQuerySerializer(serializers.Serializer):
+    department = serializers.CharField(required=True) 
+
+
+class ExamDepartmentYearQuerySerializer(serializers.Serializer):
+    department = serializers.CharField(required=True) 
+    exam_year = serializers.CharField(required=True) 
+
+
+class ExamModuleDepartmentQuerySerializer(serializers.Serializer):
+    department = serializers.CharField(required=True) 
+    module = serializers.CharField(required=True) 
+
 
 class TestSerializer(serializers.ModelSerializer):
     class Meta:
@@ -156,7 +170,7 @@ class UserLoginSerializer(serializers.Serializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'role', 'password',  'department']
+        fields = ['id', 'username', 'faculty', 'email', 'role', 'department']
 
 
 class RoleSerializer(serializers.ModelSerializer):

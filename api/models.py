@@ -25,9 +25,10 @@ class User(AbstractUser):
     department_name=models.CharField(max_length=100, null=True, blank=True)
     
     department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, related_name='users')
+    faculty = models.ForeignKey('Faculty', on_delete=models.SET_NULL, null=True, blank=True)
 
-    tests = models.ForeignKey('Test', null=True, on_delete=models.CASCADE, related_name='user_tests')
-    emails = models.ForeignKey('Mail', null=True, on_delete=models.CASCADE, related_name='user_emails')
+    tests = models.ForeignKey('Test', null=True, blank=True, on_delete=models.SET_NULL, related_name='user_tests')
+    emails = models.ForeignKey('Mail', null=True,blank=True, on_delete=models.SET_NULL, related_name='user_emails')
 
     def __str__(self):
         return self.username
@@ -161,7 +162,7 @@ class Question(models.Model):
         }
 
     def __str__(self):
-        return self.content
+        return f"{self.id} - {self.content}"
 
 
 class ModelExam(models.Model):

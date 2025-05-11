@@ -1,7 +1,7 @@
 import json
 from django.contrib.auth.models import User as AuthUser, Group
 from rest_framework import generics, renderers
-from .serializers import AuthUserSerializer, CourseSerializer, DepartmentSerializer, GroupSerializer, ModelExamSerializer, QuestionUploadSerializer
+from .serializers import AuthUserSerializer, CourseSerializer, DepartmentSerializer, ExamDepartmentQuerySerializer, ExamDepartmentYearQuerySerializer, ExamModuleDepartmentQuerySerializer, ExamYearQuerySerializer, GroupSerializer, ModelExamSerializer, QuestionUploadSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.contrib.auth import authenticate
 
@@ -23,6 +23,15 @@ from rest_framework.response import Response
 from drf_yasg.utils import swagger_auto_schema
 
 # Create your views here.
+# view classes and methods
+class IsUnauthenticated(permissions.BasePermission):
+    """
+    Custom permission to allow access only to unauthenticated users.
+    """
+    def has_permission(self, request, view):
+        return not request.user or not request.user.is_authenticated
+
+
 # Greet View
 class GreetView(APIView):
     def get(self, request):
@@ -40,6 +49,11 @@ class AuthUserViewSet(viewsets.ModelViewSet):
     # @action(detail=True, renderer_classes=[renderers.StaticHTMLRenderer])
     # def perform_create(self, serializer):
     #     serializer.save(owner=self.request.user)
+
+    def get_permissions(self):
+        if self.action == 'create':  # registration
+            return [IsUnauthenticated()]
+        return [permissions.IsAuthenticated()]
 
 class GroupsViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all().order_by('name')
@@ -83,11 +97,16 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     def get_serializer_class(self):
         if self.action == 'upload_json':
             return QuestionUploadSerializer
+        elif self.action == 'get_questions_by_department_name':
+            return ExamDepartmentQuerySerializer
         return super().get_serializer_class()
     
     @action(detail=False, methods=['GET'], url_path="by_year")
     def get_questions_by_exam_year(self, request):
-        year = request.query_params.get('exam_year', None)
+        params = ExamYearQuerySerializer(data=request.query_params)
+        params.is_valid(raise_exception=True)
+
+        year = params.validated_dat.get('exam_year', None)
         if not year:
             return Response({'detail': 'exam year is required'}, status=400)
         
@@ -97,7 +116,11 @@ class QuestionsViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], url_path='by_department')
     def get_questions_by_department_name(self, request):
-        department = request.query_params.get('department', None)
+        
+        params = ExamDepartmentQuerySerializer(data=request.query_params)
+        params.is_valid(raise_exception=True)
+        department = params.validated_data.get('department', None)
+
         if not department:
             return Response({'detail': 'Department name is required'}, status=400)
         
@@ -107,9 +130,11 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     
     @action(detail=False, methods=['get'], url_path='by_department_and_year')
     def get_questions_by_department_and_year(self, request):
-        department = request.query_params.get('department', None)
-        exam_year = request.query_params.get('exam_year', None)
-
+        params = ExamDepartmentYearQuerySerializer(data=request.query_params)
+        params.is_valid(raise_exception=True)
+        exam_year = params.validated_dat.get('exam_year', None)
+        department = params.validated_data.get('department', None)
+        
         if not department or not exam_year:
             return Response({"detail": "Both department_id and exam_year are required"}, status=400)
 
@@ -119,9 +144,11 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     
     @action(detail=False, methods=['get'], url_path='by_module')
     def get_questions_by_department_and_module(self, request):
-        department = request.query_params.get('department', None)
-        module = request.query_params.get('module', None)
-
+        params = ExamModuleDepartmentQuerySerializer(data=request.query_params)
+        params.is_valid(raise_exception=True)
+        department = params.validated_data.get('department', None)
+        module = params.validated_data.get('module', None)
+        
         if (not department) or (not module):
             return Response({'detail': 'Department and module are required'}, status=400)
         
@@ -133,9 +160,13 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     def upload_json(self, request):
         serializer = self.get_serializer_class()
 
-        department_id = request.query_params.get('department')
-        uploaded_file = request.FILES.get('json_file')
-
+        department_id = request.data.get('department')
+        print("query params: ", department_id)
+        if not department_id:
+            return Response({"detail": "department is required"}, status=400)
+                
+        uploaded_file = request.FILES.get("questions")
+        print(uploaded_file)
         if not uploaded_file:
             return Response({"detail": "json_file is required"}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -174,7 +205,6 @@ class QuestionsViewSet(viewsets.ModelViewSet):
             "message": f"{len(created)} questions inserted successfully",
             "ids": created
         }, status=status.HTTP_201_CREATED)
-    
 
     
 class TestsViewSet(viewsets.ModelViewSet):
@@ -194,12 +224,11 @@ class UserRolesViewSet(viewsets.ModelViewSet):
     serializer_class = RoleSerializer
     permission_classes = [permissions.IsAdminUser]
 
+
 class CouresViewSet(viewsets.ModelViewSet):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
     permission_classes = [permissions.IsAuthenticated]
-
-
 
 
 class ModelExamViewSet(viewsets.ModelViewSet):

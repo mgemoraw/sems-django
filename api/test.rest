@@ -11,7 +11,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 
 
 ### 
-POST http://localhost:8000/api/token/ HTTP/1.1
+POST http://localhost:8000/api/v1/token/ HTTP/1.1
 Content-Type: application/json
 
 {
@@ -33,10 +33,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###
 GET http://localhost:8000/api/v1/questions/by_department/?department='computer science' HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2MzYzMjM2LCJpYXQiOjE3NDYzNjE0MzYsImp0aSI6ImJhOGM2ZGU1ZWRjNjRjYzE4OGY2ZGE2MTI4MDczMTE4IiwidXNlcl9pZCI6M30.JDvIuyVbuFHIdCTC1HLMk3vV5F18D4eWXYzSSIo1LsU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2OTAwOTcxLCJpYXQiOjE3NDY4OTkxNzEsImp0aSI6ImFiNTA5OTk3YjQzZTQ1NmFiNmI1ZDFhN2I0YTg1NDg2IiwidXNlcl9pZCI6M30.fvA-3vusmubitAXZIoz0xRCEEhChoRuljCX_KAKtvQs
 
 
 ###
 GET http://localhost:8000/api/v1/questions/by_module/?department='computer science'&module='database' HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2MzY1OTQzLCJpYXQiOjE3NDYzNjQxNDMsImp0aSI6IjI0ZDA2MGM5YjEzOTQxNzY5ZWJjMDE2NjgxMjE1OGE5IiwidXNlcl9pZCI6M30.5d7eK_l-FwI8xs8HgPIw9L371WqLlehLHAkXi0z3pPo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2OTAwOTcxLCJpYXQiOjE3NDY4OTkxNzEsImp0aSI6ImFiNTA5OTk3YjQzZTQ1NmFiNmI1ZDFhN2I0YTg1NDg2IiwidXNlcl9pZCI6M30.fvA-3vusmubitAXZIoz0xRCEEhChoRuljCX_KAKtvQs
+
