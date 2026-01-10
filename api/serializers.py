@@ -8,13 +8,13 @@ from .models import User, Role, University, Department, Chair, Faculty, Choice, 
 
 class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = AuthUser
+        model = User
         fields = ['url', 'username', 'email', 'groups']
         extra_kwargs = {'password': {'write_only':True}}
         
     
     def create(self, validated_data):
-        user = AuthUser.objects.create_usre(**validated_data)
+        user = User.objects.create_user(**validated_data)
         return user
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
@@ -26,6 +26,23 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'password_hash', 'role', 'created_at', 'updated_at', 'department']
+
+class UserCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password', 'role', 'department']
+
+
+class UserLoginSerializer(serializers.Serializer):
+    username = serializers.CharField(max_length=100)
+    password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
+
+
+# class UserSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = User
+#         fields = ['id', 'username', 'email', 'role', 'department']
+#         # fields = "__all__"
 
 
 class RoleSerializer(serializers.ModelSerializer):
@@ -117,21 +134,6 @@ class RoleAssignmentSerializer(serializers.ModelSerializer):
         model = RoleAssignment
         fields = ['id', 'user', 'role']
 
-class UserCreateSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['username', 'email', 'password', 'role', 'department']
-
-
-class UserLoginSerializer(serializers.Serializer):
-    username = serializers.CharField(max_length=100)
-    password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
-
-
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['id', 'username', 'email', 'role', 'department']
 
 
 class RoleSerializer(serializers.ModelSerializer):

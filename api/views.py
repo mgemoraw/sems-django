@@ -25,7 +25,7 @@ from drf_yasg.utils import swagger_auto_schema
 
 
 class AuthUserViewSet(viewsets.ModelViewSet):
-    queryset = AuthUser.objects.all().order_by('-date_joined')
+    queryset = User.objects.all().order_by('-date_joined')
     serializer_class = AuthUserSerializer
     permission_classes = [permissions.IsAuthenticated]
 
@@ -96,7 +96,7 @@ def login_view(request):
     serializer = UserLoginSerializer(data=request.data)
 
     if serializer.is_valid():
-        username = serializer.validated_data['usrename']
+        username = serializer.validated_data['username']
         password = serializer.validated_data['password']
         
         # authenticate user

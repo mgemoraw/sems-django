@@ -1,12 +1,12 @@
 import base64
 from django.db import models
-
+from django.contrib.auth.models import AbstractUser
 # Create your models here.
 from django.db import models
 from django.utils import timezone
 
 
-class User(models.Model):
+class User(AbstractUser):
     USER_ROLES = [
         ('user', 'USER'),
         ('student', 'STUDENT'),
@@ -19,13 +19,15 @@ class User(models.Model):
 
     username = models.CharField(max_length=50, unique=True)
     email = models.EmailField(max_length=100, unique=True)
-    password_hash = models.CharField(max_length=255, default='User#123')
+    password = models.CharField(max_length=255, default='User#123')
     role = models.CharField(max_length=20, choices=USER_ROLES, default='student')
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
-    department_name=models.CharField(max_length=100, default=None)
+    department_name=models.CharField(max_length=100, default=None, )
     
     department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, related_name='users')
+    faculty = models.ForeignKey('Faculty', on_delete=models.SET_NULL, null=True, blank=True, related_name='user_faculty')
+
 
     # tests = models.ForeignKey('Test', null=True, on_delete=models.CASCADE, related_name='user_tests')
     # emails = models.ForeignKey('Mail', null=True, on_delete=models.CASCADE, related_name='user_emails')

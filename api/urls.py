@@ -7,8 +7,8 @@ from .views import login_view, signup_view, token_view, AuthUserViewSet, GroupsV
 
 
 router = routers.DefaultRouter()
-router.register(r'users', AuthUserViewSet)
-router.register(r'groups', GroupsViewSet)
+router.register(r'users', AuthUserViewSet, basename='users')
+router.register(r'groups', GroupsViewSet, basename='groups')
 router.register(r'others', UserViewSet, basename='others')
 router.register(r'questions', QuestionsViewSet, basename='questions')
 
