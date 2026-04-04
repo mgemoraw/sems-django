@@ -10,7 +10,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "SMEES",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "books/img/logo.png",
+    "site_logo": "images/logo.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,

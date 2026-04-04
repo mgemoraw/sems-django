@@ -66,6 +66,7 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAdminUser]
 
+
     # def list(self, request):
     #     # /api/users
     #     users  = User.objects.all()
@@ -74,9 +75,16 @@ class UserViewSet(viewsets.ModelViewSet):
     #     return Response(serializer.data, status=status.HTTP_200_OK)
     
 
-    # def create(self, request): #api/users/
-    #     pass 
+    def perform_update(self, serializer):
+        user = serializer.save(created_by=self.request.user)
 
+        if 'password' in self.request.data:
+            user.set_password(self.request.data['password'])
+            user.must_change_password = False
+            user.save()
+
+    # def create(self, request):
+    #     pass
     # def retrieve(sef, request, pk=None): #/api/users/<int:id>
     #     pass 
 

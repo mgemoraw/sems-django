@@ -16,23 +16,49 @@ class User(AbstractUser):
         ('hoc', 'HOC'),
     ]
 
-    username = models.CharField(max_length=50, unique=True)
+    USER_STATUS_CHOICES = [
+    ('active', 'Active'),
+    ('inactive', 'Inactive'),
+    ('suspended', 'Suspended'),
+    ]
+
+    must_change_password = models.BooleanField(default=True)
+    name = models.CharField(max_length=100, null=True, blank=True)
     email = models.EmailField(max_length=100, unique=True)
-    password = models.CharField(max_length=255, default='User#123')
+    password = models.CharField(max_length=255)
     role = models.CharField(max_length=20, choices=USER_ROLES, default='student')
-    created_at = models.DateTimeField(default=timezone.now)
+    created_by = models.ForeignKey(
+        'self', 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True, 
+        related_name='created_users',
+        editable=False,
+    )
+    user_status = models.CharField(
+        max_length=20,
+        choices=USER_STATUS_CHOICES,
+        default='active'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    department_name=models.CharField(max_length=100, null=True, blank=True)
+   
     
-    department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, related_name='users')
-    faculty = models.ForeignKey('Faculty', on_delete=models.SET_NULL, null=True, blank=True)
+    department = models.ForeignKey(
+        'Department', 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        related_name='users',
+    )
 
-    tests = models.ForeignKey('Test', null=True, blank=True, on_delete=models.SET_NULL, related_name='user_tests')
-    emails = models.ForeignKey('Mail', null=True,blank=True, on_delete=models.SET_NULL, related_name='user_emails')
-
+    
     def __str__(self):
         return self.username
 
+    # --------- Instance method here ---------
+    def deactivate(self):
+        self.user_status = 'inactive'
+        self.save()
 
 
 class Role(models.Model):
@@ -231,7 +257,8 @@ class UserExamResponse(models.Model):
         return f"{self.user} - {self.exam.title}"
 
 class Test(models.Model):
-    user = models.ForeignKey('User', on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tests', null=True)
+    # user = models.ForeignKey('User', on_delete=models.CASCADE, null=True)
     department = models.ForeignKey('Department', null=True, on_delete=models.CASCADE)
     score = models.FloatField()
     total_questions = models.IntegerField()
@@ -256,7 +283,7 @@ class UserResponse(models.Model):
 
 
 class Mail(models.Model):
-    user = models.ForeignKey('User', null=True,on_delete=models.CASCADE)
+    user = models.ForeignKey('User', on_delete=models.CASCADE, related_name="emails", null=True)
     sender = models.CharField(max_length=255)
     receiver = models.CharField(max_length=255)
     send_at = models.DateTimeField(default=timezone.now)

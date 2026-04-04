@@ -15,7 +15,7 @@ class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
     )
     class Meta:
         model = User
-        fields = ['url', 'username', 'department', 'faculty', 'email', 'groups', 'password']
+        fields = "__all__"
         extra_kwargs = {'password': {'write_only':True}}
         
     
@@ -34,14 +34,42 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         model = Group
         fields = ['id', 'name']
 
-# class UserSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = User
-#         fields = ['id', 'username', 'email', 'password', 'role', 'department']
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        # fields = "__all__"
+        fields = ['id', 'username', 'email', 'first_name', 'last_name', 'role', 'department']
 
-#     def create(self, validated_data):
-#         user = User.objects.create_user(**validated_data)
-#         return user
+        # exclude = ['groups', 'user_permissions', 'is_superuser', 'is_staff', 'is_active', 'last_login', 'date_joined']
+        extra_kwargs = {
+            'password': {'write_only': True}
+        }
+
+    def create(self, validated_data):
+        groups_data = validated_data.pop('groups', [])
+        user = User.objects.create_user(**validated_data)
+        user = User(**validated_data)
+
+        fname = validated_data.get('first_name', 'user')
+        lname = validated_data.get('last_name', 'default')
+        default_password = f"{lname}#{fname}123"
+
+        user.set_password(default_password)
+        user.must_change_password = True
+        user.save()
+        user.groups.set(groups_data)
+
+        return user 
+
+    # ---- validation method for username ----
+    def validate(self, attrs):
+        if User.objects.filter(username=attrs.get('username')).exists():
+            raise serializers.ValidationError({"username": "This username is already taken."})
+        if User.objects.filter(email=attrs.get('email')).exists():
+            raise serializers.ValidationError({"email": "This email is already registered."})
+        return attrs
+    
+    
 
 class RoleSerializer(serializers.ModelSerializer):
     class Meta:
@@ -64,7 +92,7 @@ class DepartmentSerializer(serializers.ModelSerializer):
 class ChairSerializer(serializers.ModelSerializer):
     class Meta:
         model = Chair
-        fields = ['id', 'name', 'faculty', 'created_at', 'updated_at']
+        fields = "__all__"
 
 
 class FacultySerializer(serializers.ModelSerializer):
@@ -167,10 +195,10 @@ class UserLoginSerializer(serializers.Serializer):
     password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
 
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['id', 'username', 'faculty', 'email', 'role', 'department']
+# class UserSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = User
+#         fields = ['id', 'username', 'faculty', 'email', 'role', 'department']
 
 
 class RoleSerializer(serializers.ModelSerializer):

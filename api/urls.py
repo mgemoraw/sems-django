@@ -12,6 +12,7 @@ from rest_framework_simplejwt.views import (
 
 router = routers.DefaultRouter()
 router.register(r'auth', AuthUserViewSet, basename='v1-auth')
+router.register(r'users', UserViewSet, basename='v1-user')
 router.register(r'groups', GroupsViewSet, basename='v1-group')
 router.register(r'departments', DepartmentsViewSet, basename='v1-department')
 router.register(r'questions', QuestionsViewSet, basename='v1-questions')
