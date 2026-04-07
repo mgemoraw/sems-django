@@ -1,37 +1,32 @@
-{% extends 'main.html' %}
+{% extends 'base.html' %} {% block content %}
 
- {%block content %}
+<div class="d-flex">
+  <!-- Sidebar -->
+  {% include 'base/sidebar.html' %}
 
- <style>
-    .home-container {
-        display:grid;
-        grid-template-columns: 1fr 3fr 1fr;
-    }
- </style>
-
-    <h1>Home Template</h1>
-
-    <div class="home-container">
-
-        <div>
-           {% include 'base/topics_component.html' %}
-        </div>
-
-        <div>
-            <h5>{{room_count}} rooms available</h5>
-            <a class='btn btn-primary' href="{% url 'base:create-room' %}">Create Room</a>
-    
-            <div>
-                {% include 'base/feed_component.html' %}
-            </div>  
-        </div>
-
-        <div>
-            {% include 'base/activity_component.html' %}
-        </div>
+  <!-- Main Content -->
+  <div class="flex-fill p-3">
+    <!-- Welcome -->
+    <div class="card-box mb-3">
+      <h4>Welcome, {{ request.user.username }}</h4>
+      <p>Start your exams and track your performance.</p>
     </div>
 
-        
+    <!-- Stats -->
+    <div class="d-flex gap-3 mb-3">
+      <div class="stat-box">Exams: {{ exams.count }}</div>
+      <div class="stat-box">Completed: {{ results.count }}</div>
+      <div class="stat-box">Pending: {{ pending_exams }}</div>
+    </div>
 
-    
+    <!-- Exams -->
+    <div class="card-box">
+      <h5>Available Exams</h5>
+      {% for exam in exams %} {% include 'exam_card.html' %} {% empty %}
+      <p>No exams available</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% endblock %}

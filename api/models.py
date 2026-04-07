@@ -25,7 +25,7 @@ class User(AbstractUser):
     must_change_password = models.BooleanField(default=True)
     name = models.CharField(max_length=100, null=True, blank=True)
     email = models.EmailField(max_length=100, unique=True)
-    password = models.CharField(max_length=255)
+    password = models.CharField(max_length=255, null=True, blank=True)
     role = models.CharField(max_length=20, choices=USER_ROLES, default='student')
     created_by = models.ForeignKey(
         'self', 

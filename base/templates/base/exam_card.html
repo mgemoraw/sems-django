@@ -1,0 +1,5 @@
+<div class="exam-card">
+  <h6>{{ exam.title }}</h6>
+  <p>{{ exam.description|truncatewords:15 }}</p>
+  <a href="{% url 'start-exam' exam.id %}" class="btn btn-primary btn-sm">Start Exam</a>
+</div>

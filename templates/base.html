@@ -1,0 +1,61 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% block title %}
+    <title>BiT - SEMS</title>
+    {% endblock title %}
+
+    <link rel="stylesheet" href="{% static 'Bootstrap5/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'custom/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'custom/css/navbar.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'custom/css/components/topics.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'custom/css/components/feed.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'custom/css/components/activity.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'custom/css/components/profile.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'custom/css/components/filter.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'custom/css/components/empty.css' %}"
+    />
+  </head>
+
+  <body>
+    {% include 'navbar.html' %}
+
+    <!-- Messages -->
+    <div class="container mt-2">
+      {% if messages %} {% for message in messages %}
+      <div class="alert alert-info">{{ message }}</div>
+      {% endfor %} {% endif %}
+    </div>
+
+    <!-- Main Content -->
+    <main>{% block content %}{% endblock %}</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Bahir Dar Institute of Technology - SEMS</p>
+    </footer>
+
+    <script src="{% static 'Bootstrap5/js/bootstrap.bundle.js' %}"></script>
+  </body>
+</html>

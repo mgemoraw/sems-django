@@ -133,10 +133,13 @@ class QuestionSerializer(serializers.ModelSerializer):
 
 
 class QuestionUploadSerializer(serializers.Serializer):
-    department = serializers.ChoiceField(
-        choices=[(dept.id, dept.name) for dept in Department.objects.all()],
-        label="Select Department"
-    )
+    # department = serializers.ChoiceField(
+    #     choices=[(dept.id, dept.name) for dept in Department.objects.all()],
+    #     label="Select Department"
+    # )
+    department = serializers.PrimaryKeyRelatedField(
+    queryset=Department.objects.all()
+)
     json_file = serializers.FileField()
 
 class ExamYearQuerySerializer(serializers.Serializer):

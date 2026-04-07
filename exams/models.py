@@ -147,3 +147,8 @@ class Answer(models.Model):
 
     def __str__(self):
         return f"{self.response.user.username} - Q{self.question.id}"
+    
+
+
+class Test(models.Model):
+    pass

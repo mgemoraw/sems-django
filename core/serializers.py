@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import University, School, Faculty, Department, Course, Module
+from .models import University, School, Faculty, Department, Course, Module, Chair, Program 
 
 
 class UniversitySerializer(serializers.ModelSerializer):
@@ -36,3 +36,14 @@ class ModuleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Module
         fields = '__all__'
+
+class ChairSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Chair
+        fields = '__all__'
+
+class ProgramSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Program
+        fields = '__all__'
+

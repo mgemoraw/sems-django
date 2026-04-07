@@ -1,61 +1,63 @@
-
-
-
-.nav {
-    display: flex;
-}
-.nav-items {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    padding: 80px 20px;
 }
 
-
-.nav-link {
-    display: block;
-    text-decoration: none;
-    font-size: 22px;
+.hero-title {
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.nav-link:hover {
-    background: #173459;
-    color: #f8f9f9;
+.hero-subtitle {
+    margin: 15px 0;
+    font-size: 18px;
 }
 
-.nav-link.active {
-    background: #173459;
-    color: #f8f9f9;
+/* STATS */
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.btn {
-    background: #fff;
-    padding: 8px;
-    margin: 8px;
-    font-size: 22px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+/* FEATURES */
+.section-title {
+    margin: 40px 0 20px;
 }
 
-.btn-primary {
-    background: #230222;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 22px;
-    padding: 8px 8px;
-    margin: 6px;
+.feature-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    margin: 10px;
+    transition: 0.3s;
 }
 
-.form-control {
-    width: 100%;
-    font-size: 22px;
-    padding: 20px 10px;
-    outline: none;
-    border: none;
-    color: #230222;
+.feature-card:hover {
+    transform: translateY(-5px);
 }
 
-.form-control:focus {
-    border-bottom: #230222 1px solid;
+/* EXAMS */
+.exam-card {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.exam-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #f1f1f1;
 }

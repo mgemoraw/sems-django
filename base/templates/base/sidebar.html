@@ -1,0 +1,14 @@
+<div class="sidebar">
+  <h5>SEMS</h5>
+  <a href="{% url 'base:home' %}">🏠 Dashboard</a>
+  <a href="{% url 'base:exams' %}">📝 Exams</a>
+  <a href="{% url 'base:results' %}">📊 My Results</a>
+  <a href="{% url 'base:profile' %}">👤 Profile</a>
+
+  {% if request.user.is_staff %}
+  <hr />
+  <h6>Admin</h6>
+  <a href="{% url 'base:bulk-upload' %}">📂 Bulk Upload</a>
+
+  {% endif %}
+</div>

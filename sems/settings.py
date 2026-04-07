@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'exams',
     'questions',
     'core',
-    'users',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',

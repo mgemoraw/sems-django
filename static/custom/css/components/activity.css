@@ -1,0 +1,20 @@
+.activity-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.activity-header {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-body a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.activity-message {
+  font-size: 13px;
+  color: #555;
+}

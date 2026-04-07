@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import University, School, Faculty, Department, Course, Module
+from .models import Chair, Program, University, School, Faculty, Department, Course, Module
 from .serializers import (
+    ChairSerializer,
+    ProgramSerializer,
     UniversitySerializer,
     SchoolSerializer,
     FacultySerializer,
@@ -40,3 +42,14 @@ class CourseViewSet(viewsets.ModelViewSet):
 class ModuleViewSet(viewsets.ModelViewSet):
     queryset = Module.objects.all()
     serializer_class = ModuleSerializer
+
+
+class ChairViewSet(viewsets.ModelViewSet):
+    queryset = Chair.objects.all()
+    serializer_class = ChairSerializer
+    
+
+class ProgramViewSet(viewsets.ModelViewSet):
+    queryset = Program.objects.all()
+    serializer_class = ProgramSerializer
+    

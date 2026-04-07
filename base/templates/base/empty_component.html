@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'custom/css/components/empty.css' %}" />
+
+<div class="empty-state">
+  <p>No data available</p>
+  <a href="{% url 'base:create-room' %}" class="btn btn-primary">
+    Create First Room
+  </a>
+</div>

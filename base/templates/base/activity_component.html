@@ -1,0 +1,23 @@
+{% load static %}
+<link
+  rel="stylesheet"
+  href="{% static 'custom/css/components/activity.css' %}"
+/>
+
+{% for message in room_messages %}
+<div class="activity-item">
+  <div class="activity-header">
+    <strong>@{{ message.user.username }}</strong>
+    <small>{{ message.created|timesince }} ago</small>
+  </div>
+
+  <div class="activity-body">
+    replied in
+    <a href="{% url 'base:room' message.room.id %}">
+      {{ message.room.name }}
+    </a>
+  </div>
+
+  <p class="activity-message">{{ message.body|truncatewords:10 }}</p>
+</div>
+{% endfor %}
