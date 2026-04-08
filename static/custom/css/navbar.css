@@ -1,94 +1,66 @@
-/* Navbar Container */
+/* NAVBAR */
 .navbar {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  padding: 12px 40px;
+  background: #fff;
   border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 10px 20px;
 }
 
-/* Layout */
+/* FLEX CONTAINER */
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
 }
 
-/* Logo */
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #2c3e50;
+/* LEFT */
+.nav-left {
+  flex: 0 0 auto;
 }
 
-.logo span {
-  color: #007bff;
-}
-
-.logo small {
-  font-size: 12px;
-  margin-left: 4px;
-  color: #888;
-}
-
-/* Search */
-.nav-center {
-  flex: 1;
+/* 🔥 SEARCH TAKES ALL SPACE */
+.nav-search {
+  flex: 1; /* THIS IS THE KEY */
   display: flex;
-  justify-content: center;
 }
 
+/* SEARCH FORM */
 .search-form {
   display: flex;
-  width: 60%;
-  max-width: 500px;
-}
-
-.search-input {
   width: 100%;
+}
+
+/* INPUT EXPANDS FULLY */
+.search-form input {
+  flex: 1;
   padding: 10px 14px;
-  border-radius: 25px 0 0 25px;
   border: 1px solid #ddd;
+  border-radius: 25px 0 0 25px;
   outline: none;
-  transition: 0.3s;
 }
 
-.search-input:focus {
-  border-color: #007bff;
-}
-
-.search-btn {
+/* BUTTON */
+.search-form button {
   padding: 10px 16px;
   border: none;
   background: #007bff;
   color: white;
   border-radius: 0 25px 25px 0;
-  cursor: pointer;
 }
 
-/* Right Section */
+/* RIGHT */
 .nav-right {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-/* Buttons */
+/* BUTTONS */
 .btn {
-  padding: 8px 16px;
+  padding: 6px 14px;
   border-radius: 20px;
   text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
 }
 
 .login-btn {
@@ -96,38 +68,19 @@
   color: white;
 }
 
-.login-btn:hover {
-  background: #0056b3;
-}
-
 .logout-btn {
   background: #dc3545;
   color: white;
 }
 
-.logout-btn:hover {
-  background: #a71d2a;
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
 }
 
-/* Welcome Text */
-.welcome {
-  font-size: 14px;
-  color: #555;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .search-form {
-    width: 100%;
-  }
-
-  .nav-right {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.logo span {
+  color: #007bff;
 }

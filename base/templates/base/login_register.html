@@ -1,30 +1,149 @@
-{% extends 'base.html' %} {% block content %} {% if page == 'login' %}
-<div>
-  <form action="" method="POST">
-    {%csrf_token%}
+{% extends 'base.html' %} {% block content %}
+<style>
+  /* PAGE LAYOUT */
+  .auth-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+  }
 
-    <label for="username">Username</label>
-    <input type="text" name="username" placeholder="Enter Username" />
-    <br />
+  /* CARD */
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  }
 
-    <label for="password">Password</label>
-    <input type="password" name="password" placeholder="Enter Password" />
+  /* TITLE */
+  .auth-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
 
-    <br />
-    <input type="submit" value="Login" class="btn btn-primary" />
-  </form>
-  <p>Haven't signed up yet?</p>
-  <a href="{%url 'base:register' %}">Sign Up</a>
+  /* INPUT */
+  .auth-input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+
+  .auth-input:focus {
+    border-color: #007bff;
+  }
+
+  /* BUTTON */
+  .auth-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .auth-btn:hover {
+    background: #0056b3;
+  }
+
+  /* FOOTER */
+  .auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .auth-footer a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+  }
+
+  /* ERROR */
+  .auth-error {
+    background: #ffe5e5;
+    color: #d00000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+</style>
+
+<div class="auth-container">
+  <div class="auth-card">
+    {% if page == 'login' %}
+    <h4 class="auth-title">Login to SEMS</h4>
+
+    <form method="POST">
+      {% csrf_token %} {% if messages %} {% for message in messages %}
+      <div class="auth-error">{{ message }}</div>
+      {% endfor %} {% endif %}
+
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        class="auth-input"
+        required
+      />
+
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        class="auth-input"
+        required
+      />
+
+      <button type="submit" class="auth-btn">Login</button>
+    </form>
+
+    <div class="auth-footer">
+      <p>
+        Don’t have an account?
+        <a href="{% url 'base:register' %}">Create Account</a>
+      </p>
+    </div>
+
+    {% else %}
+    <h4 class="auth-title">Create Account</h4>
+
+    <form method="POST">
+      {% csrf_token %} {% for field in form %}
+      <div class="field-wrapper">
+        <input
+          type="{{ field.field.widget.input_type }}"
+          name="{{ field.name }}"
+          placeholder="{{ field.label }}"
+          class="auth-input"
+          value="{{ field.value|default:'' }}"
+        />
+        {% if field.errors %}
+        <div class="auth-error">{{ field.errors|striptags }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+
+      <button type="submit" class="auth-btn">Register</button>
+    </form>
+
+    <div class="auth-footer">
+      <p>Already have an account? <a href="{% url 'base:login' %}">Login</a></p>
+    </div>
+
+    {% endif %}
+  </div>
 </div>
-{% else %}
-<div>
-  <form action="" method="POST">
-    {%csrf_token%} {{form.as_p}}
-    <input type="submit" value="Register" class="btn btn-primary" />
-  </form>
-
-  <p>Already Signed up?</p>
-  <a href="{%url 'base:login' %}">Login</a>
-</div>
-
-{% endif %} {% endblock content %}
+{% endblock %}

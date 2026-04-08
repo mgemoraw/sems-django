@@ -1,45 +1,27 @@
-{% load static %}
-
 <nav class="navbar">
   <div class="nav-container">
-    <!-- Logo -->
+    <!-- LEFT -->
     <div class="nav-left">
-      <a href="/" class="logo">
-        <span>SEMS</span>
-        <small>BiT</small>
-      </a>
+      <a href="/" class="logo"> <span>SEMS</span><small>BiT</small> </a>
     </div>
 
-    <!-- Search -->
-    <div class="nav-center">
+    <!-- SEARCH (FULL WIDTH FLEX) -->
+    <div class="nav-search">
       <form action="{% url 'base:home' %}" method="GET" class="search-form">
-        <input
-          type="text"
-          name="q"
-          placeholder="Search exams, courses..."
-          class="search-input"
-        />
-        <button type="submit" class="search-btn">🔍</button>
+        <input type="text" name="q" placeholder="Search exams..." />
+        <button type="submit">🔍</button>
       </form>
     </div>
 
-    <!-- Right Side -->
+    <!-- RIGHT -->
     <div class="nav-right">
       {% if request.user.is_authenticated %}
-
-      <span class="welcome"> Hi, {{ request.user.username }} </span>
-
+      <span class="welcome"> {{ request.user.username }}</span>
       <a href="#" class="nav-link">Dashboard</a>
-
-      <a href="{% url 'base:logout' %}" class="btn logout-btn"> Logout </a>
-
+      <a href="{% url 'base:logout' %}" class="btn logout-btn">Logout</a>
       {% else %}
-
-      <a href="{% url 'base:login' %}" class="btn login-btn"> Login </a>
-
+      <a href="{% url 'base:login' %}" class="btn login-btn">Login</a>
       {% endif %}
     </div>
   </div>
 </nav>
-
-<hr />

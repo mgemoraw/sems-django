@@ -4,3 +4,8 @@ venv/
 migrations/
 venv/
 __pycache__/
+
+static/css/tailwindcss
+static/css/tailwindcss.exe
+node_modules/
+*.log
