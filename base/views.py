@@ -8,9 +8,17 @@ from .forms import RoomForm, UserRegisterForm
 
 # Create your views here.
 def home(request):
-    context = {}
+    
+    context = {
+        
+    }
 
     return render(request, 'base/home.html', context=context)
+
+def dashboard(request):
+    context = {}
+    return render(request, 'base/dashboard.html', context=context)
+
 
 def room(request, pk):
     context = {}

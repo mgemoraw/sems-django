@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="max-w-7xl mx-auto px-4 py-8">
+  <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+    <div>
+      <h1 class="text-3xl font-black tracking-tight">Student Hub</h1>
+      <p class="text-base-content/60 italic">Bahir Dar Institute of Technology</p>
+    </div>
+    <div class="stats stats-horizontal bg-base-100 shadow-sm border border-base-300">
+      <div class="stat py-2 px-6">
+        <div class="stat-title text-[10px] uppercase font-bold">Total Exams</div>
+        <div class="stat-value text-xl text-primary">{{ exams|length }}</div>
+      </div>
+      <div class="stat py-2 px-6 border-l border-base-300">
+        <div class="stat-title text-[10px] uppercase font-bold">Completed</div>
+        <div class="stat-value text-xl text-secondary">{{ results|length }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+    <aside class="lg:col-span-3 space-y-6">
+      <div class="bg-base-100 border border-base-300 rounded-2xl p-2">
+        <ul class="menu w-full gap-1">
+          <li class="menu-title px-4 py-2 text-xs font-bold uppercase text-primary">Core Navigation</li>
+          <li><a class="active rounded-xl px-4"><i class="fa-solid fa-house w-5"></i> Dashboard</a></li>
+          <li><a class="rounded-xl px-4"><i class="fa-solid fa-file-lines w-5"></i> My Exams</a></li>
+          <li><a class="rounded-xl px-4"><i class="fa-solid fa-square-poll-vertical w-5"></i> View Results</a></li>
+          <li><a class="rounded-xl px-4"><i class="fa-solid fa-user-gear w-5"></i> Settings</a></li>
+          
+          {% if request.user.is_staff %}
+          <div class="divider px-4 opacity-50"></div>
+          <li class="menu-title px-4 py-2 text-xs font-bold uppercase text-secondary">Administration</li>
+          <li><a class="rounded-xl px-4 text-secondary hover:bg-secondary/10"><i class="fa-solid fa-plus w-5"></i> Add Questions</a></li>
+          <li><a class="rounded-xl px-4 text-secondary hover:bg-secondary/10"><i class="fa-solid fa-cloud-arrow-up w-5"></i> Bulk Upload</a></li>
+          <li><a class="rounded-xl px-4 text-secondary hover:bg-secondary/10"><i class="fa-solid fa-users w-5"></i> Manage Users</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center">
+          <i class="fa-solid fa-quote-left text-primary opacity-30 text-2xl mb-2"></i>
+          <p class="text-sm font-medium italic text-primary/80">
+            “Consistency is the key to mastering engineering.”
+          </p>
+      </div>
+    </aside>
+
+    <main class="lg:col-span-6 space-y-8">
+      
+      <div class="relative overflow-hidden bg-neutral text-neutral-content rounded-3xl p-8 shadow-xl">
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold">Welcome back, {{ request.user.username|default:"Student" }}</h2>
+          <p class="mt-2 opacity-70 text-sm max-w-sm">Ready to sharpen your skills? Pick an assessment and track your improvement over time.</p>
+          <div class="mt-6 flex gap-3">
+            <button class="btn btn-primary btn-sm rounded-lg px-6">Explore</button>
+            <button class="btn btn-ghost btn-sm">Activity Log</button>
+          </div>
+        </div>
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
+      </div>
+
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-black uppercase tracking-tight">Recommended Assessments</h2>
+          <div class="badge badge-outline border-base-300">{{ exams|length }} Available</div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+          {% for exam in exams %}
+          <div class="group bg-base-100 border border-base-300 rounded-2xl p-5 hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md">
+            <div class="flex flex-col sm:flex-row justify-between gap-4">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="badge badge-primary badge-xs"></span>
+                  <h3 class="font-bold text-lg group-hover:text-primary transition-colors">{{ exam.title }}</h3>
+                </div>
+                <p class="text-sm opacity-60 leading-relaxed">{{ exam.description|truncatewords:15 }}</p>
+                <div class="flex flex-wrap gap-4 pt-3 text-[11px] font-bold text-base-content/40 uppercase tracking-tighter">
+                  <span class="flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 MIN</span>
+                  <span class="flex items-center gap-1"><i class="fa-regular fa-file-lines"></i> 20 QUESTIONS</span>
+                  <span class="flex items-center gap-1 text-success"><i class="fa-solid fa-bolt"></i> MEDIUM</span>
+                </div>
+              </div>
+              <div class="flex items-center">
+                {% if request.user.is_authenticated %}
+                  <a href="{% url 'start-exam' exam.id %}" class="btn btn-primary btn-md rounded-xl w-full sm:w-auto px-8 shadow-sm group-hover:shadow-primary/20">
+                    Start <i class="fa-solid fa-chevron-right ml-2 text-[10px]"></i>
+                  </a>
+                {% else %}
+                  <a href="{% url 'base:login' %}" class="btn btn-outline btn-md rounded-xl w-full sm:w-auto">Login</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% empty %}
+          <div class="text-center py-12 border-2 border-dashed border-base-300 rounded-3xl">
+            <p class="opacity-40">No assessments found in your department.</p>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+
+    <aside class="lg:col-span-3 space-y-6">
+      
+      <div class="bg-base-100 border border-base-300 rounded-2xl p-5 shadow-sm">
+        <h3 class="font-black text-sm uppercase tracking-widest mb-4">Class Activity</h3>
+        <div class="space-y-4">
+          {% for activity in activities %}
+          <div class="flex gap-3">
+            <div class="avatar placeholder">
+              <div class="bg-neutral-focus text-neutral-content rounded-full w-8 text-xs">
+                <span>{{ activity.user.0 }}</span>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-bold leading-none">{{ activity.user }}</span>
+              <span class="text-[10px] opacity-60">Completed {{ activity.exam|truncatechars:15 }}</span>
+            </div>
+          </div>
+          {% empty %}
+          <p class="text-xs opacity-40 italic">No global activity...</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="bg-base-100 border border-base-300 rounded-2xl overflow-hidden shadow-sm">
+        <div class="bg-base-200 p-4 border-b border-base-300">
+          <h3 class="font-bold text-xs uppercase tracking-widest">Editor's Choice</h3>
+        </div>
+        <div class="p-2">
+          {% for exam in recommended_exams %}
+          <a href="#" class="flex items-center justify-between p-3 hover:bg-base-200 rounded-xl transition-colors group">
+            <span class="text-sm font-medium group-hover:text-primary">{{ exam.title|truncatechars:18 }}</span>
+            <i class="fa-solid fa-arrow-right text-[10px] opacity-0 group-hover:opacity-100 transition-all"></i>
+          </a>
+          {% empty %}
+          <p class="p-4 text-xs opacity-40">More results needed...</p>
+          {% endfor %}
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+
+{% endblock %}

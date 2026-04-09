@@ -1,157 +1,192 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
 
-<div class="container mx-auto p-4 lg:p-8">
+<div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-    <div class="lg:col-span-3 space-y-4">
-      <div class="card bg-base-100 shadow-xl border border-base-200">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="lg:col-span-3 space-y-4">
+
+      <!-- Navigation -->
+      <div class="card bg-base-100 shadow ">
         <div class="card-body p-4">
-          <h2 class="menu-title text-base-content opacity-60">Navigation</h2>
-          <ul class="menu p-0">
-            <li>
-              <a href="#"><span class="text-lg">🏠</span> Dashboard</a>
-            </li>
-            <li>
-              <a href="#"><span class="text-lg">📝</span> Exams</a>
-            </li>
-            <li>
-              <a href="#"><span class="text-lg">📊</span> Results</a>
-            </li>
-            <li>
-              <a href="#"><span class="text-lg">👤</span> Profile</a>
-            </li>
+          <h2 class="menu-title opacity-60">Navigation</h2>
+          <ul class="menu">
+            <li><a>🏠 Dashboard</a></li>
+            <li><a>📝 Exams</a></li>
+            <li><a>📊 Results</a></li>
+            <li><a>👤 Profile</a></li>
           </ul>
 
-          {% if request.user.is_staff %}
+          {% comment %} {% if request.user.is_staff %} {% endcomment %}
           <div class="divider my-2"></div>
-          <h2 class="menu-title text-base-content opacity-60">Admin</h2>
-          <ul class="menu p-0">
-            <li>
-              <a href="#"
-                ><span class="text-lg text-primary">➕</span> Add Questions</a
-              >
-            </li>
-            <li>
-              <a href="#"><span class="text-lg">📂</span> Bulk Upload</a>
-            </li>
-            <li>
-              <a href="#"><span class="text-lg">👥</span> Manage Users</a>
-            </li>
+          <h2 class="menu-title opacity-60">Admin</h2>
+          <ul class="menu">
+            <li><a>➕ Add Questions</a></li>
+            <li><a>📂 Bulk Upload</a></li>
+            <li><a>👥 Manage Users</a></li>
           </ul>
-          {% endif %}
+          {% comment %} {% endif %} {% endcomment %}
         </div>
       </div>
-    </div>
 
-    <div class="lg:col-span-6 space-y-8">
-      <div
-        class="hero rounded-2xl overflow-hidden bg-gradient-to-br from-primary to-secondary text-primary-content shadow-xl"
-      >
-        <div class="hero-content text-center py-12 px-6">
-          <div class="max-w-md">
-            <h1 class="text-3xl font-bold">
-              Welcome, {{ request.user.username|default:"Student" }}!
+      <!-- Quick Stats -->
+      {% if user.is_authenticated %}
+      <div class="grid grid-cols-2 gap-3">
+        <div class="stat bg-base-100 rounded-lg shadow p-3">
+          <div class="stat-title text-xs">Exams</div>
+          <div class="stat-value text-lg">{{ exams|length }}</div>
+        </div>
+
+        <div class="stat bg-base-100 rounded-lg shadow p-3">
+          <div class="stat-title text-xs">Completed</div>
+          <div class="stat-value text-lg">{{ results|length }}</div>
+        </div>
+      </div>
+      {% endif %}
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="lg:col-span-6 space-y-6">
+
+      <!-- HERO -->
+      <div class="hero bg-gradient-to-r from-primary to-secondary text-primary-content rounded-xl shadow">
+        <div class="hero-content text-center py-10">
+          <div>
+            
+
+            {% if user.is_authenticated %}
+            <h1 class="text-2xl font-bold">
+              Welcome back, {{ request.user.username|default:"Student" }}
             </h1>
-            <p class="py-4 opacity-90">
-              Practice exams, track your progress, and sharpen your engineering
-              skills.
-            </p>
 
-            {% if request.user.is_authenticated %}
-            <a href="#" class="btn btn-neutral border-none">Go to Dashboard</a>
+            <p class="py-2 opacity-90">
+              Continue your exam journey and improve your performance.
+            </p>
+            <div class="flex gap-2 justify-center mt-3">
+              <a class="btn btn-neutral btn-sm">Browse Exams</a>
+              <a class="btn btn-outline btn-sm">View Results</a>
+            </div>
             {% else %}
-            <a href="{% url 'base:login' %}" class="btn btn-neutral border-none"
-              >Get Started</a
-            >
+            <h1 class="text-2xl font-bold">
+              Welcome to BiT Student Exam Management System
+            </h1>
+
+            <p class="py-2 opacity-90">
+              Start your exam journey and improve your performance.
+            </p>
+            <div>
+              <a href="{%url 'base:login' %}" class="btn btn-outline btn-sm">Get Started</a>
+
+            </div>
             {% endif %}
           </div>
         </div>
       </div>
 
-      <div class="space-y-4">
-        <div class="flex items-center justify-between px-2">
-          <h3 class="text-xl font-bold">Available Exams</h3>
-          <span class="badge badge-outline">{{ exams|length }} New</span>
+      <!-- EXAMS -->
+      <div>
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-lg font-bold">Available Exams</h2>
+          <span class="badge badge-primary">{{ exams|length }}</span>
         </div>
 
-        {% for exam in exams %}
-        <div
-          class="card card-side bg-base-100 shadow-md hover:shadow-lg transition-all border border-base-200"
-        >
-          <div class="card-body py-6 px-8">
-            <h2 class="card-title text-primary">{{ exam.title }}</h2>
-            <p class="text-base-content/70">
-              {{ exam.description|truncatewords:18 }}
-            </p>
-            <div class="card-actions justify-end mt-4">
-              {% if request.user.is_authenticated %}
-              <a
-                href="{% url 'start-exam' exam.id %}"
-                class="btn btn-primary btn-sm"
-                >Start Exam</a
-              >
-              {% else %}
-              <a href="{% url 'base:login' %}" class="btn btn-outline btn-sm"
-                >Login to Start</a
-              >
-              {% endif %}
-            </div>
-          </div>
-        </div>
-        {% empty %}
-        <div class="alert shadow-sm bg-base-200">
-          <span>No exams available at the moment.</span>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
+        <div class="space-y-3">
 
-    <div class="lg:col-span-3 space-y-6">
-      <div class="card bg-base-100 shadow-md border border-base-200">
-        <div class="card-body p-5">
-          <h3 class="font-bold border-b pb-2 mb-2">Recent Activity</h3>
-          <div class="space-y-3">
-            {% for activity in activities %}
-            <div class="text-sm flex gap-2 items-start">
-              <span class="badge badge-ghost badge-xs mt-1"></span>
-              <span
-                ><strong>{{ activity.user }}</strong> completed {{ activity.exam
-                }}</span
-              >
-            </div>
-            {% empty %}
-            <p class="text-xs text-base-content/50 italic">
-              No recent activity
-            </p>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
+          {% for exam in exams %}
+          <div class="card bg-base-100 shadow hover:shadow-lg transition">
 
-      <div class="card bg-primary/5 shadow-md border border-primary/10">
-        <div class="card-body p-5">
-          <h3 class="font-bold text-primary mb-2">Recommended</h3>
-          <div class="space-y-2">
-            {% for exam in recommended_exams %}
-            <div
-              class="collapse collapse-arrow bg-base-100 border border-base-200 rounded-lg"
-            >
-              <input type="checkbox" />
-              <div class="collapse-title text-sm font-semibold py-2 px-4">
+            <div class="card-body p-5">
+
+              <!-- Title -->
+              <h3 class="font-semibold text-primary">
                 {{ exam.title }}
+              </h3>
+
+              <!-- Description -->
+              <p class="text-sm opacity-70">
+                {{ exam.description|truncatewords:15 }}
+              </p>
+
+              <!-- META INFO -->
+              <div class="flex flex-wrap gap-2 text-xs mt-2">
+                <span class="badge badge-outline">⏱ 30 min</span>
+                <span class="badge badge-outline">📄 20 Questions</span>
+                <span class="badge badge-outline">🎯 Medium</span>
               </div>
-              <div class="collapse-content text-xs">
-                <p>Top rated practice for this week.</p>
+
+              <!-- ACTION -->
+              <div class="flex justify-end mt-3">
+                {% if request.user.is_authenticated %}
+                  <a href="{% url 'start-exam' exam.id %}" class="btn btn-primary btn-sm">
+                    Start Exam
+                  </a>
+                {% else %}
+                  <a href="{% url 'base:login' %}" class="btn btn-outline btn-sm">
+                    Login
+                  </a>
+                {% endif %}
               </div>
+
             </div>
-            {% empty %}
-            <p class="text-xs text-base-content/50 italic">
-              No recommendations
-            </p>
-            {% endfor %}
           </div>
+          {% empty %}
+          <div class="alert bg-base-200">
+            No exams available
+          </div>
+          {% endfor %}
+
         </div>
       </div>
-    </div>
+
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="lg:col-span-3 space-y-4">
+
+      <!-- Recent Activity -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body p-4">
+          <h3 class="font-bold mb-2">Recent Activity</h3>
+
+          {% for activity in activities %}
+          <div class="text-sm mb-2">
+            <strong>{{ activity.user }}</strong> completed {{ activity.exam }}
+          </div>
+          {% empty %}
+          <p class="text-xs opacity-50">No activity</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Recommended -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body p-4">
+          <h3 class="font-bold mb-2">Recommended</h3>
+
+          {% for exam in recommended_exams %}
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm">{{ exam.title }}</span>
+            <a href="#" class="btn btn-xs btn-primary">Start</a>
+          </div>
+          {% empty %}
+          <p class="text-xs opacity-50">No recommendations</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Motivation Card -->
+      <div class="card bg-primary text-primary-content shadow">
+        <div class="card-body p-4 text-center">
+          <p class="text-sm">
+            “Consistency is the key to mastering exams.”
+          </p>
+        </div>
+      </div>
+
+    </aside>
+
   </div>
 </div>
 
