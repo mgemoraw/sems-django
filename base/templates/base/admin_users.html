@@ -1,0 +1,209 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="p-6 lg:p-8">
+  <!-- PAGE HEADER -->
+  <div
+    class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6"
+  >
+    <div>
+      <h1 class="text-2xl font-bold text-slate-800 dark:text-white">
+        User Management
+      </h1>
+      <p class="text-sm text-slate-500">
+        Manage students, admins, and system users
+      </p>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="flex flex-wrap gap-2">
+      <!-- Add User -->
+      <label for="add-user-modal" class="btn btn-primary btn-sm">
+        <i class="fa-solid fa-plus"></i> Add User
+      </label>
+
+      <!-- Bulk Upload -->
+      <label for="bulk-user-modal" class="btn btn-outline btn-sm">
+        <i class="fa-solid fa-upload"></i> Bulk Upload
+      </label>
+    </div>
+  </div>
+
+  <!-- SUMMARY CARDS -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+    <div class="card bg-base-100 border border-base-200">
+      <div class="card-body p-4">
+        <h3 class="text-sm text-gray-500">Total Users</h3>
+        <p class="text-2xl font-bold">{{ users|length }}</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 border border-base-200">
+      <div class="card-body p-4">
+        <h3 class="text-sm text-gray-500">Admins</h3>
+        <p class="text-2xl font-bold">{{ users|dictsort:"is_staff"|length }}</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 border border-base-200">
+      <div class="card-body p-4">
+        <h3 class="text-sm text-gray-500">Active Users</h3>
+        <p class="text-2xl font-bold">{{ users|length }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- USERS TABLE -->
+  <div class="card bg-base-100 border border-base-200 shadow-sm">
+    <div class="card-body p-4">
+      <!-- TABLE HEADER -->
+      <div
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4"
+      >
+        <h2 class="font-semibold">All Users</h2>
+
+        <!-- Search -->
+        <form method="GET" class="flex gap-2">
+          <input
+            type="text"
+            name="q"
+            placeholder="Search users..."
+            class="input input-sm input-bordered w-full md:w-60"
+          />
+          <button class="btn btn-sm">Search</button>
+        </form>
+      </div>
+
+      <!-- TABLE -->
+      <div class="overflow-x-auto">
+        <table class="table table-sm">
+          <thead class="bg-base-200">
+            <tr>
+              <th>User</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th class="text-right">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {% for user in users %}
+            <tr class="hover">
+              <!-- USER -->
+              <td>
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-9 h-9 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-white flex items-center justify-center text-sm font-bold"
+                  >
+                    {{ user.username|first|upper }}
+                  </div>
+                  <div>
+                    <div class="font-medium">
+                      {{ user.get_full_name|default:user.username }}
+                    </div>
+                    <div class="text-xs text-gray-500">
+                      @{{ user.username }}
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <!-- EMAIL -->
+              <td class="text-sm">{{ user.email|default:"-" }}</td>
+
+              <!-- ROLE -->
+              <td>
+                {% if user.is_staff %}
+                <span class="badge badge-info badge-sm">Admin</span>
+                {% else %}
+                <span class="badge badge-ghost badge-sm">Student</span>
+                {% endif %}
+              </td>
+
+              <!-- STATUS -->
+              <td>
+                {% if user.is_active %}
+                <span class="badge badge-success badge-sm">Active</span>
+                {% else %}
+                <span class="badge badge-error badge-sm">Disabled</span>
+                {% endif %}
+              </td>
+
+              <!-- ACTIONS -->
+              <td class="text-right">
+                <div class="flex justify-end gap-2">
+                  <!-- View -->
+                  <label
+                    for="view-user-modal"
+                    class="btn btn-xs btn-ghost"
+                    onclick="openViewUser('{{ user.username }}','{{ user.email }}','{% if user.is_staff %}Admin{% else %}Student{% endif %}','{% if user.is_active %}Active{% else %}Disabled{% endif %}')"
+                  >
+                    <i class="fa-regular fa-eye"></i>
+                  </label>
+
+                  <!-- Edit -->
+                  <label
+                    for="edit-user-modal"
+                    class="btn btn-xs btn-ghost"
+                    onclick="openEditUser('{{ user.id }}','{{ user.username }}','{{ user.email }}','{% if user.is_staff %}admin{% else %}student{% endif %}')"
+                  >
+                    <i class="fa-solid fa-pen"></i>
+                  </label>
+
+                  <!-- Delete -->
+                  <label
+                    for="delete-user-modal"
+                    class="btn btn-xs btn-ghost text-rose-600"
+                    onclick="openDeleteUser('{{ user.id }}')"
+                  >
+                    <i class="fa-solid fa-trash"></i>
+                  </label>
+                </div>
+              </td>
+            </tr>
+
+            {% empty %}
+            <tr>
+              <td colspan="5" class="text-center py-6 text-gray-500">
+                No users found.
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODALS -->
+{% include 'base/modals/add_user_modal.html' %} {% include
+'base/modals/edit_user_modal.html' %} {% include
+'base/modals/view_user_modal.html' %} {% include
+'base/modals/delete_user_modal.html' %} {% include
+'base/modals/bulk_user_modal.html' %}
+
+<!-- JS -->
+<script>
+  function openViewUser(username, email, role, status) {
+    document.getElementById("view-username").innerText = username;
+    document.getElementById("view-email").innerText = email;
+    document.getElementById("view-role").innerText = role;
+    document.getElementById("view-status").innerText = status;
+  }
+
+  function openEditUser(id, username, email, role) {
+    document.getElementById("edit-user-id").value = id;
+    document.getElementById("edit-username").value = username;
+    document.getElementById("edit-email").value = email;
+    document.getElementById("edit-role").value = role;
+    document.getElementById("edit-user-form").action = `/users/${id}/update/`;
+  }
+
+  function openDeleteUser(id) {
+    document.getElementById("delete-user-id").value = id;
+    document.getElementById("delete-user-form").action = `/users/${id}/delete/`;
+  }
+</script>
+
+{% endblock %}

@@ -26,7 +26,7 @@ class User(AbstractUser):
     must_change_password = models.BooleanField(default=True)
     name = models.CharField(max_length=100, null=True, blank=True)
     email = models.EmailField(max_length=100, unique=True)
-    password = models.CharField(max_length=255, )
+    password = models.CharField(max_length=255, null=True, blank=True)
     role = models.CharField(max_length=20, choices=USER_ROLES, default='student')
     created_by = models.ForeignKey(
         'self', 
@@ -61,6 +61,11 @@ class User(AbstractUser):
         self.user_status = 'inactive'
         self.save()
 
+    # ========== Additional methods for user management ==========
+    def get_full_name(self):
+        """ Return the user's full name. """
+        return self.first_name + ' ' + self.last_name
+
 
 class Role(models.Model):
     name = models.CharField(max_length=50)
@@ -68,6 +73,16 @@ class Role(models.Model):
 
     def __str__(self):
         return self.name
+    
+class CourseAssignment(models.Model):
+    user = models.ForeignKey('User', on_delete=models.CASCADE, null=True, blank=True)
+    course = models.ForeignKey('Course', on_delete=models.CASCADE, null=True, blank=True)
+
+
+class RoleAssignment(models.Model):
+    user = models.ForeignKey('User', on_delete=models.CASCADE, null=True, blank=True)
+    role = models.ForeignKey('Role', on_delete=models.CASCADE, null=True, blank=True)
+
 
 
 class University(models.Model):
@@ -90,9 +105,9 @@ class Department(models.Model):
     updated_at = models.DateTimeField(default=timezone.now)
     
 
-    tests = models.ForeignKey('Test', on_delete=models.CASCADE,null=True, related_name='department_tests')
-    questions = models.ForeignKey('Question', on_delete=models.CASCADE,null=True, related_name='department_questions')
-    modules = models.ForeignKey('Module', on_delete=models.CASCADE, null=True, related_name='department_modules')
+    # tests = models.ForeignKey('Test', on_delete=models.CASCADE,null=True, related_name='department_tests')
+    # questions = models.ForeignKey('Question', on_delete=models.CASCADE,null=True, related_name='department_questions')
+    # modules = models.ForeignKey('Module', on_delete=models.CASCADE, null=True, related_name='department_modules')
 
     def __str__(self):
         return self.name
@@ -293,13 +308,4 @@ class Mail(models.Model):
     def __str__(self):
         return self.id
 
-
-class CourseAssignment(models.Model):
-    user = models.ForeignKey('User', on_delete=models.CASCADE, null=True, blank=True)
-    course = models.ForeignKey('Course', on_delete=models.CASCADE, null=True, blank=True)
-
-
-class RoleAssignment(models.Model):
-    user = models.ForeignKey('User', on_delete=models.CASCADE, null=True, blank=True)
-    role = models.ForeignKey('Role', on_delete=models.CASCADE, null=True, blank=True)
 

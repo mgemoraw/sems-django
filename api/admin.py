@@ -74,12 +74,21 @@ class ModelExamAdmin(admin.ModelAdmin):
     list_filter = ('created_by', 'department', 'exam_start', 'exam_end')
     search_fields = ['title']
 
+
+class RoleAdmin(admin.ModelAdmin):
+    list_display = ('name', 'description')
+    search_fields = ['name']
+
+class RoleAssignmentAdmin(admin.ModelAdmin):
+    list_display = ('user', 'role')
+    search_fields = ['user__username', 'role__name']
+
 admin.site.register(ModelExam, ModelExamAdmin)
 admin.site.register(UserExamResponse)
 
 admin.site.register(User, UserAdmin)
-admin.site.register(Role)
-admin.site.register(RoleAssignment)
+admin.site.register(Role, RoleAdmin)
+admin.site.register(RoleAssignment, RoleAssignmentAdmin)
 
 admin.site.register(University)
 admin.site.register(Department)

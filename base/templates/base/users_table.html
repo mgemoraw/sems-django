@@ -1,0 +1,154 @@
+<!-- USERS TABLE SECTION -->
+<div class="card bg-base-100 border border-base-200 shadow-sm mt-6">
+  <div class="card-body p-5">
+    <!-- Header -->
+    <div
+      class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4"
+    >
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-users text-sky-500 text-xl"></i>
+        <h3 class="font-bold">Users Management</h3>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex gap-2">
+        <input
+          type="text"
+          placeholder="Search users..."
+          class="input input-sm input-bordered w-full md:w-60"
+        />
+        <a href="#" class="btn btn-sm btn-primary">
+          <i class="fa-solid fa-plus"></i> Add User
+        </a>
+        <a
+          href="#"
+          class="btn btn-sm btn-outline"
+          onclick="document.getElementById('bulk-user-modal').checked = true"
+        >
+          <i class="fa-solid fa-upload"></i> Bulk Upload
+        </a>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="overflow-x-auto">
+      <table class="table table-sm">
+        <!-- Head -->
+        <thead class="bg-base-200 text-base-content">
+          <tr>
+            <th>User</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th class="text-right">Actions</th>
+          </tr>
+        </thead>
+
+        <!-- Body -->
+        <tbody>
+          {% for user in users %}
+          <tr class="hover">
+            <!-- User Info -->
+            <td>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-9 h-9 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-white flex items-center justify-center text-sm font-bold"
+                >
+                  {{ user.username|first|upper }}
+                </div>
+                <div>
+                  <div class="font-medium">
+                    {{ user.get_full_name|default:user.username }}
+                  </div>
+                  <div class="text-xs text-gray-500">@{{ user.username }}</div>
+                </div>
+              </div>
+            </td>
+
+            <!-- Email -->
+            <td class="text-sm">{{ user.email|default:"-" }}</td>
+
+            <!-- Role -->
+            <td>
+              {% if user.is_staff %}
+              <span class="badge badge-info badge-sm">Admin</span>
+              {% else %}
+              <span class="badge badge-ghost badge-sm">Student</span>
+              {% endif %}
+            </td>
+
+            <!-- Status -->
+            <td>
+              {% if user.is_active %}
+              <span class="badge badge-success badge-sm gap-1">
+                <i class="fa-solid fa-circle text-[8px]"></i> Active
+              </span>
+              {% else %}
+              <span class="badge badge-error badge-sm gap-1">
+                <i class="fa-solid fa-circle text-[8px]"></i> Disabled
+              </span>
+              {% endif %}
+            </td>
+
+            <!-- Actions -->
+            <td class="text-right">
+              <div class="flex justify-end gap-2">
+                <a
+                  href="#"
+                  class="btn btn-xs btn-ghost hover:bg-sky-100 dark:hover:bg-slate-700"
+                  onclick="openViewUser('{{ user.username }}', '{{ user.email }}', '{% if user.is_staff %}Admin{% else %}Student{% endif %}', '{% if user.is_active %}Active{% else %}Disabled{% endif %}')"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="btn btn-xs btn-ghost hover:bg-amber-100 dark:hover:bg-amber-900/20"
+                >
+                  <i class="fa-solid fa-pen"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="btn btn-xs btn-ghost text-rose-600 hover:bg-rose-100 dark:hover:bg-rose-900/20"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </a>
+              </div>
+            </td>
+          </tr>
+          {% empty %}
+          <tr>
+            <td colspan="5" class="text-center text-gray-500 py-6 italic">
+              No users found.
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    function openViewUser(username, email, role, status) {
+      document.getElementById("view-username").innerText = username;
+      document.getElementById("view-email").innerText = email;
+      document.getElementById("view-role").innerText = role;
+      document.getElementById("view-status").innerText = status;
+    }
+
+    function openEditUser(id, username, email, role) {
+      document.getElementById("edit-user-id").value = id;
+      document.getElementById("edit-username").value = username;
+      document.getElementById("edit-email").value = email;
+      document.getElementById("edit-role").value = role;
+
+      document.getElementById("edit-user-form").action = `/users/${id}/update/`;
+    }
+
+    function openDeleteUser(id) {
+      document.getElementById("delete-user-id").value = id;
+      document.getElementById("delete-user-form").action =
+        `/users/${id}/delete/`;
+    }
+  </script>
+</div>

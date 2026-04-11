@@ -1,0 +1,86 @@
+<!-- BULK USER UPLOAD MODAL -->
+<input type="checkbox" id="bulk-user-modal" class="modal-toggle" />
+
+<div class="modal">
+  <div class="modal-box w-full max-w-2xl">
+    <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+      <i class="fa-solid fa-upload text-sky-500"></i>
+      Bulk User Upload
+    </h3>
+
+    <form
+      method="POST"
+      action="{% url 'admin:bulk_users' %}"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+
+      <div class="space-y-4">
+        <!-- File Upload -->
+        <div>
+          <label class="label">Upload CSV File</label>
+          <input
+            type="file"
+            name="file"
+            accept=".csv"
+            class="file-input file-input-bordered w-full"
+            required
+          />
+          <p class="text-xs text-gray-500 mt-1">Only CSV files are allowed</p>
+        </div>
+
+        <!-- Default Role -->
+        <div>
+          <label class="label">Default Role</label>
+          <select name="default_role" class="select select-bordered w-full">
+            <option value="student">Student</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <!-- Options -->
+        <div class="flex flex-col gap-2 text-sm">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="send_email"
+              class="checkbox checkbox-sm"
+            />
+            Send login credentials via email
+          </label>
+
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="overwrite"
+              class="checkbox checkbox-sm"
+            />
+            Overwrite existing users
+          </label>
+        </div>
+
+        <!-- CSV Format Info -->
+        <div class="bg-base-200 p-3 rounded-lg text-xs">
+          <strong>CSV Format:</strong>
+          <pre class="mt-1">username,email,password,role(optional)</pre>
+        </div>
+
+        <!-- Sample Download -->
+        <div>
+          <a
+            href="{% static 'samples/users_sample.csv' %}"
+            class="link link-primary text-sm"
+          >
+            Download Sample CSV
+          </a>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="modal-action">
+        <label for="bulk-user-modal" class="btn">Cancel</label>
+        <button type="submit" class="btn btn-primary">Upload Users</button>
+      </div>
+    </form>
+  </div>
+</div>

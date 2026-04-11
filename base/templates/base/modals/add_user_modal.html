@@ -1,0 +1,46 @@
+<!-- ADD USER MODAL -->
+<input type="checkbox" id="add-user-modal" class="modal-toggle" />
+
+<div class="modal">
+  <div class="modal-box w-full max-w-lg">
+    <h3 class="font-bold text-lg mb-4">Add New User</h3>
+
+    <form method="POST" action="{% url 'base:add_user' %}">
+      {% csrf_token %}
+
+      <div class="grid gap-3">
+        <input
+          name="username"
+          placeholder="Username"
+          class="input input-bordered w-full"
+          required
+        />
+
+        <input
+          name="email"
+          type="email"
+          placeholder="Email"
+          class="input input-bordered w-full"
+        />
+
+        <input
+          name="password"
+          type="password"
+          placeholder="Password"
+          class="input input-bordered w-full"
+          required
+        />
+
+        <select name="role" class="select select-bordered w-full">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+
+      <div class="modal-action">
+        <label for="add-user-modal" class="btn">Cancel</label>
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+</div>

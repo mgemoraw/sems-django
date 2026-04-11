@@ -1,0 +1,20 @@
+<!-- DELETE USER MODAL -->
+<input type="checkbox" id="delete-user-modal" class="modal-toggle" />
+
+<div class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg text-rose-600">Delete User</h3>
+
+    <p class="py-3 text-sm">Are you sure you want to delete this user?</p>
+
+    <form method="POST" id="delete-user-form">
+      {% csrf_token %}
+      <input type="hidden" name="user_id" id="delete-user-id" />
+
+      <div class="modal-action">
+        <label for="delete-user-modal" class="btn">Cancel</label>
+        <button type="submit" class="btn btn-error">Delete</button>
+      </div>
+    </form>
+  </div>
+</div>

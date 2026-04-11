@@ -17,7 +17,7 @@ router.register(r'groups', GroupsViewSet, basename='v1-group')
 router.register(r'departments', DepartmentsViewSet, basename='v1-department')
 router.register(r'questions', QuestionsViewSet, basename='v1-questions')
 router.register(r'tests', TestsViewSet, basename='v1-test')
-router.register(r'roles', CouresViewSet, basename='v1-role')
+# router.register(r'roles', RoleListView.as_view(), basename='v1-role')
 router.register(r'courses', CouresViewSet, basename='v1-course')
 router.register(r'exams', ModelExamViewSet, basename='v1-exam')
 
@@ -35,6 +35,10 @@ urlpatterns = [
     re_path('token/', token_view, name='access_token'),
     # path('auth/login/', login_view, name='user_login'),
     path('auth/users/register/', UserRegisterView.as_view(), name='user_register'),
+    path('roles/', RoleListView.as_view(), name='role_list'),
+    path('roles/create/', RoleCreateView.as_view(), name='role_create'),
+    path('users/role/assign/<int:user_id>/', AssignUserRoleView.as_view(), name='assign_user_role'),
+    
     # path('auth/users/update/<int:id>/', UserUpdateView.as_view(), name='user_update'),
     # path('auth/users/delete/<int:id>/', UserDeleteView.as_view(), name='user_delete'),
     # path('auth/password/update/', PasswordUpdateView.as_view(), name='password_update'),

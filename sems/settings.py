@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'base',
     'api',
+    # 'users',
     'exams',
     'questions',
     'core',

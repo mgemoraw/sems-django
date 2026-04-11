@@ -56,17 +56,23 @@
 
       <div class="flex items-center gap-2 lg:gap-4">
         <div class="dropdown dropdown-end">
-          <label
-            tabindex="0"
-            class="btn btn-ghost btn-circle btn-sm text-blue-800 dark:bg-slate-800 border-none hover:bg-sky-100 dark:hover:bg-slate-700 transition-all"
+          <button
+            id="theme-toggle"
+            class="btn btn-ghost btn-circle btn-sm hover:bg-sky-100 dark:hover:bg-slate-700 transition"
+            aria-label="Toggle Theme"
           >
+            <!-- Sun (Light Mode Icon) -->
             <i
-              class="fa-solid fa-sun text-amber-500 text-lg hidden dark:inline-block"
+              id="theme-icon-sun"
+              class="fa-solid fa-sun text-amber-500 text-lg hidden"
             ></i>
+
+            <!-- Moon (Dark Mode Icon) -->
             <i
-              class="fa-solid fa-moon text-blue-600 text-lg hidden dark:hidden"
+              id="theme-icon-moon"
+              class="fa-solid fa-moon text-blue-600 text-lg hidden"
             ></i>
-          </label>
+          </button>
 
           <ul
             tabindex="0"
@@ -172,57 +178,98 @@
         </div>
 
         <div class="dropdown dropdown-end">
+          <!-- Trigger -->
           <label
             tabindex="0"
-            class="btn btn-ghost btn-circle avatar placeholder hover:bg-sky-100 dark:hover:bg-slate-800 transition-colors"
+            class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg hover:bg-sky-100 dark:hover:bg-slate-800 transition"
           >
+            <!-- Avatar -->
             <div
-              class="bg-gradient-to-br from-sky-500 to-blue-600 text-white rounded-full w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center shadow-md"
+              class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-white flex items-center justify-center shadow-md"
             >
-              <span class="text-sm font-bold"
-                >{{ request.user.username|make_list|first|upper }}</span
+              {% if request.user.username %}
+              <span class="text-sm font-bold">
+                {{ request.user.username|first|upper }}
+              </span>
+              {% else %}
+              <i class="fa-solid fa-user text-sm"></i>
+              {% endif %}
+            </div>
+
+            <!-- Username -->
+            <div class="hidden md:flex flex-col leading-tight">
+              <span
+                class="text-sm font-semibold text-slate-800 dark:text-white"
               >
-              <i
-                class="absolute fa-solid fa-user bg-gradient-to-br from-sky-500 to-blue-600 text-white rounded-full w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center shadow-md"
-              ></i>
+                {{
+                request.user.get_full_name|default:request.user.username|truncatechars:18
+                }}
+              </span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">
+                Student
+              </span>
             </div>
           </label>
+
+          <!-- Dropdown -->
           <ul
-            class="dropdown-content z-[1] menu menu-md p-2 shadow-2xl bg-white dark:bg-slate-800 rounded-box w-64 mt-3 border border-sky-100 dark:border-slate-700"
+            tabindex="0"
+            class="dropdown-content z-[100] menu p-2 shadow-xl bg-white dark:bg-slate-800 rounded-xl w-64 mt-3 border-slate-200 dark:border-slate-700"
           >
-            <li class="px-4 py-3">
-              <span class="font-bold text-slate-900 dark:text-white block"
-                >{{ request.user.get_full_name|default:request.user.username
-                }}</span
-              >
-              <span
-                class="text-xs text-slate-500 dark:text-slate-400 block font-normal"
-                >{{ request.user.email|default:"student@bit.edu.et" }}</span
-              >
+            <!-- User Info -->
+            <li class="px-4 py-3 pointer-events-none">
+              <span class="font-semibold text-slate-900 dark:text-white">
+                {{ request.user.get_full_name|default:request.user.username }}
+              </span>
+              <span class="text-xs text-slate-500 dark:text-slate-400 block">
+                {{ request.user.email|default:"student@bit.edu.et" }}
+              </span>
             </li>
-            <div class="divider my-0 opacity-50"></div>
+
+            <div class="divider my-1"></div>
+
+            <!-- Menu -->
             <li>
               <a
                 href="{% url 'base:dashboard' %}"
-                class="gap-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-700"
-                ><i class="fa-solid fa-chart-line text-sky-500"></i>
-                Dashboard</a
+                class="flex items-center gap-3 rounded-lg hover:bg-sky-50 dark:hover:bg-slate-700"
               >
+                <i class="fa-solid fa-chart-line text-sky-500"></i>
+                Dashboard
+              </a>
             </li>
+
             <li>
               <a
                 href="#"
-                class="gap-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-700"
-                ><i class="fa-regular fa-user text-sky-500"></i> Profile</a
+                class="flex items-center gap-3 rounded-lg hover:bg-sky-50 dark:hover:bg-slate-700"
               >
+                <i class="fa-regular fa-user text-sky-500"></i>
+                Profile
+              </a>
             </li>
-            <div class="divider my-0 opacity-50"></div>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg hover:bg-sky-50 dark:hover:bg-slate-700"
+              >
+                <i class="fa-solid fa-gear text-sky-500"></i>
+                Settings
+              </a>
+            </li>
+
+            <div class="divider my-1"></div>
+
+            <!-- Logout -->
             <li>
               <a
                 href="{% url 'base:logout' %}"
-                class="gap-3 text-rose-600 font-semibold rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/30"
-                ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+                class="flex items-center gap-3 text-rose-600 font-semibold rounded-lg hover:bg-rose-50 dark:hover:bg-rose-900/20"
               >
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+              </a>
             </li>
           </ul>
         </div>
@@ -371,6 +418,36 @@
       setTheme("system");
     }
   })();
+
+  const toggleBtn = document.getElementById("theme-toggle");
+  const sunIcon = document.getElementById("theme-toggle-light");
+  const moonIcon = document.getElementById("theme-toggle-dark");
+  const html = document.documentElement;
+  // Load saved theme
+  const savedTheme = localStorage.getItem("theme") || "light";
+  html.setAttribute("data-theme", savedTheme);
+
+  function updateIcons(theme) {
+    if (theme === "dark") {
+      sunIcon.classList.remove("hidden");
+      moonIcon.classList.add("hidden");
+    } else {
+      moonIcon.classList.remove("hidden");
+      sunIcon.classList.add("hidden");
+    }
+  }
+
+  updateIcons(savedTheme);
+
+  toggleBtn.addEventListener("click", () => {
+    const currentTheme = html.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+    html.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+
+    updateIcons(newTheme);
+  });
 </script>
 
 <style>

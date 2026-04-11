@@ -44,6 +44,7 @@ urlpatterns = [
     path('', include('base.urls')),
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
+    # path('api/v2/users/', include('users.urls')),
     path('api/v2/exams/', include('exams.urls')),
     path('api/v2/questions/', include('questions.urls')),
     path('api/v2/core/', include('core.urls')),

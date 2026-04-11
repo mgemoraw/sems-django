@@ -3,7 +3,7 @@
 <div
   class="min-h-screen bg-gradient-to-br from-sky-50 via-blue-50/30 to-indigo-50/20 dark:from-slate-900 dark:via-slate-800/50 dark:to-slate-900/20"
 >
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
     <!-- Header Section with Stats -->
     <div
       class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10"
@@ -19,13 +19,13 @@
             <h1
               class="text-3xl lg:text-4xl font-black bg-gradient-to-r from-sky-600 to-blue-700 bg-clip-text text-transparent"
             >
-              Student Dashboard
+              Admin Dashboard
             </h1>
             <p
-              class="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-2 mt-1"
+              class="text-base-content/60 text-sm flex items-center gap-2 mt-1"
             >
               <i class="fa-regular fa-calendar-alt text-sky-500 text-xs"></i>
-              Track your progress and performance
+              Track System progress and performance
             </p>
           </div>
         </div>
@@ -102,10 +102,12 @@
                   {{ request.user.email|default:"student@bit.edu.et" }}
                 </p>
                 <div class="flex gap-1 mt-2">
-                  <span class="badge bg-white/20 border-none text-white text-xs"
+                  <span
+                    class="badge badge-neutral bg-white/20 border-none text-white text-xs"
                     >Engineering</span
                   >
-                  <span class="badge bg-white/20 border-none text-white text-xs"
+                  <span
+                    class="badge badge-neutral bg-white/20 border-none text-white text-xs"
                     >Year 3</span
                   >
                 </div>
@@ -143,7 +145,7 @@
                   class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
                 >
                   <i class="fa-solid fa-file-lines w-5"></i>
-                  My Exams {% if exams|length > 0 %}
+                  Exams {% if exams|length > 0 %}
                   <span class="badge badge-ghost badge-sm ml-auto"
                     >{{ exams|length }}</span
                   >
@@ -154,8 +156,52 @@
                 <a
                   class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
                 >
+                  <i class="fa-solid fa-file-lines w-5"></i>
+                  Faculties {% if faculties|length > 0 %}
+                  <span class="badge badge-ghost badge-sm ml-auto"
+                    >{{ faculties|length }}</span
+                  >
+                  {% endif %}
+                </a>
+              </li>
+              <li>
+                <a
+                  class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
+                >
+                  <i class="fa-solid fa-file-lines w-5"></i>
+                  Programs {% if programs|length > 0 %}
+                  <span class="badge badge-ghost badge-sm ml-auto"
+                    >{{ programs|length }}</span
+                  >
+                  {% endif %}
+                </a>
+              </li>
+              <li>
+                <a
+                  class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
+                >
                   <i class="fa-solid fa-square-poll-vertical w-5"></i>
-                  View Results
+                  Exam Statistics
+                </a>
+              </li>
+              <li>
+                <a
+                  href="{% url 'base:admin-users' %}"
+                  class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
+                >
+                  <i class="fa-solid fa-user w-5"></i>
+                  Users
+                </a>
+              </li>
+
+              <!-- Questions Banks-->
+              <li>
+                <a
+                  href="#"
+                  class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
+                >
+                  <i class="fa-solid fa-question w-5"></i>
+                  Question Bank
                 </a>
               </li>
               <li>
@@ -216,9 +262,7 @@
             <div class="space-y-3">
               <div>
                 <div class="flex justify-between text-xs mb-1">
-                  <span class="text-slate-600 dark:text-slate-300"
-                    >Overall Completion</span
-                  >
+                  <span>Overall Completion</span>
                   <span class="font-bold text-sky-600 dark:text-sky-400">
                     {% if exams|length > 0 %} {{ results|length|floatformat:0
                     }}% {% else %}0{% endif %}
@@ -232,9 +276,7 @@
               </div>
               <div>
                 <div class="flex justify-between text-xs mb-1">
-                  <span class="text-slate-600 dark:text-slate-300"
-                    >Average Score</span
-                  >
+                  <span>Average Score</span>
                   <span class="font-bold text-blue-600 dark:text-blue-400"
                     >78%</span
                   >
@@ -338,7 +380,7 @@
                 <i class="fa-solid fa-star-of-life text-sky-500 text-lg"></i>
                 Recommended Assessments
               </h2>
-              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+              <p class="text-xs opacity-60 mt-1">
                 Based on your recent activity
               </p>
             </div>
@@ -368,7 +410,7 @@
                       class="badge badge-sky-500 badge-xs animate-pulse bg-sky-500"
                     ></span>
                     <h3
-                      class="font-bold text-lg text-slate-800 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors"
+                      class="font-bold text-lg group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors"
                     >
                       {{ exam.title }}
                     </h3>
@@ -380,9 +422,7 @@
                     {% endif %}
                   </div>
 
-                  <p
-                    class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
-                  >
+                  <p class="text-sm opacity-70 leading-relaxed">
                     {{ exam.description|truncatewords:20 }}
                   </p>
 
@@ -448,13 +488,11 @@
             <div
               class="text-center py-16 border-2 border-dashed border-sky-200 dark:border-slate-700 rounded-2xl bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm"
             >
-              <i
-                class="fa-solid fa-folder-open text-5xl text-sky-300 dark:text-slate-500 opacity-50 mb-3"
-              ></i>
-              <p class="text-slate-500 dark:text-slate-400 text-sm">
+              <i class="fa-solid fa-folder-open text-5xl opacity-20 mb-3"></i>
+              <p class="opacity-50 text-sm">
                 No assessments found in your department.
               </p>
-              <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">
+              <p class="text-xs opacity-30 mt-1">
                 Check back later for new exams
               </p>
             </div>
@@ -471,9 +509,7 @@
               <i
                 class="fa-regular fa-calendar-clock text-amber-500 text-xl"
               ></i>
-              <h3 class="font-bold text-slate-800 dark:text-white">
-                Upcoming Exams
-              </h3>
+              <h3 class="font-bold">Upcoming Exams</h3>
             </div>
             <div class="flex flex-wrap gap-3">
               <div
@@ -489,6 +525,8 @@
             </div>
           </div>
         </div>
+        <!-- List of users -->
+        {% include 'base/users_table.html' %}
       </main>
 
       <!-- RIGHT SIDEBAR -->
@@ -529,15 +567,12 @@
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center gap-2 mb-0.5">
-                    <span
-                      class="text-xs font-bold text-slate-700 dark:text-white"
-                      >{{ activity.user }}</span
-                    >
-                    <span class="text-[10px] text-slate-400 dark:text-slate-500"
+                    <span class="text-xs font-bold">{{ activity.user }}</span>
+                    <span class="text-[10px] opacity-50"
                       >{{ activity.date|timesince }} ago</span
                     >
                   </div>
-                  <p class="text-xs text-slate-600 dark:text-slate-300">
+                  <p class="text-xs">
                     Completed
                     <span class="font-semibold text-sky-600 dark:text-sky-400"
                       >{{ activity.exam|truncatechars:20 }}</span
@@ -559,13 +594,9 @@
               </div>
               {% empty %}
               <div class="text-center py-8">
-                <i
-                  class="fa-regular fa-clock text-3xl text-sky-300 dark:text-slate-500 opacity-50 mb-2"
-                ></i>
-                <p class="text-xs text-slate-400 dark:text-slate-500 italic">
-                  No recent activity...
-                </p>
-                <p class="text-[10px] text-slate-400 dark:text-slate-500 mt-1">
+                <i class="fa-regular fa-clock text-3xl opacity-20 mb-2"></i>
+                <p class="text-xs opacity-40 italic">No recent activity...</p>
+                <p class="text-[10px] opacity-30 mt-1">
                   Start an exam to see activity here
                 </p>
               </div>
@@ -589,9 +620,7 @@
           <div class="card-body p-5">
             <div class="flex items-center gap-2 mb-3">
               <i class="fa-solid fa-crown text-amber-500 text-lg"></i>
-              <h3
-                class="font-bold text-sm uppercase tracking-wider text-slate-700 dark:text-white"
-              >
+              <h3 class="font-bold text-sm uppercase tracking-wider">
                 Editor's Choice
               </h3>
             </div>
@@ -609,21 +638,19 @@
                     <i class="fa-solid fa-star text-sky-500 text-xs"></i>
                   </div>
                   <span
-                    class="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors"
+                    class="text-sm font-medium group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors"
                   >
                     {{ exam.title|truncatechars:20 }}
                   </span>
                 </div>
                 <i
-                  class="fa-solid fa-arrow-right text-xs text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"
+                  class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"
                 ></i>
               </a>
               {% empty %}
               <div class="text-center py-6">
-                <i
-                  class="fa-regular fa-lightbulb text-2xl text-sky-300 dark:text-slate-500 opacity-50 mb-2"
-                ></i>
-                <p class="text-xs text-slate-400 dark:text-slate-500">
+                <i class="fa-regular fa-lightbulb text-2xl opacity-20 mb-2"></i>
+                <p class="text-xs opacity-40">
                   Complete more exams to get recommendations!
                 </p>
               </div>
@@ -641,9 +668,7 @@
               class="font-bold text-sm uppercase tracking-wider flex items-center gap-2 mb-3"
             >
               <i class="fa-solid fa-medal text-amber-500"></i>
-              <span class="text-slate-700 dark:text-white"
-                >Recent Achievements</span
-              >
+              Recent Achievements
             </h3>
             <div class="flex justify-around">
               <div class="text-center group cursor-pointer">
@@ -652,9 +677,7 @@
                 >
                   <i class="fa-solid fa-bolt"></i>
                 </div>
-                <p class="text-[10px] mt-1 text-slate-500 dark:text-slate-400">
-                  Speed Demon
-                </p>
+                <p class="text-[10px] mt-1 opacity-60">Speed Demon</p>
               </div>
               <div class="text-center group cursor-pointer">
                 <div
@@ -662,9 +685,7 @@
                 >
                   <i class="fa-solid fa-brain"></i>
                 </div>
-                <p class="text-[10px] mt-1 text-slate-500 dark:text-slate-400">
-                  Scholar
-                </p>
+                <p class="text-[10px] mt-1 opacity-60">Scholar</p>
               </div>
               <div class="text-center group cursor-pointer">
                 <div
@@ -672,9 +693,7 @@
                 >
                   <i class="fa-solid fa-fire"></i>
                 </div>
-                <p class="text-[10px] mt-1 text-slate-500 dark:text-slate-400">
-                  On Fire
-                </p>
+                <p class="text-[10px] mt-1 opacity-60">On Fire</p>
               </div>
             </div>
           </div>
@@ -706,10 +725,17 @@
 
   /* Smooth Transitions */
   * {
-    transition-property:
-      background-color, border-color, color, fill, stroke, transform;
+    transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
+  }
+
+  /* Line clamp for text */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 </style>
 
