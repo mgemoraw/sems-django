@@ -1,0 +1,4102 @@
+[
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following aquifer properties has the greatest influence on the rate of groundwater flow, according to Darcy's Law?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Effective porosity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Specific yield"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Hydraulic conductivity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Specific storage"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following best describes the driving force behind groundwater flow, as described by Darcy's Law?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The volume of water stored in the aquifer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The difference in hydraulic head between two points in the aquifer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The width of the aquifer"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The specific yield of the aquifer material"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "An aquifer with a low hydraulic conductivity will generally have:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A high rate of groundwater flow"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A low rate of groundwater flow"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A large cross-sectional area"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A steep hydraulic gradient"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following geological formations is most likely to be an aquifer?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A layer of unfractured granite"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A tightly compacted clay layer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A layer of well-sorted gravel and sand"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A layer of shale"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "A geological formation that transmits water very slowly and is not a good source of groundwater is called a(n",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Aquifer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Aquitard"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Aquiclude"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Unsaturated zone"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the primary difference between an aquifer and an aquiclude?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Aquifers are always located deeper underground than aquicludes"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Aquicludes store more water than aquifers"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Aquifers transmit water readily, while aquicludes do not transmit water at all"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Aquifers are made of sand and gravel, while aquicludes are made of clay"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The height to which water will rise in a small-diameter tube due to surface tension and adhesive forces, just above the water table, describes which of the following?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Aquitard zone"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Zone of saturation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Capillary fringe"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Confined aquifer"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which type of aquifer is generally the most susceptible to surface contamination from sources like agricultural runoff or leaking underground storage tanks?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Confined aquifer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Unconfined aquifer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Fractured bedrock aquifer overlain by a thick clay layer"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Artesian aquifer"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "For developing a high-yield water well, which aquifer characteristic is most important to consider?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A very large surface area"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A very high storativity (S"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A very high transmissivity (T"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A very low hydraulic gradient"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following aquifer types is most likely to produce artesian flow when a well is drilled into it?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "An unconfined aquifer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A perched aquifer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A confined aquifer"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A fractured granite aquifer"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "In seismic area, which one of the following has most negative effect on the dam stability?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "If the horizontal acceleration due to earthquake is acting to u/s towards empty reservoir"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "If the horizontal acceleration due to earthquake is acting to u/s towards full reservoir"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "If the vertical acceleration due to earthquake is acting upward to the dam body"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which one of the following is incorrect about the uplift pressure under a gravity dam?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "If there is a gallery, uplift pressure distribution will be decreased"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "If there is no tail water, the uplift pressure distribution will be increased"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Uplift pressure is always having zero distribution if there is tension crack under the dam"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "B&C"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following is incorrect about the hydraulic structures?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Straight gravity dams resist some external forces by arch action"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "All Arch dams resist all forces including it weight by arch action transferring to the abutments"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Embankment dams will fail by overturning"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which one is incorrect about foundation of dams?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "We can construction high gravity dams on fine grain material foundations"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Embankment dams are not suitable to construct on rock foundation as gravity dam cannot be constructed on coarse grained materials"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Curtain grouting is used to strengthen carrying capacity of the foundation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Dam storage has different components and out lets",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Dead storage is used to store water for the any further required purpose of the storage"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Bottom outlet is used to withdraw water for our live storage"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Live storage is the component which is used to store sediment"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which one is incorrect about the stability of concrete gravity dams?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "For full reservoir if the resultant of all external forces passes outside the middle third, tension will develop at the toe"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "For empty reservoir if the resultant of all external forces passes outside the middle third to the heel direction, tension will develop at the toe"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "If the principal stress is less than the compressive strength of the concrete, the dam will fail due to crushing"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A&C"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Dam spillways can be classified based on their purpose such as main spillway, auxiliary spillway and emergency spillway",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "when the actual flood exceeds the design flood"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "when there is malfunctioning of the main dam outlets"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "when the gates of spillway are not working"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "when the actual flood does not exceed the design flood"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "If low height Arch dam with d/s face of nearly vertical is proposed to be constructed on river X with narrow gorge and steeply rises abutment, which type of spillway will be the most appropriate?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Over flow spillway"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Free overfall spillway"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Chute spillway"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Side channel spillway"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which one of the following types of spillways is not usually recommended for high dams due to the structure\u2019s instability problem?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ogee spillway"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Open channel spillway"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Straight drop spillway"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Cascade spillway"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Different energy dissipator measures that can be adopted at the toe of the spillway depends upon the relative positions of jump height curve (JHC",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "providing ski-jump bucket"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "providing secondary dam (weir"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "providing sloping apron above the river bed"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "providing sloping apron below the river bed"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which one of the following is not correctly matched?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Canal head regulator- used to separate floor levels of the under sluices and the main weir section"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Divide wall- constructed at the head of a canal taking off"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Fish ladder - constructed on the bed of the river, upstream of the head regulator"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which type of spillway is ideally suited for a very high dams in which the energy can\u2019t be dissipated by a hydraulic jump or bucket?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Shaft/ Moring glory/ spillway"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Open channel spillway"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Conduit/ Tunnel spillway"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Cascade spillway"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which type of spillway component is used to dissipate energy at the toe of the spillway?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Terminal structure"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Entrance channel"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Exit channel"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which one of the following is not a correct statement?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "If tail water depth is either too small or too large for the formation of perfect hydraulic jump at the toe of the spillway, bucket type energy dissipator is not the only option that should be provided for the dissipation of high energy"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The most effective energy dissipation in overflow spillway design is when the tail water rating curve (TWRC"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The amount of energy dissipation in a hydraulic jump increases as the Froude number increases"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The amount of energy dissipation in a hydraulic jump decreases as the Froude number increases"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What will be the possible measures that should be adopted at the toe of an overflow spillway for the dissipation of energy for the case when the jump height curve is lying below the tail water rating curve for all discharges?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Providing secondary dam/weir/ d/s of the toe of the spillway"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "By providing a sloping apron above the river bed"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "By providing a sloping apron below the river bed"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Provision of a ski-jump bucket"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the main objective of irrigation engineering?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To remove excess water from fields"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To supply water to crops for optimum growth"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To construct dams and reservoirs"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To increase soil salinity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the duty of water in irrigation engineering?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The depth of water applied to crops"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The volume of water required per unit area"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The time required for irrigation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The efficiency of water use"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which factor has the most significant influence on crop water requirements?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Soil texture"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Crop variety"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Climate conditions (temperature, humidity, wind, and solar radiation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Fertilizer application"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The total amount of water needed by a crop during its entire growing period is called:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Evapotranspiration"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Field capacity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Crop water requirement"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Wilting point"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the term for the sum of water lost by evaporation from soil and transpiration from plants?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Water productivity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Irrigation efficiency"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Evapotranspiration"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Percolation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following methods is commonly used to estimate crop water requirements?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Penman-Monteith equation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Hydrometer method"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Tensiometer reading"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "pH meter"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the purpose of the crop coefficient (Kc",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To determine the soil pH"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To account for variations in crop water use at different growth stages"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To measure groundwater availability"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To calculate irrigation system efficiency"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "If an irrigation canal supplies water at a discharge rate of 5 m\u00b3/s to a field of 100 hectares, how long will it take to provide 10 cm of water depth?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "10 hours"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "8"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "5"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "If the conveyance efficiency of a canal is 80% and the field requires 5000 m\u00b3 of water, how much water should be released from the canal?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "4000 m\u00b3"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "5000 m\u00b3"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "6250 m\u00b3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "7000 m\u00b3"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "If an irrigation canal is designed to irrigate 200 hectares with a duty of 1000 hectares per cumec, what is the required discharge?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "0"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "0"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "0"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "0"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the function of an 'escapes' structure in an irrigation canal system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To drain excess water from the canal"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To store water for emergency use"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To increase the velocity of water flow"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To prevent seepage losses"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the term for the loss of water due to seepage and evaporation in an irrigation canal?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Conveyance loss"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Storage loss"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Field application loss"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Surface runoff"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What type of soil water is available for plant uptake?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Gravitational water"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Hygroscopic water"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Runoff water"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Capillary water"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the term for the water content in the soil after excess gravitational water has drained?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Wilting point"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Field capacity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Saturation point"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Evaporation level"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What happens when soil reaches the permanent wilting point?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Plants continue growing normally"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Plants can no longer extract water and wilt permanently"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Soil becomes waterlogged"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Water absorption by roots increases"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which soil type generally has the highest water-holding capacity?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Sandy soil"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Clay soil"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Loamy soil"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Gravelly soil"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which irrigation method helps conserve soil moisture most efficiently?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Flood irrigation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Sprinkler irrigation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Drip irrigation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Furrow irrigation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the movement of water from plant leaves to the atmosphere called?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Transpiration"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Evaporation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Percolation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Capillary rise"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which factor affects the rate of transpiration in plants?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Temperature"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Humidity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Wind speed"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which type of soil structure provides the best balance of water retention and drainage for plant growth?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Sandy soil"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Silty soil"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Clay soil"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Loamy soil"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the main advantage of a pressurized irrigation system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Reduces water loss and increases efficiency"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Requires minimal energy"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Uses gravitational force only"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Leads to excessive water runoff"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Sprinkler irrigation is best suited for which type of crops?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Rice and Paddy"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Orchard and Row Crops"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Aquatic Plants"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Wetland Crops"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which irrigation method delivers water directly to the plant roots through tubes or pipes?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Sprinkler Irrigation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Drip Irrigation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Furrow Irrigation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Basin Irrigation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which irrigation method mimics natural rainfall?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Drip Irrigation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Sprinkler Irrigation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Flood Irrigation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Furrow Irrigation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which irrigation method is best suited for sandy soils?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Drip Irrigation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Sprinkler Irrigation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Flood Irrigation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Furrow Irrigation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which irrigation method involves small channels running between crop rows?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Drip Irrigation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Sprinkler Irrigation"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Furrow Irrigation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Basin Irrigation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the primary purpose of drainage in agriculture?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To increase soil fertility"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To remove excess water from the field"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To increase the amount of irrigation water"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To prevent evaporation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which type of drainage system involves underground pipes to remove excess water?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Subsurface drainage"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Surface drainage"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Contour drainage"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Flood drainage"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the main purpose of surface drainage?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To remove excess groundwater"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To control floods in rivers"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To prevent waterlogging on the surface"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To store rainwater for irrigation"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which type of drainage system is used in agricultural fields to remove excess water?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Stormwater drainage"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Surface drainage"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Subsurface drainage"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Sewer drainage"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the primary characteristic of open channel flow?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Flow occurs under pressure"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Flow occurs due to gravity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Flow is always turbulent"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Flow is always laminar"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following describes uniform flow in an open channel?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Velocity and depth remain constant along the channel"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Velocity changes but depth remains constant"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Depth changes but velocity remains constant"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Both velocity and depth change along the channel"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "On the specific energy curve for a given discharge, the point of minimum specific energy corresponds to:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Subcritical flow"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Supercritical flow"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Critical flow"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Uniform flow"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "When a hump is placed in a channel with subcritical flow, the depth of flow over the hump:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Increases"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Decreases"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Remains the same"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Becomes zero"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "In a channel with a width contraction, if the flow is supercritical, the depth of flow in the contracted section:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Increases"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Decreases"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Remains the same"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Becomes critical"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "A flow transition from subcritical to supercritical occurs when:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The channel slope changes from mild to steep"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The channel slope changes from steep to mild"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A hydraulic jump occurs"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The channel width increases"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The momentum equation in open channel flow is used to analyze:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Energy losses"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Forces acting on the fluid"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Flow velocity distribution"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Channel roughness"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "In open channel flow, supercritical flow occurs when:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Fr  < 1"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Re > 2000"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Fr = 1"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Fr > 1"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "In a trapezoidal channel with bottom width b, side slope z, flow depth y, and velocity V, the continuity equation is:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Q = (by+zy2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Q = (by+2zy2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Q = (by+zy"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Q = (by+zy2"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The momentum equation for open channel flow is given by:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "\u2211F=\u03c1Q(V1*V2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "\u2211F=\u03c1Q(V1- V2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "\u2211F=\u03c1Q(V1+ V2"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "\u2211F=\u03c1Q(V2- V1"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The most efficient channel section is the one that:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Has the maximum wetted perimeter"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Has the minimum hydraulic radius"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Has the maximum hydraulic radius for a given area"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Has the minimum area for a given discharge"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "For a rectangular channel, the best hydraulic section occurs when:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Width b = 2y"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Width b = y"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Width b = 3y"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Width b = 4y"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "From GVF, on a mild slope (S0 <Sc",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "M1"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "M2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "M3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "S1"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Form GVF, On a horizontal slope (S0 = 0",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "H1"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "H2"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "H3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "M2"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "From GVF, the M3 profile occurs when:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The flow depth is greater than normal depth and less than critical depth"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The flow depth is greater than both normal and critical depth"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The flow depth is less than normal depth and greater than critical depth"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The flow depth is less than both normal and critical depth"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "From GVF, the S2 profile occurs when:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The flow depth is greater than normal depth and less than critical depth"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The flow depth is greater than both normal and critical depth"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The flow depth is less than normal depth and greater than critical depth"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The flow depth is less than both normal and critical depth"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "From GVF, the C1 profile occurs when:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The flow depth is equal to normal depth and less than critical depth"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The flow depth is equal to both normal and critical depth"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The flow depth is less than normal depth and equal to critical depth"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The flow depth is greater than normal depth and equal to critical depth"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Rapidly varied flow is characterized by:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Small changes in depth and velocity over a long distance"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rapid changes in depth and velocity over a short distance"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Constant depth and velocity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Uniform flow conditions"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "A practical example of a hydraulic jump is observed:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Downstream of a sluice gate"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Upstream of a weir"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "In a gradually varied flow"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "In a uniform flow"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The dam break problem is an example of:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Steady flow"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Unsteady flow"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Uniform flow"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Gradually varied flow"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following statements about dimensional analysis in fluid mechanics is true?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The Buckingham \u03c0 theorem states that any physical phenomenon can be described using a maximum of three dimensionless parameters"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Reynolds number is a dimensionless parameter that compares gravitational and inertial forces"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "For model testing to be valid, only geometric similarity needs to be satisfied"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Dimensional analysis helps in reducing the number of variables in a problem by grouping them into dimensionless numbers, aiding in model testing and similitude"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following is correct about the four types of pipe flow problems and their solutions?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "If flow rate and pipe-diameter is known, the head loss can be calculated using the Darcy-Weisbach equation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "If head loss is known, the discharge is found using the Darcy-Weisbach equation without any iterations"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "If head loss is known, the pipe diameter can be determined without iterations"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Given flow rate, the pipe length is found using Bernoulli\u2019s equation assuming negligible friction"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following statements correctly describes fundamental principles of pipe networks?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The Hardy Cross method is used to analyze open-channel networks by solving for flow depth variations along the system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "In a series pipe connection, the total flow rate is the sum of the flow rates in each pipe, while in parallel pipe systems, the head loss is the sum of individual head losses"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Modern hydraulic software has replaced traditional pipe network analysis methods, making fundamental principles like conservation of mass and energy outdated"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "In a pipe network, flow is always conserved at junctions (nodes"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following statements correctly describes a fundamental property of fluids?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Viscosity is a measure of a fluid\u2019s resistance to compression and it is constant for all fluids at different temperatures"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A fluid is defined as a substance that deforms continuously under the application of a shear stress, no matter how small the shear force is"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Surface tension is caused by cohesive forces between fluid molecules and has no effect on small-scale fluid motion such as bubble and water droplet formations"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Density of a gas remains constant regardless of changes in pressure and temperature"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following statements correctly describes a fundamental principle of fluid mechanics?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The principle of conservation of mass states that the velocity of a fluid must remain constant along a streamline"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Bernoulli\u2019s equation is derived from the energy equation with the assumption that the fluid flow is compressible, viscous, and unsteady"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Euler\u2019s equation describes the balance of forces in an inviscid (not-viscous"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Flow visualization techniques, such as streamlines, path lines, and streak lines, are only applicable to steady flows"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following statements correctly describes fundamental concepts related to pipe flow?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Friction head loss in pipe flow is caused by the interaction between the fluid and the pipe wall, and it is accounted for using a factor in the Darcy-Weisbach equation"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Pipes are circular in cross-section to minimizes costs rather than for hydraulic advantages"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "In pipe flow, the hydraulic gradient is always equal to the pressure gradient, regardless of flow velocity or pepe roughness effects"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The Manning equation is commonly used to calculate head losses in pressurized pipe systems"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "When rain starts falling, it strikes the buildings and different objects and gets collected there",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Rainfall infiltration"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rainfall interception"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Rainfall storage"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Rainfall collection"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The rate at which amount of rainfall that is absorbed by soil of any condition is known as ____________",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Excess runoff"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Interception capacity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Infiltration capacity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Absorption capacity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The amount of rainfall collected in depressions in a basin is known as",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Depression collection"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Depression storage"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Depression infiltration"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Depression interception"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The water that reaches the stream channel from excess rainfall is known as",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Infiltration"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Surface detention"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Depression storage"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Direct runoff"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the formula of excess or effective rainfall?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Excess rainfall = Total rainfall \u2013 Interception \u2013 Depression storage \u2013 Infiltration"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Excess rainfall = Total rainfall \u2013 Infiltration"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Excess rainfall = Total rainfall \u2013 Interception \u2013 Depression storage"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Excess rainfall = Total rainfall \u2013 Interception \u2013 Infiltration"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is initial basin loss?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Sum of infiltration and depression storage"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Only depression storage"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Only rainfall interception"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Sum of rainfall interception and depression storage"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What are the coordinates of a hyetograph?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Rainfall intensity vs time"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Accumulated rainfall vs time"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Rainfall depth vs time"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Discharge vs time"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "The graph prepared with intensity of rainfall as ordinate and time as abscissa is known as:",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "synthetic unit hydrograph"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "S-hydrograph"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "hyetograph"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "unit hydrograph"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Why is river water generally not reliable for direct use?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "It is too saline"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It contains large amounts of silt and suspended matter"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "It is too deep to extract water"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "It does not contain any dissolved minerals"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is an impounding reservoir?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A large underground water storage"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A natural lake used for water supply"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A pool formed upstream of a dam"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A water storage tank in cities"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following is a characteristic of groundwater?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "High turbidity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Free from pathogenic bacteria"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Requires extensive filtration"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Usually low in mineral content"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is an artesian spring?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A spring where water flows due to underground pressure in a confined aquifer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A spring that appears only in rainy seasons"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A spring that forms in dry desert regions"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A spring that requires a pump to extract water"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is a disadvantage of groundwater?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "It is highly turbid"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It is always contaminated"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "It often has high mineral content"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "It requires extensive sedimentation before use"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the primary factor for selecting a water source for a town?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The color of water"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The proximity to the town"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The amount of rainfall"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The temperature of water"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the purpose of an infiltration gallery?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To collect water directly from rainfall"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To filter water before reaching the consumer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To collect groundwater by horizontal perforated pipes"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To store water in a reservoir"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which type of pipe is most resistant to corrosion?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ductile Iron Pipe"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Galvanized Iron Pipe"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Copper Pipe"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Plastic Pipe"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "Which of the following the most economical shape for a service reservoir?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Rectangular"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Circular"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Triangular"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Elliptical"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the purpose of aeration in water treatment?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To remove heavy metals"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To reduce turbidity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To remove dissolved gases like CO\u2082 and H\u2082S"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To disinfect water"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Water Resources and Irrigation Engineering",
+        "course_name": "",
+        "content": "What is the major disadvantage of an intermittent water supply system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Continuous water loss due to leakage"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Higher operating cost"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Risk of water contamination due to negative pressure"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Uneven distribution of pressure"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    }
+]

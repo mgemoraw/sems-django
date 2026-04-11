@@ -1,0 +1,22 @@
+/* REMOVE DEFAULT BODY MARGIN */
+body {
+  margin: 0;
+  background: #f8f9fa;
+}
+
+/* NAVBAR MUST BE FULL WIDTH */
+.navbar-wrapper {
+  width: 100%;
+}
+
+/* PREVENT CONTENT FROM BREAKING NAVBAR */
+main.main-content {
+  width: 100%;
+}
+
+/* FIX BOOTSTRAP CONFLICT */
+.navbar,
+.nav-container {
+  width: 100%;
+  max-width: 100%;
+}

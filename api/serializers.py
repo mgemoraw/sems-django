@@ -1,49 +1,76 @@
 import base64
 from rest_framework import serializers
 from django.contrib.auth.models import User as AuthUser, Group
+from rest_framework import permissions
+from .models import ModelExam, User, Role, University, Department, Chair, Faculty, Choice, Course, Module, Question, Test, UserResponse, Mail, CourseAssignment, RoleAssignment
 
-from .models import User, Role, University, Department, Chair, Faculty, Choice, Course, Module, Question, Test, UserResponse, Mail, CourseAssignment, RoleAssignment
 
-
+# SErializer classes
 
 class AuthUserSerializer(serializers.HyperlinkedModelSerializer):
+    groups = serializers.HyperlinkedRelatedField(
+        view_name='group-detail', 
+        queryset=Group.objects.all(), 
+        many=True,
+    )
     class Meta:
         model = User
-        fields = ['url', 'username', 'email', 'groups']
+        # fields = ['url', 'username', 'email', 'groups']
+        fields = "__all__"
         extra_kwargs = {'password': {'write_only':True}}
         
     
     def create(self, validated_data):
+        groups_data = validated_data.pop('groups', [])
         user = User.objects.create_user(**validated_data)
+
+        # Assign groups after user is created
+        user.groups.set(groups_data)
+        
         return user
+    
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
-        fields = ['url', 'name']
+        fields = ['id', 'name']
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'password_hash', 'role', 'created_at', 'updated_at', 'department']
+        # fields = "__all__"
+        fields = ['id', 'username', 'email', 'first_name', 'last_name', 'role', 'department']
 
-class UserCreateSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['username', 'email', 'password', 'role', 'department']
+        # exclude = ['groups', 'user_permissions', 'is_superuser', 'is_staff', 'is_active', 'last_login', 'date_joined']
+        extra_kwargs = {
+            'password': {'write_only': True}
+        }
 
+    def create(self, validated_data):
+        groups_data = validated_data.pop('groups', [])
+        user = User.objects.create_user(**validated_data)
+        user = User(**validated_data)
 
-class UserLoginSerializer(serializers.Serializer):
-    username = serializers.CharField(max_length=100)
-    password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
+        fname = validated_data.get('first_name', 'user')
+        lname = validated_data.get('last_name', 'default')
+        default_password = f"{lname}#{fname}123"
 
+        user.set_password(default_password)
+        user.must_change_password = True
+        user.save()
+        user.groups.set(groups_data)
 
-# class UserSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = User
-#         fields = ['id', 'username', 'email', 'role', 'department']
-#         # fields = "__all__"
+        return user 
 
+    # ---- validation method for username ----
+    def validate(self, attrs):
+        if User.objects.filter(username=attrs.get('username')).exists():
+            raise serializers.ValidationError({"username": "This username is already taken."})
+        if User.objects.filter(email=attrs.get('email')).exists():
+            raise serializers.ValidationError({"email": "This email is already registered."})
+        return attrs
+    
+    
 
 class RoleSerializer(serializers.ModelSerializer):
     class Meta:
@@ -66,7 +93,7 @@ class DepartmentSerializer(serializers.ModelSerializer):
 class ChairSerializer(serializers.ModelSerializer):
     class Meta:
         model = Chair
-        fields = ['id', 'name', 'faculty', 'created_at', 'updated_at']
+        fields = "__all__"
 
 
 class FacultySerializer(serializers.ModelSerializer):
@@ -78,13 +105,13 @@ class FacultySerializer(serializers.ModelSerializer):
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Choice
-        fields = ['id', 'question', 'label', 'content', 'is_answer']
+        fields = ['id', 'question', 'label', 'content', 'is_answer', 'image_base64']
 
 
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
-        fields = ['id', 'module_name', 'module', 'code', 'name', 'credit_hour']
+        fields = ['id', 'module', 'code', 'name', 'credit_hour']
 
 
 class ModuleSerializer(serializers.ModelSerializer):
@@ -99,11 +126,38 @@ class QuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Question
-        fields = ['id', 'department', 'course', 'content', 'options', 'image_base64', 'answer', 'created_at', 'updated_at']
+        fields = ['id', 'department', 'module', 'course', 'content', 'options', 'image_base64', 'answer', 'created_at', 'updated_at']
     def get_image_base64(self, obj):
         if obj.image:
             return base64.b64encode(obj.image).decode('utf-8')
         return None
+
+
+class QuestionUploadSerializer(serializers.Serializer):
+    # department = serializers.ChoiceField(
+    #     choices=[(dept.id, dept.name) for dept in Department.objects.all()],
+    #     label="Select Department"
+    # )
+    department = serializers.PrimaryKeyRelatedField(
+    queryset=Department.objects.all()
+)
+    json_file = serializers.FileField()
+
+class ExamYearQuerySerializer(serializers.Serializer):
+    exam_year = serializers.CharField(required=True) 
+
+class ExamDepartmentQuerySerializer(serializers.Serializer):
+    department = serializers.CharField(required=True) 
+
+
+class ExamDepartmentYearQuerySerializer(serializers.Serializer):
+    department = serializers.CharField(required=True) 
+    exam_year = serializers.CharField(required=True) 
+
+
+class ExamModuleDepartmentQuerySerializer(serializers.Serializer):
+    department = serializers.CharField(required=True) 
+    module = serializers.CharField(required=True) 
 
 
 class TestSerializer(serializers.ModelSerializer):
@@ -134,6 +188,21 @@ class RoleAssignmentSerializer(serializers.ModelSerializer):
         model = RoleAssignment
         fields = ['id', 'user', 'role']
 
+class UserCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password', 'role', 'department']
+
+
+class UserLoginSerializer(serializers.Serializer):
+    username = serializers.CharField(max_length=100)
+    password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
+
+
+# class UserSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = User
+#         fields = ['id', 'username', 'faculty', 'email', 'role', 'department']
 
 
 class RoleSerializer(serializers.ModelSerializer):
@@ -148,12 +217,12 @@ class RoleCreateSerializer(serializers.ModelSerializer):
         fields = ['name', 'description']
 
 
-class PasswordCreateSerializer(serializers.Serializer):
+class PasswordCreateSerializer(serializers.ModelSerializer):
     old_password = serializers.CharField()
     new_password = serializers.CharField()
 
 
-class TokenSerializer(serializers.Serializer):
+class TokenSerializer(serializers.ModelSerializer):
     access_token = serializers.CharField()
     token_type = serializers.CharField()
     username = serializers.CharField()
@@ -161,6 +230,21 @@ class TokenSerializer(serializers.Serializer):
     department = serializers.CharField()
 
 
-class LoginSerializer(serializers.Serializer):
+class LoginSerializer(serializers.ModelSerializer):
     username = serializers.CharField(max_length=100)
     password = serializers.CharField(max_length=100, write_only=True, style={'input_type': 'password'})
+
+
+class ModelExamSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ModelExam
+        fields = ('title', 'department', 'exam_start', 'exam_end', 'duration_minutes', 'hide')
+
+        # Optional: mark read-only fields
+        read_only_fields = ('created_by', 'created_at')
+
+    def create(self, validated_data):
+        # Assign the created_by field using the context (viewset handles this)
+        user = self.context['request'].user
+        exam = ModelExam.objects.create(created_by=user, **validated_data)
+        return exam

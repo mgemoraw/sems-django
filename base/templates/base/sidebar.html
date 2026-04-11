@@ -1,0 +1,27 @@
+<div class="flex flex-col h-full p-4">
+  <h2 class="text-lg font-semibold mb-4">Navigation</h2>
+  <ul class="menu menu-vertical w-full">
+   {% comment %} <li><a href="{% url 'base:dashboard' %}">🏠 Dashboard</a></li>
+    <li><a href="{% url 'exams:list' %}">📝 Exams</a></li>
+    <li><a href="{% url 'results:list' %}">📊 Results</a></li>
+    <li><a href="{% url 'profile:view' %}">👤 Profile</a></li> {% endcomment %}
+    <li><a href="{% url 'base:dashboard' %}">🏠 Dashboard</a></li>
+    <li><a href="#">📝 Exams</a></li>
+    <li><a href="#">📊 Results</a></li>
+    <li><a href="#">👤 Profile</a></li>
+  </ul>
+
+  {% if request.user.is_staff %}
+  <div class="divider my-4"></div>
+  <h2 class="text-lg font-semibold mb-2">Admin</h2>
+  <ul class="menu menu-vertical w-full">
+    {% comment %} <li><a href="{% url 'admin:add_question' %}">➕ Add Question</a></li>
+    <li><a href="{% url 'admin:bulk_upload' %}">📂 Bulk Upload</a></li>
+    <li><a href="{% url 'admin:manage_users' %}">👥 Manage Users</a></li> {% endcomment %}
+    
+    <li><a href="#">➕ Add Question</a></li>
+    <li><a href="#">📂 Bulk Upload</a></li>
+    <li><a href="#">👥 Manage Users</a></li>
+  </ul>
+  {% endif %}
+</div>

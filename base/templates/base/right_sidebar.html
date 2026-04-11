@@ -1,0 +1,30 @@
+<div class="p-4">
+  <h2 class="font-bold text-lg mb-2">Recent Activity</h2>
+  <div class="space-y-2">
+    {% for activity in activities %}
+    <div class="text-sm flex items-start gap-2">
+      <span class="badge badge-ghost badge-xs mt-1"></span>
+      <span><strong>{{ activity.user }}</strong> completed {{ activity.exam }}</span>
+    </div>
+    {% empty %}
+    <p class="text-xs text-gray-500 italic">No recent activity</p>
+    {% endfor %}
+  </div>
+
+  <div class="divider my-4"></div>
+
+  <h2 class="font-bold text-lg mb-2">Recommended Exams</h2>
+  <div class="space-y-2">
+    {% for exam in recommended_exams %}
+    <div class="collapse collapse-arrow bg-base-100 border border-base-200 rounded-lg">
+      <input type="checkbox" />
+      <div class="collapse-title text-sm font-semibold py-2 px-4">{{ exam.title }}</div>
+      <div class="collapse-content text-xs px-4 pb-2">
+        Top rated practice for this week.
+      </div>
+    </div>
+    {% empty %}
+    <p class="text-xs text-gray-500 italic">No recommendations</p>
+    {% endfor %}
+  </div>
+</div>

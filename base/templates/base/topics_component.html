@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'custom/css/components/topics.css' %}" />
+
+<div class="topics">
+  <a href="{% url 'base:home' %}" class="topic-item active"> 🌍 All Topics </a>
+
+  {% for topic in topics %}
+  <a href="{% url 'base:home' %}?q={{topic.name}}" class="topic-item">
+    # {{ topic.name }}
+  </a>
+  {% endfor %}
+</div>

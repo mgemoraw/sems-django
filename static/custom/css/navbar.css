@@ -1,0 +1,86 @@
+/* NAVBAR */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+
+/* FLEX CONTAINER */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+/* LEFT */
+.nav-left {
+  flex: 0 0 auto;
+}
+
+/* 🔥 SEARCH TAKES ALL SPACE */
+.nav-search {
+  flex: 1; /* THIS IS THE KEY */
+  display: flex;
+}
+
+/* SEARCH FORM */
+.search-form {
+  display: flex;
+  width: 100%;
+}
+
+/* INPUT EXPANDS FULLY */
+.search-form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+}
+
+/* BUTTON */
+.search-form button {
+  padding: 10px 16px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 0 25px 25px 0;
+}
+
+/* RIGHT */
+.nav-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.login-btn {
+  background: #007bff;
+  color: white;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo span {
+  color: #007bff;
+}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% block content %}
+
+<style>
+  .form-container {
+    max-width: 600px;
+    margin: 40px auto;
+  }
+
+  .form-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+</style>
+
+<div class="container">
+  <div class="form-container">
+    <div class="form-card">
+      <h4 class="form-title">Create New Room</h4>
+
+      <form method="POST" action="">
+        {% csrf_token %}
+
+        <!-- Topic -->
+        <div class="form-group">
+          <label>Topic</label>
+          {{ form.topic }}
+        </div>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label>Room Name</label>
+          {{ form.name }}
+        </div>
+
+        <!-- Description -->
+        <div class="form-group">
+          <label>Description</label>
+          {{ form.description }}
+        </div>
+
+        <!-- Errors -->
+        {% if form.errors %}
+        <div class="alert alert-danger">{{ form.errors }}</div>
+        {% endif %}
+
+        <!-- Actions -->
+        <div class="form-actions">
+          <a href="{% url 'base:home' %}" class="btn btn-outline-secondary">
+            Cancel
+          </a>
+
+          <button type="submit" class="btn btn-primary">Create Room</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

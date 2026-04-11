@@ -1,2 +1,43 @@
+###
 POST http://127.0.0.1:8000/api/login
-Content
+Content-Type: application/json
+
+
+
+###
+GET http://localhost:8000/api/users/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2Mjk2NjI0LCJpYXQiOjE3NDYyOTQ4MjQsImp0aSI6ImJlYTdiNzQ2MTAxMzQ4Mjk4NmY3YmI2MjUwYTk3YzM2IiwidXNlcl9pZCI6MX0.wnkhjQzY-ArFGYqfOcrhUx4oxwy7qAJdZlXqq6tN2nU
+
+
+### 
+POST http://localhost:8000/api/v1/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "Mengist#2451"
+}
+
+###
+GET http://localhost:8000/api/auth/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2Mjk2NjI0LCJpYXQiOjE3NDYyOTQ4MjQsImp0aSI6ImJlYTdiNzQ2MTAxMzQ4Mjk4NmY3YmI2MjUwYTk3YzM2IiwidXNlcl9pZCI6MX0.wnkhjQzY-ArFGYqfOcrhUx4oxwy7qAJdZlXqq6tN2nU
+
+
+###
+GET http://localhost:8000/api/v1/questions/by_year/?exam_year=2024 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2MzYzMjM2LCJpYXQiOjE3NDYzNjE0MzYsImp0aSI6ImJhOGM2ZGU1ZWRjNjRjYzE4OGY2ZGE2MTI4MDczMTE4IiwidXNlcl9pZCI6M30.JDvIuyVbuFHIdCTC1HLMk3vV5F18D4eWXYzSSIo1LsU
+
+###
+GET http://localhost:8000/api/v1/questions/by_department/?department='computer science' HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2OTAwOTcxLCJpYXQiOjE3NDY4OTkxNzEsImp0aSI6ImFiNTA5OTk3YjQzZTQ1NmFiNmI1ZDFhN2I0YTg1NDg2IiwidXNlcl9pZCI6M30.fvA-3vusmubitAXZIoz0xRCEEhChoRuljCX_KAKtvQs
+
+
+###
+GET http://localhost:8000/api/v1/questions/by_module/?department='computer science'&module='database' HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2OTAwOTcxLCJpYXQiOjE3NDY4OTkxNzEsImp0aSI6ImFiNTA5OTk3YjQzZTQ1NmFiNmI1ZDFhN2I0YTg1NDg2IiwidXNlcl9pZCI6M30.fvA-3vusmubitAXZIoz0xRCEEhChoRuljCX_KAKtvQs
+

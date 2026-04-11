@@ -1,0 +1,23 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'custom/css/components/feed.css' %}" />
+
+{% for room in rooms %}
+<div class="feed-card">
+  <div class="feed-header">
+    <strong>@{{ room.host.username }}</strong>
+    <small>{{ room.created|timesince }} ago</small>
+  </div>
+
+  <div class="feed-body">
+    <h5>
+      <a href="{% url 'base:room' room.id %}"> {{ room.name }} </a>
+    </h5>
+    <p>{{ room.description|truncatewords:15 }}</p>
+  </div>
+
+  <div class="feed-footer">
+    <span class="topic-badge">#{{ room.topic.name }}</span>
+    <span>👥 {{ room.participants.count }}</span>
+  </div>
+</div>
+{% endfor %}

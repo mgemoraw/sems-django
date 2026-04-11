@@ -1,0 +1,23 @@
+.topics {
+  display: flex;
+  flex-direction: column;
+}
+
+.topic-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 6px;
+  transition: 0.2s;
+}
+
+.topic-item:hover {
+  background: #f1f5ff;
+}
+
+.topic-item.active {
+  background: #007bff;
+  color: white;
+}

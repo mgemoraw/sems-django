@@ -1,0 +1,13 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'custom/css/components/filter.css' %}" />
+
+<div class="filter-bar">
+  <form method="GET" action="{% url 'base:home' %}">
+    <input
+      type="text"
+      name="q"
+      placeholder="Search rooms..."
+      class="filter-input"
+    />
+  </form>
+</div>

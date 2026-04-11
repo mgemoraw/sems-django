@@ -1,0 +1,4799 @@
+[
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What does it mean PC beep ?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " motherboard failure"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " keyboard failure"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " System Booting"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " ALL"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "If your PC only shows manufacturer logo and then crashes right before it was supposed to load the operating system, then what type problem happen?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " a problem with CPU"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " a problem with RAM or hard disk"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " a problem with Keyboard"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " ALL"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "If your PC is not powering on at all, then what type problem happen?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " a problem with the power source."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " a problem with RAM or hard disk"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " a problem with Keyboard"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " ALL"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which is the most common form factor used today for computer cases, power supplies, and motherboards?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " AT"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "ATX"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " ATC"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "ATI"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which unit of electricity measures is used to measure the power consumption of a device?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " amp"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " ohm"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " volt"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " watt"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "If you need to reset the BIOS password on a motherboard and the instructions say to make sure jumper J1 is open, what should you do?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " start the computer and enter BIOS setup mode"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " boot Windows and start the BIOS password reset utility; choose option J1"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " open the case and remove the cover from a set of pins marked J1."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " unplug the computer and install the loopback connector from the port labeled"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following represents a method for accessing the BIOS setup program?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " boot Windows and go to Control Panel"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " press a key during the BIOS POST"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " set a motherboard jumper and start the computer"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " boot to the BIOS setup floppy disk"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What term defines, a set of components on the motherboard that work closely with the processor to control the memory, buses, and peripherals?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " socket"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " chipset"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " case"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " keyboard"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What type of processor memory is located on the processor chip (processor die)?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " Level 1 Cache"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " Multi-task Processor"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " Multi-level"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " none"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "After installing the processor and reassembling the computer, the system begins the boot process and suddenly turns off before completing the boot. What should you do?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " Restart a computer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " Turn off a computer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "  Check the cooler and make sure you have thermal paste on the processor"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following components of the .NET framework provide an extensible set of classes that can be used by any .NET compliant programming language?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "NET base class libraries"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Common Language Runtime"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Common Language Infrastructure"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Language Independence"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following method is used to reads the next character from the standard input stream?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Write( );"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "ReadKey( );"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Read( );"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "ReadLine( );"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following statements is/are incorrect?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A class can contain only instance data and instance member method."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Instance members of a class can be accessed only through an object of that class."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A static method operate on a specific instance of a class"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A and C"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is correct?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Destructor method can receive parameters"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A class can have at most one constructor"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "You must explicitly call a constructor"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Destructor methods can have a return type"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "You do have two forms named as form1 and form2. The execution by default starts from form1 but you need to start from form2. Which of the following is true?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "this.Form2(true);"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Application.new (Form2());"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Application.Run(new Form2());"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Form2 frm= new Form2();"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following statement is correct about exception handling in C#.NET?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "If an exception occurs then the program terminates abruptly without getting any chance to recover from the exception."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "No matter whether an exception occurs or not, the statements in the finally clause (if present) will get executed."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "In one function, there can be only one try block."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which C#.Net window displays the list of projects and forms under it?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "ToolBox Window"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Solution Explorer Window"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Error List Window"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Properties Window"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following statements is incorrect about arrays used in C#.NET?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Arrays can be rectangular or jagged."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rectangular arrays have similar rows stored in adjacent memory locations."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Rectangular arrays do not have an access to the methods of System.Array Class."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Jagged arrays have dissimilar rows stored in non-adjacent memory locations."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which is not true about the object-oriented approach?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Emphasis is on data rather than procedure"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Data is hidden and cannot be accessed by external functions"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Objects communicate through Method"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "It supports abstract data but not the class"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which is not a feature of OOP in general definitions?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Efficient Code"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Code reusability"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Modularity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Duplicate/Redundant data"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following feature is also known as run-time binding or late binding?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Static binding"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Dynamic loading"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Dynamic binding"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Data hiding"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which among the following is not a necessary condition for constructors?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Its name must be same as that of class"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It must not have any return type"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "It must contain a definition body"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "It can contains arguments"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What happens if non static members are used in static member function(Method)?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Executes fine"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Compile time error"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Executes if that member function is not used"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Runtime error"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What is encapsulation in OOP?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "It is a way of combining various data members and member functions that operate on those data members into a single unit"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It is a way of combining various data members and member functions into a single unit which can operate on any data"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "It is a way of combining various data members into a single unit"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "It is a way of combining various member functions into a single unit"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which is the correct syntax of inheritance?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "class base_classname extends derived_classname{ /*define class body*/ }"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "class derived_classname extends base_classname{ /*define class body*/ }"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "class derived_classname  base_classname{ /*define class body*/ }"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "class base_classname  derived_classname{ /*define class body*/ }"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following best describes member function overriding?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Member functions having the same name in derived class only"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Member functions having the same name and different signature inside main function"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Member functions having the same name and signature in base and derived classes"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Member functions having the same name in base class only"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which one of the following components that enables the user to choose a single value or multiple values at a time?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "JTextField"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "JComboBox"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "JList"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "JLabel"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following components generate action events?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Buttons"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Labels"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Check boxes"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Windows"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following statements is correct to create a DataOutputStream to write to a file named out.dat?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "DataOutputStream outfile = new DataOutputStream(new File(\"out.dat\"));"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "DataOutputStream outfile = new DataOutputStream(new FileOutputStream(\"out.dat\"));"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "DataOutputStream outfile = new DataOutputStream(FileOutputStream(\"out.dat\"));"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "DataOutputStream outfile = new DataOutputStream(\"out.dat\");"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is used to read bytes from streams and converts them into appropriate primitive type values or strings?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "DataOutputStream"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "DataInputStream"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "FileInputStream"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "FileOutputStream"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "To create a statement on a Connection object conn, use.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Statement statement = conn.statement();"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Statement statement = Connection.createStatement();"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Statement statement = conn.createStatement();"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Statement statement = connection.create();"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "To execute a SELECT statement \"select * from Address\" on a Statement object stmt, use.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "stmt.execute(\"select * from Address\");"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "stmt.executeQuery(\"select * from Address\");"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "stmt.executeUpdate(\"select * from Address\");"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "stmt.query(\"select * from Address\");"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which one of the following is not the advantage of Multithreading?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "You can perform multiple operations together at a time"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Threads are dependent on other threads"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A thread can execute concurrently with other threads within a single process."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "It is used to perform tasks in parallel processing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The server listens for a connection request from a client using the following statement?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Socket s = new Socket(ServerName, port);"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Socket s = serverSocket.accept()"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Socket s = serverSocket.getSocket()"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Socket s = new Socket(ServerName);"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The Data flow diagram (DFD) shows?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The flow of data"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The processes"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The areas where they are stored"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is not a phase of the SDLC (Software Development Life Cycle)?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Planning"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Analysis"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Implementation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Review"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is not a software development methodology?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Agile"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Waterfall"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "RAD (Rapid Application Development)"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "UML (Unified Modeling Language)"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is not the type of information system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Management Information Systems"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Decision support systems"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Transaction Processing Systems"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which phase of the System Life Cycle involves gathering all the necessary information for understanding the requirements of the system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Planning"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Analysis and Requirements"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Design"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Development"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "At which stage of the SDLC do you assess if you need a new system or not?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Design"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Analysis and Requirements"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Implementation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Maintenance"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is the first step of SDLC?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Preliminary Investigation and analysis"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Coding"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Design"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Testing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Document flow diagrams are developed by?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "systems analyst"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "programmers"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "system designers"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "users and managers of an organization"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which paradigm structures a team loosely and depends on individual initiatives of the team members?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Synchronous paradigm"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Random paradigm"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Open paradigm"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Closed paradigm"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of these is true?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Generic products are produced by organization and sold to open market"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Generic products and customized products are types of software products"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Customized products are commissioned by particular customer"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The process each manager follows during the life of a project is known as?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Manager life cycle"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Project Management"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Project Management Life Cycle"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The model serves as the basis for the creation of ________ for the Software?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Specifications"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Testing"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Maintenance"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Design"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following activity is undertaken immediately after feasibility study and before the requirement analysis and specification phase?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Project Monitoring"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Project Planning"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Project Control"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Project Scheduling"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "A 66.6% risk is considered as?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "High"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Low"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Very Low"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Moderate"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which one of the following is not a software process quality?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Productivity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Timeliness"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Visibility"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Portability"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is/are main parameters that you should use when computing the costs of a software development project?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Travel and training costs"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Hardware and software costs"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Effort costs (the costs of paying software engineers and managers)"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The weak entity relationship set is represented in E-R diagram as ?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Double diamonds"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Double rectangle"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Dashed lines"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Diamond"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "In the __________ normal form, a composite attribute is converted to individual attributes?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "First"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Second"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Third"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Fourth"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Is an attribute which can be further to be divide?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Composite"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Null"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Derived"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Multiple value"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "A functional dependency is a relationship between or among?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Tables."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Rows."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Relations."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Attributes."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The entity set person is classified as student and employee. This process is called?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Generalization"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Specialization"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Inheritance"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Constraint generalization"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following describes no attribute of a primary key can be null?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Domain Integrity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Entity Integrity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Referential Integrity"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Enterprise Integrity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which clause from the following corresponds to the projection operation of the relational algebra?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "From"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Select"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Where"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "none of these"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "If every non-key attribute is functionally dependent on the primary key, then the relation will be in.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "1NF"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "2NF"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "3NF"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "4NF"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following statement is not true?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The larger the lock granularity used; the more concurrency is reduced."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Row-level locking maximizes concurrency."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "System overhead is increased in row-level locking."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Degree of concurrency is low for fine granularity and high for coarse granularity"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Databases threats that are related to unauthorized disclosure are called.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Loss of integrity"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Loss of availability"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Loss of confidentiality"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of these statements about serializable schedules is true?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Every serializable schedule contains no conflicting actions."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Every serializable schedule is recoverable."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Every 2PL schedule is serializable."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Concurrency problem that occurs when one transaction is allowed to see the intermediate results of another transaction before it has committed, which will be failed for some reason is called.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Incorrect summery Problem"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Lost update problem"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Dirty Read Problem"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The purpose of database recovery is.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To bring the database into the last consistent state."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To preserve consistency of transactions."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To preserve durability property of transactions."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of these statements about recoverable schedules is true?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "In a recoverable schedule, if a transaction T commits, then any other transaction that T  read from must also have committed."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Every recoverable schedule is serializable."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "In a recoverable schedule, no transaction will ever be aborted because a transaction that it read from has aborted."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None of the above."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following transaction property refers transaction should either be performed in its entirety or not performed at all?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Consistency"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Atomicity"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Isolation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Durability"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Concurrency control is important for which of the following reasons?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "To ensure data integrity when updates occur to the database in a multiuser environment"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "To ensure data integrity when updates occur to the database in a single-user environment"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "To ensure data integrity while reading data occurs to the database in a multiuser environment"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "To ensure data integrity while reading data occurs to the database in a single-user environment"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What two things do you need to create WebPages & view them?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "A text editor and a web browser"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "A text editor and a compiler"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A compiler and a web browser"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All of the above"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Where in an HTML document is the correct place to refer to an external style sheet?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "In the <head> section"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "At the top of the document"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "In the <body> section"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "At the end of the document"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What CSS define in HTML?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "How to save HTML elements"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "How to display HTML elements"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "How to send HTML elements"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "How to made HTML elements"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The _____ character tells browsers to stop tagging the text.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "?"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "/"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": ">"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "%"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What does an HTML tag do?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "It specifies formatting and layout instructions for your web page."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It hides programming instructions from view."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "It determines the organizational structure of your Web site."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "It connects your web site to an operating environment."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following is not the scope of Variable in PHP?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Local"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Global"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Static"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Extern"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of following is not a Superglobals in PHP?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "$_SERVER"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "$_ENV"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "$_FILES"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "$_PUT"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "A function in PHP which starts with __ (double underscore) is known as.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Inbuilt Function"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Default Function"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Magic Function"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "User Defined Function"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following PHP functions accepts any number of parameters?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "func_get_args()"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "func_get_argv()"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "get_argv()"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "get_argc()"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Where setcookie( ) function must appear in PHP?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Before tag"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "After tag"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "In tag"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Anywhere"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What will be the result of combining a string with another data type in PHP?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "int"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "float"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "string"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "There are___error levels are available in PHP?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "15"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "16"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "17"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "14"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "When a user views a page containing a JavaScript program, which machine actually executes the script?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The User's machine running a Web browser"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The Web server"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "A central machine that exist between web server and client\u2019s machine"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A server dedicated for executing JavaScript code"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Emphasize on the following steps and determine the correct order. 1. Open a connection to MySQL server 2. Execute the sql query 3. Fetch the data from query 4. Select database 5. Close connection.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "1,4,2,3,5"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "4,1,2,3,5"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "1,5,4,2,1"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "1,4,3,2,5"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which component handle background processing associated with an application?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Activities"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Services"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Broadcast Receivers"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Content Providers"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following component has UI elements that are drawn on-screen including buttons, lists forms etc?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Fragments"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Views"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Resources"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Manifest"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which of the following component has Configuration file for the application?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Resources"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Manifest"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Services"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Activities"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Adb Stands for.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Android Debug Bridge."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Android Drive Bridge."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Android Delete Bridge"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "In which directory XML layout files are stored?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "/assets"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "/src"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "/res/values"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "/res/layout"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What are the functionalities in AsyncTask in Android?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "OnPreExecution()"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "OnPostExecution()"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "DoInBackground()"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "OnProgressUpdate()"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which Broadcast In Android Includes Information About Battery State Level?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Android.intent.action.BATTERY_CHANGED"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Android.intent.action.BATTERY_LOW"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Android.intent.action.BATTERY_OKAY"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Android.intent.action.CALL_BUTTON"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Android is based on which Kernal?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Linux"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Windows"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Mac"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Redhat"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "In a___________ relationship, one device controls traffic and the others must transmit through it.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Peer-to-peer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Point-to-point"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Primary-secondary"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "full duplex"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which one of the following is different from the other?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "172.16.35.12"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "188.17.12.14"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "130.17.12.24"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "126.17.12.254"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "______ is a networking technique that enables us to transfer two or more different data signals simultaneously on the same communication channel.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Switching"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Layering Task"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Multiplexing"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What is the prefix length notation for the subnet mask 255.255.255.248?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "/30"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "/27"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "/28"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "/29"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The wireless LAN specification is defined by IEEE, called, _______which covers the data link and physical layer.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "IEEEE 802.2"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "IEEE 802.11"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "IEEE 802.3"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "IEEE 802.5"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "A network where there is no resource reservation is called.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Circuit-Switched Networks"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "message-switched networks"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Packet-switched networks"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Satellite network"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "The whole communication between client and server to transmit a file may take.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "2RTT"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "RTT + transmit time"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "2RTT + transmit time"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "RTT"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Most networks employ devices for routing services. Routers work at which of the following OSI layers?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Transport"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Network"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Presentation"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Session"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which one of the following file permissions enable a user to change the content of file or create/delete files in directory?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Read(r)"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Execute(x)"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Write(w)"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A&B"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which is a service that allows administrators to log in to a host from a remote location and control the host?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "DNS"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Telnet"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "DHCP"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "FTP"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which directory contains binaries used by both system admin and non-privileged users?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "/etc"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "/lib"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "/mnt"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "/bin"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What DHCP message is sent by the client to reply by broadcasting an acceptance message, requesting to lease IP information?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "DHCPDISCOVER"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "DHCPOFFER"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "DHCPREQUEST"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "DHCPRELEASE"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "_____Is a command which can be used to troubleshoot name resolution issues and to verify the current status of the name servers.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "ipconfig"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "nslookup"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "netstat"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "ipconfig"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which linux command can be used to see the status of DHCP server configuration?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Sudo systemctl restart isc-dhcp-server.service"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Sudo systemctl status isc-dhcp-server.service."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Sudo apt install isc-dhcp-server"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Sudo nano etc/dhcp/dhcpd.conf"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which server gives the services like assigning the IP address, subnet mask, default gateway and other information to clients?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "DNS server"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "DHCP server"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Telnet server"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "None"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which one of the following limits the impact of a hardware or software failure and can recover quickly when such a failure occurs?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Scalability"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Quality of Service"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Fault tolerant"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Security"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "A network administrator enters the service password-encryption command into the configuration mode of a router. What does this command accomplish?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "This command provides an exclusive encrypted password for external service personnel who are required to do router maintenance."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "This command automatically encrypts passwords in configuration files that are currently stored in NVRAM."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "This command encrypts passwords as they are transmitted across serial WAN links."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "This command prevents someone from viewing the running configuration passwords"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Passwords can be used to restrict access to all or parts of the Cisco IOS. Select the modes and interfaces that can be protected with passwords.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "privileged EXEC mode"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "router configuration mode"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Ethernet interface"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "All"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "A home network has both wired and wireless connectivity. From a laptop computer, the user issues a ping to the wireless printer located in another room. The first two echo requests fail, but the last two succeed. Additional pings are all successful. Why do the first two echo requests fail?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "The computer and the printer must join the wireless network first and that process takes time."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "The distance between the computer and the printer causes delay on the first two pings."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "The wireless printer must be activated and that takes time."
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "The computer must use ARP to obtain the MAC address of the printer and this process takes time."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "You are the network administrator for your company. You have installed a new router in your network. You want to establish a remote connection from your computer to the new router so it can be configured. You are not concerned about security during the remote connection. Which Cisco IOS command should you use to accomplish the task?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Ssh"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "telnet"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Terminal"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "virtual"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "You are discovering that there are differences between the configuration of EIGRP for IPv6 and EIGRP for IPv4. Which statement is true with regard to the difference?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " A router ID is required for both versions"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " A router ID must be configured under the routing process for EIGRP for IPv4"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " AS numbers are not required in EIGRP for IPv6"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " AS numbers are not required in EIGRP for IPv4"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "You are a network administrator for your organization. Your organization has two Virtual LANs, named Marketing and Production. All Cisco 2950 switches in the network have both VLANs configured on them. Switches A, C, F, and G have user machines connected for both VLANs, whereas switches B, D, and E have user machines connected for the Production VLAN only.  You receive a request to configure Fast Ethernet port 0/2 on Switch B for a user computer in the Marketing VLAN. VLAN numbers for the Marketing and Production VLANs are 15 and 20, respectively.Which Cisco 2950 switch command should you use to configure the port?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " SwitchB(config-if)#switchport trunk vlan 15"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " SwitchB(config)#switchport access vlan 15"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " SwitchB(config-if)#switchport access vlan 15"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " SwitchB(config-if)#switchport trunk vlan 15, 20"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "What is the primary benefit of the Virtual Local Area Network (VLAN) Trunking Protocol (VTP)?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " broadcast control"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " frame tagging"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " inter-VLAN routing"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " consistent VLAN configuration across switches in a domain"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "You run the following command. switch# show ip interface brief. What information is displayed?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": " A summary of the IP addresses and subnet mask on the interface"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": " A summary of the IP addresses on the interface and the interface's status"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": " The IP packet statistics for the interfaces"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": " The IP addresses for the interface and the routing protocol advertising the network"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Assume you've been hired as a security engineer at company A, and you've recently installed a biometric authentication system. Unfortunately, the biometric system rejects a large number of legitimate, registered users. So, as a security engineer, how do you tune the system?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Increase the number of false rejections."
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Reduce the number of false rejections."
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Increase the False Acceptance Rate"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Reduce the number of false acceptances."
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Smart card is a good form of two-factor authentication because.",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "It contains a certificate on a microchip that is resistant to cloning or cracking"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "It can double as a proximity card for building entrance key card systems"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "It does not rely on internal power like a token"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "A smart card is portable and can be loaned to others"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "During your lunch break, your phone begins to receive unsolicited messages. What might this be an example of?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Packet sniffing"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Bluesnarfing"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Bluejacking"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Spoofing"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "Which one of the following is true statement?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Active attack is an attack in which the attacker observes interaction with the system"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Passive attack is an attack in which the attacker directly interacts with the system"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Unintentional attack is an attack where there is a deliberate goal of misuse"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Ignoring notifications to install new updates and security patches is an unintentional attack"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "department_id": 0,
+        "course_code": null,
+        "department_name": "Information Technology",
+        "course_name": "",
+        "content": "A network station transmits hundreds of SYN packets to a destination computer. What is the computer doing that sends the message?",
+        "image": "",
+        "options": [
+            {
+                "label": "A",
+                "image": null,
+                "content": "Sending the contents of a large file to the destination computer"
+            },
+            {
+                "label": "B",
+                "image": null,
+                "content": "Attempting to establish a TCP connection with the destination computer"
+            },
+            {
+                "label": "C",
+                "image": null,
+                "content": "Attacking the destination computer with a SYN flood"
+            },
+            {
+                "label": "D",
+                "image": null,
+                "content": "Transmitting streaming audio or video to the destination computer"
+            },
+            {
+                "label": "E",
+                "image": null,
+                "content": null
+            },
+            {
+                "label": "F",
+                "image": null,
+                "content": null
+            }
+        ],
+        "answer": "C"
+    }
+]

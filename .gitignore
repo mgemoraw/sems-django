@@ -2,3 +2,12 @@
 db.sqlite3
 venv/
 migrations/
+venv/
+__pycache__/
+
+static/css/tailwindcss
+static/css/tailwindcss.exe
+static/css/tailwindcss-linux-x64
+
+node_modules/
+*.log

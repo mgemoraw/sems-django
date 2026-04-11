@@ -26,9 +26,9 @@ from drf_yasg import openapi
 # define your api schema
 schema_view = get_schema_view(
     openapi.Info(
-        title='SMEES-API',
+        title='SEMS-API',
         default_version='v1',
-        description='SMEES_API',
+        description='SEMS_API',
         terms_of_service="www.sems.adyamengineering.com/policies/terms",
         contact=openapi.Contact(email='contact@adyamengineering.com'),
         licence=openapi.License(name='BSD Licence'),
@@ -37,12 +37,16 @@ schema_view = get_schema_view(
 )
 
 # Your DRF views and router
-router = routers.DefaultRouter()
+# router = routers.DefaultRouter()
 # router.register(r'users', views.UserViewSet)  # Example viewset
 
 urlpatterns = [
+    path('', include('base.urls')),
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),
+    path('api/v1/', include('api.urls')),
+    path('api/v2/exams/', include('exams.urls')),
+    path('api/v2/questions/', include('questions.urls')),
+    path('api/v2/core/', include('core.urls')),
     # Swagger UI
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-docs-ui'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),

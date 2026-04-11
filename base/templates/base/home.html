@@ -1,0 +1,724 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div
+  class="min-h-screen bg-gradient-to-br from-sky-50 via-blue-50/30 to-indigo-50/20 dark:from-slate-900 dark:via-slate-800/50 dark:to-slate-900/20"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+    <!-- Header Section with Stats -->
+    <div
+      class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10"
+    >
+      <div class="space-y-2">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg"
+          >
+            <i class="fa-solid fa-chart-line text-white text-xl"></i>
+          </div>
+          <div>
+            <h1
+              class="text-3xl lg:text-4xl font-black bg-gradient-to-r from-sky-600 to-blue-700 bg-clip-text text-transparent"
+            >
+              Student Dashboard
+            </h1>
+            <p
+              class="text-base-content/60 text-sm flex items-center gap-2 mt-1"
+            >
+              <i class="fa-regular fa-calendar-alt text-sky-500 text-xs"></i>
+              Track your progress and performance
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Stats Cards -->
+      <div class="flex gap-4">
+        <div
+          class="stats stats-horizontal bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-xl rounded-2xl border border-sky-100 dark:border-slate-700"
+        >
+          <div class="stat px-6 py-3">
+            <div class="stat-figure text-sky-500">
+              <i class="fa-solid fa-book-open text-2xl"></i>
+            </div>
+            <div class="stat-title text-xs font-bold uppercase tracking-wider">
+              Total Exams
+            </div>
+            <div class="stat-value text-2xl text-sky-600 dark:text-sky-400">
+              {{ exams|length }}
+            </div>
+            <div class="stat-desc text-[10px] flex items-center gap-1">
+              <i class="fa-solid fa-arrow-up text-emerald-500"></i>
+              <span class="text-emerald-500">+12%</span> from last month
+            </div>
+          </div>
+          <div
+            class="stat px-6 py-3 border-l border-sky-100 dark:border-slate-700"
+          >
+            <div class="stat-figure text-blue-500">
+              <i class="fa-solid fa-check-circle text-2xl"></i>
+            </div>
+            <div class="stat-title text-xs font-bold uppercase tracking-wider">
+              Completed
+            </div>
+            <div class="stat-value text-2xl text-blue-600 dark:text-blue-400">
+              {{ results|length }}
+            </div>
+            <div class="stat-desc text-[10px] flex items-center gap-1">
+              <i class="fa-solid fa-chart-line text-emerald-500"></i>
+              {{ results|length|default:0 }}/{{ exams|length }} exams done
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+      <!-- LEFT SIDEBAR -->
+      <aside class="lg:col-span-3 space-y-6">
+        <!-- User Profile Card -->
+        {% if user.is_authenticated %}
+        <div
+          class="card bg-gradient-to-br from-sky-500 via-blue-600 to-indigo-700 text-white shadow-2xl"
+        >
+          <div class="card-body p-6">
+            <div class="flex items-center gap-4">
+              <div class="avatar online">
+                <div
+                  class="w-14 h-14 rounded-full ring ring-sky-300 ring-offset-2 ring-offset-sky-500"
+                >
+                  <div
+                    class="bg-white/20 backdrop-blur-sm rounded-full w-full h-full flex items-center justify-center text-xl font-bold"
+                  >
+                    {{ request.user.username|make_list|first|upper }}
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg">
+                  {{ request.user.get_full_name|default:request.user.username }}
+                </h3>
+                <p class="text-xs opacity-90 flex items-center gap-1">
+                  <i class="fa-regular fa-envelope"></i>
+                  {{ request.user.email|default:"student@bit.edu.et" }}
+                </p>
+                <div class="flex gap-1 mt-2">
+                  <span
+                    class="badge badge-neutral bg-white/20 border-none text-white text-xs"
+                    >Engineering</span
+                  >
+                  <span
+                    class="badge badge-neutral bg-white/20 border-none text-white text-xs"
+                    >Year 3</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Navigation Menu -->
+        <div
+          class="card bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-xl border border-sky-100 dark:border-slate-700"
+        >
+          <div class="card-body p-4">
+            <ul class="menu menu-md w-full gap-1">
+              <li
+                class="menu-title text-sky-600 dark:text-sky-400 text-xs font-bold uppercase tracking-wider px-2 mb-2"
+              >
+                <i class="fa-regular fa-compass mr-2"></i>Core Navigation
+              </li>
+              <li>
+                <a
+                  class="active bg-sky-50 dark:bg-sky-900/20 text-sky-600 dark:text-sky-400 rounded-xl transition-all duration-300 hover:scale-105"
+                >
+                  <i class="fa-solid fa-chart-line w-5"></i>
+                  Dashboard
+                  <span
+                    class="badge badge-sky-500 badge-xs ml-auto bg-sky-500 text-white"
+                    >Live</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
+                >
+                  <i class="fa-solid fa-file-lines w-5"></i>
+                  My Exams {% if exams|length > 0 %}
+                  <span class="badge badge-ghost badge-sm ml-auto"
+                    >{{ exams|length }}</span
+                  >
+                  {% endif %}
+                </a>
+              </li>
+              <li>
+                <a
+                  class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
+                >
+                  <i class="fa-solid fa-square-poll-vertical w-5"></i>
+                  View Results
+                </a>
+              </li>
+              <li>
+                <a
+                  class="rounded-xl transition-all duration-300 hover:bg-sky-50 dark:hover:bg-sky-900/20 hover:translate-x-1"
+                >
+                  <i class="fa-solid fa-user-gear w-5"></i>
+                  Settings
+                </a>
+              </li>
+
+              {% if request.user.is_staff %}
+              <li
+                class="menu-title text-blue-600 dark:text-blue-400 text-xs font-bold uppercase tracking-wider px-2 mt-4 mb-2"
+              >
+                <i class="fa-solid fa-shield-haltered mr-2"></i>Administration
+              </li>
+              <li>
+                <a
+                  class="rounded-xl text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-plus w-5"></i>
+                  Add Questions
+                </a>
+              </li>
+              <li>
+                <a
+                  class="rounded-xl text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cloud-arrow-up w-5"></i>
+                  Bulk Upload
+                </a>
+              </li>
+              <li>
+                <a
+                  class="rounded-xl text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-users w-5"></i>
+                  Manage Users
+                </a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+
+        <!-- Progress Overview -->
+        <div
+          class="card bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-xl border border-sky-100 dark:border-slate-700"
+        >
+          <div class="card-body p-5">
+            <h3
+              class="font-bold text-sm uppercase tracking-wider flex items-center gap-2 mb-3"
+            >
+              <i class="fa-solid fa-chart-simple text-sky-500"></i>
+              Your Progress
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span>Overall Completion</span>
+                  <span class="font-bold text-sky-600 dark:text-sky-400">
+                    {% if exams|length > 0 %} {{ results|length|floatformat:0
+                    }}% {% else %}0{% endif %}
+                  </span>
+                </div>
+                <progress
+                  class="progress progress-primary w-full h-2 bg-sky-100 dark:bg-slate-700"
+                  value="{{ results|length }}"
+                  max="{{ exams|length }}"
+                ></progress>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span>Average Score</span>
+                  <span class="font-bold text-blue-600 dark:text-blue-400"
+                    >78%</span
+                  >
+                </div>
+                <progress
+                  class="progress progress-secondary w-full h-2 bg-blue-100 dark:bg-slate-700"
+                  value="78"
+                  max="100"
+                ></progress>
+              </div>
+              <div class="pt-2 text-center">
+                <div
+                  class="radial-progress text-sky-500"
+                  style="--value:{{ results|length|default:0|floatformat:0 }}; --size:3rem; --thickness: 4px;"
+                  role="progressbar"
+                >
+                  {{ results|length }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Motivation Quote -->
+        <div
+          class="card bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/30 dark:to-blue-950/30 border border-sky-200 dark:border-sky-800 shadow-lg hover:shadow-xl transition-all duration-300"
+        >
+          <div class="card-body p-5 text-center">
+            <div
+              class="w-12 h-12 mx-auto bg-sky-500/20 rounded-full flex items-center justify-center mb-3"
+            >
+              <i class="fa-solid fa-quote-left text-sky-500 text-xl"></i>
+            </div>
+            <p
+              class="text-sm font-medium italic text-slate-700 dark:text-slate-300"
+            >
+              "The only way to do great work is to love what you do."
+            </p>
+            <p class="text-xs text-sky-600 dark:text-sky-400 mt-2">
+              - Steve Jobs
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="lg:col-span-6 space-y-8">
+        <!-- Welcome Hero -->
+        <div
+          class="relative overflow-hidden bg-gradient-to-r from-slate-800 via-slate-700 to-sky-800 dark:from-slate-900 dark:via-slate-800 dark:to-sky-900 rounded-2xl shadow-2xl"
+        >
+          <div class="relative z-10 p-6 lg:p-8">
+            <div class="flex items-start justify-between">
+              <div>
+                <h2 class="text-2xl lg:text-3xl font-bold text-white">
+                  Welcome back, {{ request.user.username|default:"Student" }}!
+                  👋
+                </h2>
+                <p class="mt-2 text-white/70 text-sm max-w-md">
+                  Ready to sharpen your skills? Pick an assessment and track
+                  your improvement over time.
+                </p>
+                <div class="mt-6 flex gap-3">
+                  <button
+                    class="btn bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white border-none rounded-lg px-6 gap-2 hover:scale-105 transition-transform"
+                  >
+                    <i class="fa-solid fa-rocket"></i>
+                    Explore
+                  </button>
+                  <button
+                    class="btn btn-ghost btn-sm text-white hover:bg-white/10 gap-2"
+                  >
+                    <i class="fa-regular fa-clock"></i>
+                    Activity Log
+                  </button>
+                </div>
+              </div>
+              <div class="hidden md:block text-6xl opacity-20">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"
+          ></div>
+          <div
+            class="absolute -bottom-16 -right-16 w-48 h-48 bg-white/10 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute -top-16 -left-16 w-48 h-48 bg-sky-400/20 rounded-full blur-3xl"
+          ></div>
+        </div>
+
+        <!-- Assessments Section -->
+        <section>
+          <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <div>
+              <h2
+                class="text-xl font-black uppercase tracking-tight flex items-center gap-2"
+              >
+                <i class="fa-solid fa-star-of-life text-sky-500 text-lg"></i>
+                Recommended Assessments
+              </h2>
+              <p class="text-xs opacity-60 mt-1">
+                Based on your recent activity
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <div
+                class="badge badge-outline border-sky-200 dark:border-sky-700 text-sky-600 dark:text-sky-400 gap-1"
+              >
+                <i class="fa-regular fa-clock"></i> {{ exams|length }} Available
+              </div>
+              <button class="btn btn-ghost btn-xs" id="sortExams">
+                <i class="fa-solid fa-arrow-up-wide-short"></i>
+                Sort
+              </button>
+            </div>
+          </div>
+
+          <div class="space-y-4" id="examsContainer">
+            {% for exam in exams %}
+            <div
+              class="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border border-sky-100 dark:border-slate-700 rounded-2xl p-5 hover:border-sky-300 dark:hover:border-sky-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 exam-item"
+              data-title="{{ exam.title|lower }}"
+            >
+              <div class="flex flex-col md:flex-row justify-between gap-4">
+                <div class="flex-1 space-y-2">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span
+                      class="badge badge-sky-500 badge-xs animate-pulse bg-sky-500"
+                    ></span>
+                    <h3
+                      class="font-bold text-lg group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors"
+                    >
+                      {{ exam.title }}
+                    </h3>
+                    {% if exam.is_new %}
+                    <span
+                      class="badge badge-success badge-sm bg-emerald-500 text-white border-none"
+                      >New</span
+                    >
+                    {% endif %}
+                  </div>
+
+                  <p class="text-sm opacity-70 leading-relaxed">
+                    {{ exam.description|truncatewords:20 }}
+                  </p>
+
+                  <div class="flex flex-wrap gap-4 pt-2">
+                    <span
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider"
+                    >
+                      <i class="fa-regular fa-clock text-sky-500"></i>
+                      30 MIN
+                    </span>
+                    <span
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider"
+                    >
+                      <i class="fa-regular fa-file-lines text-blue-500"></i>
+                      20 QUESTIONS
+                    </span>
+                    <span
+                      class="flex items-center gap-1.5 text-[11px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider"
+                    >
+                      <i class="fa-solid fa-chart-line"></i>
+                      MEDIUM
+                    </span>
+                  </div>
+
+                  <!-- Difficulty Stars -->
+                  <div class="flex gap-0.5">
+                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                    <i
+                      class="fa-regular fa-star text-slate-300 dark:text-slate-600 text-xs"
+                    ></i>
+                    <i
+                      class="fa-regular fa-star text-slate-300 dark:text-slate-600 text-xs"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  {% if request.user.is_authenticated %}
+                  <a
+                    href="{% url 'start-exam' exam.id %}"
+                    class="btn bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white border-none rounded-xl px-8 shadow-md group-hover:shadow-sky-500/30 transition-all duration-300 gap-2"
+                  >
+                    Start Exam
+                    <i
+                      class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"
+                    ></i>
+                  </a>
+                  {% else %}
+                  <a
+                    href="{% url 'base:login' %}"
+                    class="btn btn-outline rounded-xl px-8 gap-2 border-sky-500 text-sky-600 hover:bg-sky-50 dark:hover:bg-sky-950/30"
+                  >
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            {% empty %}
+            <div
+              class="text-center py-16 border-2 border-dashed border-sky-200 dark:border-slate-700 rounded-2xl bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm"
+            >
+              <i class="fa-solid fa-folder-open text-5xl opacity-20 mb-3"></i>
+              <p class="opacity-50 text-sm">
+                No assessments found in your department.
+              </p>
+              <p class="text-xs opacity-30 mt-1">
+                Check back later for new exams
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <!-- Upcoming Exams Section -->
+        <div
+          class="card bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 border border-amber-200 dark:border-amber-800"
+        >
+          <div class="card-body p-5">
+            <div class="flex items-center gap-2 mb-3">
+              <i
+                class="fa-regular fa-calendar-clock text-amber-500 text-xl"
+              ></i>
+              <h3 class="font-bold">Upcoming Exams</h3>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <div
+                class="badge badge-lg badge-outline gap-2 p-3 border-amber-200 dark:border-amber-700 text-amber-700 dark:text-amber-400"
+              >
+                <i class="fa-regular fa-clock"></i> Data Structures - Tomorrow
+              </div>
+              <div
+                class="badge badge-lg badge-outline gap-2 p-3 border-amber-200 dark:border-amber-700 text-amber-700 dark:text-amber-400"
+              >
+                <i class="fa-regular fa-clock"></i> Algorithms - Dec 15
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="lg:col-span-3 space-y-6">
+        <!-- Live Activity Feed -->
+        <div
+          class="card bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-xl border border-sky-100 dark:border-slate-700"
+        >
+          <div class="card-body p-5">
+            <div class="flex items-center justify-between mb-4">
+              <h3
+                class="font-black text-sm uppercase tracking-widest flex items-center gap-2"
+              >
+                <i class="fa-solid fa-waveform text-sky-500"></i>
+                Live Activity
+              </h3>
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                ></span>
+              </span>
+            </div>
+
+            <div class="space-y-4 max-h-96 overflow-y-auto custom-scrollbar">
+              {% for activity in activities %}
+              <div
+                class="flex gap-3 items-start group hover:bg-sky-50 dark:hover:bg-sky-900/20 p-2 rounded-xl transition-all duration-300"
+              >
+                <div class="avatar placeholder">
+                  <div
+                    class="bg-gradient-to-br from-sky-500 to-blue-600 text-white rounded-full w-8 h-8 text-xs font-bold flex items-center justify-center"
+                  >
+                    {{ activity.user|make_list|first|upper }}
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center gap-2 mb-0.5">
+                    <span class="text-xs font-bold">{{ activity.user }}</span>
+                    <span class="text-[10px] opacity-50"
+                      >{{ activity.date|timesince }} ago</span
+                    >
+                  </div>
+                  <p class="text-xs">
+                    Completed
+                    <span class="font-semibold text-sky-600 dark:text-sky-400"
+                      >{{ activity.exam|truncatechars:20 }}</span
+                    >
+                  </p>
+                  <div class="flex gap-2 mt-1">
+                    <span
+                      class="text-[10px] text-emerald-600 dark:text-emerald-400"
+                      >Score: 85%</span
+                    >
+                    <span class="text-[10px] text-amber-600 dark:text-amber-400"
+                      >+12 pts</span
+                    >
+                  </div>
+                </div>
+                <i
+                  class="fa-regular fa-circle-check text-emerald-500 text-xs opacity-0 group-hover:opacity-100 transition-opacity"
+                ></i>
+              </div>
+              {% empty %}
+              <div class="text-center py-8">
+                <i class="fa-regular fa-clock text-3xl opacity-20 mb-2"></i>
+                <p class="text-xs opacity-40 italic">No recent activity...</p>
+                <p class="text-[10px] opacity-30 mt-1">
+                  Start an exam to see activity here
+                </p>
+              </div>
+              {% endfor %}
+            </div>
+
+            <div class="divider my-2"></div>
+            <a
+              href="#"
+              class="text-center text-xs text-sky-600 dark:text-sky-400 hover:text-sky-700 transition-colors"
+            >
+              View All Activity <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Editor's Choice / Recommended -->
+        <div
+          class="card bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/30 dark:to-blue-950/30 border border-sky-200 dark:border-sky-800 shadow-lg"
+        >
+          <div class="card-body p-5">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-crown text-amber-500 text-lg"></i>
+              <h3 class="font-bold text-sm uppercase tracking-wider">
+                Editor's Choice
+              </h3>
+            </div>
+
+            <div class="space-y-2">
+              {% for exam in recommended_exams %}
+              <a
+                href="#"
+                class="flex items-center justify-between p-3 hover:bg-white/50 dark:hover:bg-slate-700/50 rounded-xl transition-all duration-300 group"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-8 h-8 bg-sky-500/10 rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-star text-sky-500 text-xs"></i>
+                  </div>
+                  <span
+                    class="text-sm font-medium group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors"
+                  >
+                    {{ exam.title|truncatechars:20 }}
+                  </span>
+                </div>
+                <i
+                  class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"
+                ></i>
+              </a>
+              {% empty %}
+              <div class="text-center py-6">
+                <i class="fa-regular fa-lightbulb text-2xl opacity-20 mb-2"></i>
+                <p class="text-xs opacity-40">
+                  Complete more exams to get recommendations!
+                </p>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement Badges -->
+        <div
+          class="card bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-xl border border-sky-100 dark:border-slate-700"
+        >
+          <div class="card-body p-5">
+            <h3
+              class="font-bold text-sm uppercase tracking-wider flex items-center gap-2 mb-3"
+            >
+              <i class="fa-solid fa-medal text-amber-500"></i>
+              Recent Achievements
+            </h3>
+            <div class="flex justify-around">
+              <div class="text-center group cursor-pointer">
+                <div
+                  class="w-12 h-12 mx-auto bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform"
+                >
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <p class="text-[10px] mt-1 opacity-60">Speed Demon</p>
+              </div>
+              <div class="text-center group cursor-pointer">
+                <div
+                  class="w-12 h-12 mx-auto bg-gradient-to-br from-sky-400 to-blue-600 rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform"
+                >
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <p class="text-[10px] mt-1 opacity-60">Scholar</p>
+              </div>
+              <div class="text-center group cursor-pointer">
+                <div
+                  class="w-12 h-12 mx-auto bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform"
+                >
+                  <i class="fa-solid fa-fire"></i>
+                </div>
+                <p class="text-[10px] mt-1 opacity-60">On Fire</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  /* Smooth Transitions */
+  * {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+
+  /* Line clamp for text */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  // Sort functionality for exams
+  let sortAscending = true;
+  document.getElementById("sortExams")?.addEventListener("click", function () {
+    const container = document.getElementById("examsContainer");
+    const exams = Array.from(container.children);
+
+    exams.sort((a, b) => {
+      const titleA = a.querySelector("h3").innerText;
+      const titleB = b.querySelector("h3").innerText;
+      if (sortAscending) {
+        return titleA.localeCompare(titleB);
+      } else {
+        return titleB.localeCompare(titleA);
+      }
+    });
+
+    exams.forEach((exam) => container.appendChild(exam));
+    sortAscending = !sortAscending;
+
+    // Update button icon
+    const sortBtn = document.getElementById("sortExams");
+    sortBtn.innerHTML = sortAscending
+      ? '<i class="fa-solid fa-arrow-up-wide-short"></i> Sort'
+      : '<i class="fa-solid fa-arrow-down-wide-short"></i> Sort';
+  });
+</script>
+
+{% endblock %}
