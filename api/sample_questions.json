@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "department": 1,
+
+      "content": "What is the output of 2 + 3 * 2 in Python?",
+      "answer": "B",
+      "exam_year": 2024,
+      "choices": [
+        { "label": "A", "content": "10", "is_answer": false },
+        { "label": "B", "content": "8", "is_answer": true },
+        { "label": "C", "content": "7", "is_answer": false },
+        { "label": "D", "content": "12", "is_answer": false }
+      ]
+    },
+    {
+      "department": 1,
+
+      "content": "Which data structure uses FIFO order?",
+      "answer": "C",
+      "exam_year": 2023,
+      "choices": [
+        { "label": "A", "content": "Stack", "is_answer": false },
+        { "label": "B", "content": "Tree", "is_answer": false },
+        { "label": "C", "content": "Queue", "is_answer": true },
+        { "label": "D", "content": "Graph", "is_answer": false }
+      ]
+    },
+    {
+      "department": 1,
+
+      "content": "What is the capital of Ethiopia?",
+      "answer": "A",
+      "exam_year": 2024,
+      "choices": [
+        { "label": "A", "content": "Addis Ababa", "is_answer": true },
+        { "label": "B", "content": "Nairobi", "is_answer": false },
+        { "label": "C", "content": "Cairo", "is_answer": false },
+        { "label": "D", "content": "Khartoum", "is_answer": false }
+      ]
+    },
+    {
+      "department": 1,
+
+      "content": "Which keyword is used to define a function in Python?",
+      "answer": "A",
+      "exam_year": 2022,
+      "choices": [
+        { "label": "A", "content": "def", "is_answer": true },
+        { "label": "B", "content": "function", "is_answer": false },
+        { "label": "C", "content": "fun", "is_answer": false },
+        { "label": "D", "content": "define", "is_answer": false }
+      ]
+    },
+    {
+      "department": 1,
+
+      "content": "Which of the following is NOT an OOP principle?",
+      "answer": "D",
+      "exam_year": 2021,
+      "choices": [
+        { "label": "A", "content": "Encapsulation", "is_answer": false },
+        { "label": "B", "content": "Inheritance", "is_answer": false },
+        { "label": "C", "content": "Polymorphism", "is_answer": false },
+        { "label": "D", "content": "Compilation", "is_answer": true }
+      ]
+    }
+  ]
+}

@@ -64,12 +64,28 @@ class UserSerializer(serializers.ModelSerializer):
 
     # ---- validation method for username ----
     def validate(self, attrs):
-        if User.objects.filter(username=attrs.get('username')).exists():
+        # if User.objects.filter(username=attrs.get('username')).exists():
+        #     raise serializers.ValidationError({"username": "This username is already taken."})
+        # if User.objects.filter(email=attrs.get('email')).exists():
+        #     raise serializers.ValidationError({"email": "This email is already registered."})
+        # return attrs
+        username = attrs.get('username')
+        email = attrs.get('email')
+
+        queryset = User.objects.all()
+
+        # EXCLUDE current instance during update
+        if self.instance:
+            queryset = queryset.exclude(id=self.instance.id)
+
+        if username and queryset.filter(username=username).exists():
             raise serializers.ValidationError({"username": "This username is already taken."})
-        if User.objects.filter(email=attrs.get('email')).exists():
+
+        if email and queryset.filter(email=email).exists():
             raise serializers.ValidationError({"email": "This email is already registered."})
+
         return attrs
-    
+        
     
 
 class RoleSerializer(serializers.ModelSerializer):
@@ -105,7 +121,7 @@ class FacultySerializer(serializers.ModelSerializer):
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Choice
-        fields = ['id', 'question', 'label', 'content', 'is_answer', 'image_base64']
+        fields = ['id', 'question', 'label', 'content', 'is_answer', 'image']
 
 
 class CourseSerializer(serializers.ModelSerializer):
@@ -121,17 +137,69 @@ class ModuleSerializer(serializers.ModelSerializer):
 
 
 class QuestionSerializer(serializers.ModelSerializer):
-    options = serializers.JSONField()
+    # options = serializers.JSONField()
+    choices = ChoiceSerializer(many=True)
     image_base64 = serializers.SerializerMethodField()
 
     class Meta:
         model = Question
-        fields = ['id', 'department', 'module', 'course', 'content', 'options', 'image_base64', 'answer', 'created_at', 'updated_at']
+        fields = ['id', 'department', 'module', 'course', 'content',  'choices', 'image', 'image_base64', 'answer', 'created_at', 'updated_at']
+
+
     def get_image_base64(self, obj):
         if obj.image:
             return base64.b64encode(obj.image).decode('utf-8')
         return None
 
+    def validate(self, data):
+        choices = data.get('choices', [])
+
+        if len(choices) < 2:
+            raise serializers.ValidationError("At least 2 choices required.")
+
+        if not any(choice.get('is_answer') for choice in choices):
+            raise serializers.ValidationError("One choice must be correct.")
+
+        labels = [c['label'] for c in choices]
+        if data.get('answer') not in labels:
+            raise serializers.ValidationError("Answer must match one of the choice labels.")
+
+        return data
+
+    def create(self, validated_data):
+        choices_data = validated_data.pop('choices')
+        # options = choices_data 
+        question = Question.objects.create(**validated_data)
+        for choice_data in choices_data:
+            Choice.objects.create(question=question, **choice_data)
+
+        return question
+
+class BulkQuestionSerializer(serializers.Serializer):
+    questions = QuestionSerializer(many=True)
+
+    def create(self, validated_data):
+        questions_data = validated_data.get('questions', [])
+        created_questions = []
+        department = validated_data.get('department')
+        for q_data in questions_data:
+            q_data['department'] = department
+            options = q_data.pop('choices', [])
+            question = Question.objects.create(**q_data, options=options)
+            for choice_data in options:
+                Choice.objects.create(question=question, **choice_data)
+
+        from django.db import transaction
+
+        with transaction.atomic():
+            for q_data in questions_data:
+                serializer = QuestionSerializer(data=q_data)
+                serializer.is_valid(raise_exception=True)
+                question = serializer.save()
+                created_questions.append(question)
+
+        return created_questions
+    
 
 class QuestionUploadSerializer(serializers.Serializer):
     # department = serializers.ChoiceField(
@@ -139,9 +207,23 @@ class QuestionUploadSerializer(serializers.Serializer):
     #     label="Select Department"
     # )
     department = serializers.PrimaryKeyRelatedField(
-    queryset=Department.objects.all()
-)
+        queryset=Department.objects.all()
+        )
     json_file = serializers.FileField()
+
+
+
+class BulkOptionSerializer(serializers.Serializer):
+    label = serializers.CharField(max_length=10)
+    content = serializers.CharField()
+    is_answer = serializers.BooleanField(required=False, default=False)
+
+class OptionsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Choice
+        fields = ['id', 'question', 'label', 'content', 'is_answer', 'image']
+        
+
 
 class ExamYearQuerySerializer(serializers.Serializer):
     exam_year = serializers.CharField(required=True) 

@@ -2,7 +2,7 @@
 from django.urls import path, re_path, include
 from rest_framework import routers
 # from .views import get_user, create_user
-from .views import (CouresViewSet, DepartmentsViewSet, GreetView, UserRegisterView, UserUpdateView, UserDeleteView, PasswordUpdateView, TokenView, UserLogoutView, UserListView, RoleListView, RoleCreateView, AssignUserRoleView,
+from .views import (BulkQuestionFileUploadView, BulkQuestionUploadView, CouresViewSet, DepartmentsViewSet, GreetView, OptionsViewSet, UserRegisterView, UserUpdateView, UserDeleteView, PasswordUpdateView, TokenView, UserLogoutView, UserListView, RoleListView, RoleCreateView, AssignUserRoleView,
 login_view, signup_view, token_view, AuthUserViewSet, GroupsViewSet, UserViewSet, QuestionsViewSet, TestsViewSet, ModelExamViewSet
 )
 from rest_framework_simplejwt.views import (
@@ -16,6 +16,8 @@ router.register(r'users', UserViewSet, basename='v1-user')
 router.register(r'groups', GroupsViewSet, basename='v1-group')
 router.register(r'departments', DepartmentsViewSet, basename='v1-department')
 router.register(r'questions', QuestionsViewSet, basename='v1-questions')
+
+router.register(r'options', OptionsViewSet, basename='v1-options')
 router.register(r'tests', TestsViewSet, basename='v1-test')
 # router.register(r'roles', RoleListView.as_view(), basename='v1-role')
 router.register(r'courses', CouresViewSet, basename='v1-course')
@@ -38,7 +40,8 @@ urlpatterns = [
     path('roles/', RoleListView.as_view(), name='role_list'),
     path('roles/create/', RoleCreateView.as_view(), name='role_create'),
     path('users/role/assign/<int:user_id>/', AssignUserRoleView.as_view(), name='assign_user_role'),
-    
+    path('questions/bulk-upload/', BulkQuestionUploadView.as_view(), name='question_upload'),
+    path('questions/bulk-upload-file/', BulkQuestionFileUploadView.as_view(), name='question_file_upload'),
     # path('auth/users/update/<int:id>/', UserUpdateView.as_view(), name='user_update'),
     # path('auth/users/delete/<int:id>/', UserDeleteView.as_view(), name='user_delete'),
     # path('auth/password/update/', PasswordUpdateView.as_view(), name='password_update'),

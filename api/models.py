@@ -1,4 +1,5 @@
 import base64
+from urllib import request
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
@@ -84,7 +85,6 @@ class RoleAssignment(models.Model):
     role = models.ForeignKey('Role', on_delete=models.CASCADE, null=True, blank=True)
 
 
-
 class University(models.Model):
     code = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=100, unique=True)
@@ -141,15 +141,7 @@ class Faculty(models.Model):
     def __str__(self):
         return self.name
 
-class Choice(models.Model):
-    question = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='choices')
-    label = models.CharField(max_length=10)
-    content = models.TextField()
-    is_answer = models.BooleanField(default=False)
-    image = models.BinaryField(null=True, blank=True)
 
-    def __str__(self):
-        return self.name
 
 
 class Course(models.Model):
@@ -174,13 +166,24 @@ class Module(models.Model):
         return self.name
 
 
+class Choice(models.Model):
+    question = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='choices')
+    label = models.CharField(max_length=10)
+    content = models.TextField()
+    is_answer = models.BooleanField(default=False)
+    image = models.ImageField(upload_to='options/', null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+    
+
 class Question(models.Model):
     department = models.ForeignKey('Department', on_delete=models.CASCADE, null=True, related_name='department')
     course = models.ForeignKey('Course', on_delete=models.SET_NULL, null=True, blank=True)
     module = models.ForeignKey('Module', on_delete=models.SET_NULL, null=True, blank=True)
     content = models.TextField()
     options = models.JSONField()  # Store as JSON array
-    image = models.BinaryField(null=True, blank=True)
+    image = models.ImageField(upload_to='questions/', null=True, blank=True)
     answer = models.CharField(max_length=10)
     exam_year = models.PositiveIntegerField(null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
@@ -190,7 +193,9 @@ class Question(models.Model):
         image_base64 = None
         if self.image:
             image_base64 = base64.b64encode(self.image).decode('utf-8')  # Convert bytes to base64 string
-
+        
+        if self.image and request:
+            image_url = request.build_absolute_uri(self.image.url)
         return {
             'id': self.id,
             'department_id': self.department.id,
@@ -198,7 +203,7 @@ class Question(models.Model):
             'options': self.options,  # Options are already in JSON format
             'course_idfk': self.course.id if self.course else None,
             'answer': self.answer,
-            'image': image_base64,
+            'image': image_url if self.image else None,
             'created_at': str(self.created_at),
             'updated_at': str(self.updated_at),
         }

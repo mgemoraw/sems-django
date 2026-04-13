@@ -1,7 +1,24 @@
 import json
 from django.contrib.auth.models import User as AuthUser, Group
 from rest_framework import generics, renderers
-from .serializers import AuthUserSerializer, CourseSerializer, DepartmentSerializer, ExamDepartmentQuerySerializer, ExamDepartmentYearQuerySerializer, ExamModuleDepartmentQuerySerializer, ExamYearQuerySerializer, GroupSerializer, ModelExamSerializer, QuestionUploadSerializer
+from yaml import serializer
+from .serializers import (
+    AuthUserSerializer, 
+    BulkQuestionSerializer,
+    CourseSerializer, 
+    DepartmentSerializer, 
+    ExamDepartmentQuerySerializer, 
+    ExamDepartmentYearQuerySerializer, 
+    ExamModuleDepartmentQuerySerializer, 
+    ExamYearQuerySerializer, 
+    GroupSerializer, 
+    ModelExamSerializer, 
+    OptionsSerializer, 
+    QuestionUploadSerializer,
+    BulkQuestionSerializer,
+    QuestionSerializer,
+    RoleCreateSerializer,
+    RoleSerializer,)
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.contrib.auth import authenticate
 
@@ -15,7 +32,7 @@ from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from django.db import transaction
 from datetime import timedelta
-from .models import Course, ModelExam, User, Role, Department, Question, Test, UserResponse, Module
+from .models import Choice, Course, ModelExam, User, Role, Department, Question, Test, UserResponse, Module
 from .serializers import UserSerializer, RoleSerializer, UserCreateSerializer, UserLoginSerializer, RoleCreateSerializer, PasswordCreateSerializer, QuestionSerializer, TestSerializer
 from .authentication import create_access_token, authenticate_user
 from rest_framework.authtoken.models import Token 
@@ -66,8 +83,15 @@ class GroupsViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('username')
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated, permissions.IsAdminUser]
 
+    def get_queryset(self):
+        # Admin sees all users
+        if self.request.user.is_staff or self.request.user.role == 'admin':
+            return User.objects.all().order_by('username')
+        
+        # normal user see only themseleves
+        return User.objects.filter(id=self.request.user.id)
 
     # def list(self, request):
     #     # /api/users
@@ -76,26 +100,40 @@ class UserViewSet(viewsets.ModelViewSet):
 
     #     return Response(serializer.data, status=status.HTTP_200_OK)
     
+    def perform_create(self, serializer):
+        user = serializer.save()
+
+        if 'password' in self.request.data:
+            user.set_password(self.request.data['password'])
+            user.save()
 
     def perform_update(self, serializer):
         user = serializer.save(created_by=self.request.user)
 
-        if 'password' in self.request.data:
-            user.set_password(self.request.data['password'])
+        password = self.request.data.get('password', None)
+
+        if password:
+            user.set_password(password)
             user.must_change_password = False
             user.save()
 
-    # def create(self, request):
-    #     pass
-    # def retrieve(sef, request, pk=None): #/api/users/<int:id>
-    #     pass 
+    # Only admin can delete users
+    def destroy(self, request, *args, **kwargs):
+        if not request.user.is_staff:
+            return Response(
+                {"error": "Only admins can delete users"},
+                status=403
+            )
+        return super().destroy(request, *args, **kwargs)
 
-
-    # def destroy(self, request):
-    #     pass
-
-    # def update(self, request, pk=None):
-    #     pass
+    # Only admin can create users
+    def create(self, request, *args, **kwargs):
+        if not request.user.is_staff:
+            return Response(
+                {"error": "Only admins can create users"},
+                status=403
+            )
+        return super().create(request, *args, **kwargs)
 
 
 class QuestionsViewSet(viewsets.ModelViewSet):
@@ -176,7 +214,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
             return Response({"detail": "department is required"}, status=400)
                 
         uploaded_file = request.FILES.get("questions")
-        print(uploaded_file)
+        # print(uploaded_file)
         if not uploaded_file:
             return Response({"detail": "json_file is required"}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -216,6 +254,110 @@ class QuestionsViewSet(viewsets.ModelViewSet):
             "ids": created
         }, status=status.HTTP_201_CREATED)
 
+    @action(detail=False, methods=['post'], url_path='bulk-upload', parser_classes=[MultiPartParser, FormParser], serializer_class=QuestionUploadSerializer)
+    def bulk_upload(self, request):
+        serializer = self.get_serializer_class()
+
+        file = request.FILES.get('json_file')
+        print("Uploaded file: ", file)
+        if not file:
+            return Response(
+                {"error": "No file uploaded"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        try:
+            data = json.load(file)
+            # print("Uploaded data: ", data)
+        except Exception:
+            return Response(
+                {"error": "Invalid JSON file"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # Get department
+        department_id = request.data.get('department')
+        department = get_object_or_404(Department, id=department_id)
+
+        
+        questions_data = data.get('questions', [])
+        
+        created_ids = []
+        # print(questions_data)
+        with transaction.atomic():
+            for q_data in questions_data:
+                # serializer = self.get_serializer(data=q_data)
+                serializer = BulkQuestionSerializer(
+                    data={"questions": questions_data},
+                    context={'department': department}
+                    )
+                if not serializer.is_valid():
+                    return Response(
+                        {"error": "Invalid question data", "details": serializer.errors, "question_data": q_data},
+                        status=status.HTTP_400_BAD_REQUEST
+                    )
+                serializer.is_valid(raise_exception=True)
+                question = serializer.save()
+                created_ids.append(question.id)
+
+        return Response(
+            {
+                "message": "Bulk upload successful",
+                "created_count": len(created_ids),
+                "question_ids": created_ids
+            },
+            status=status.HTTP_201_CREATED
+        )
+
+class OptionsViewSet(viewsets.ModelViewSet):
+    queryset = Choice.objects.all().order_by('id')
+    serializer_class = OptionsSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class BulkQuestionUploadView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        serializer = BulkQuestionSerializer(data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response({"message": "Bulk upload successful"}, status=201)
+
+        return Response(serializer.errors, status=400)
+
+
+class BulkQuestionFileUploadView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        file = request.FILES.get('file')
+
+        if not file:
+            return Response({"error": "No file uploaded"}, status=400)
+
+        try:
+            data = json.load(file)
+        except Exception:
+            return Response({"error": "Invalid JSON file"}, status=400)
+
+        questions_data = data.get('questions', [])
+
+        created = []
+
+        with transaction.atomic():
+            for q_data in questions_data:
+                serializer = QuestionSerializer(data=q_data)
+                serializer.is_valid(raise_exception=True)
+                question = serializer.save()
+                created.append(question.id)
+
+        return Response({
+            "message": "Bulk upload successful",
+            "created_count": len(created),
+            "question_ids": created
+        }, status=201)
     
 class TestsViewSet(viewsets.ModelViewSet):
     queryset = Test.objects.all().order_by('id')
