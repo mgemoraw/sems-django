@@ -1,9 +1,10 @@
 import base64
 from rest_framework import serializers
 from django.contrib.auth.models import User as AuthUser, Group
+
 from rest_framework import permissions
 from .models import ModelExam, User, Role, University, Department, Chair, Faculty, Choice, Course, Module, Question, Test, UserResponse, Mail, CourseAssignment, RoleAssignment
-
+from django.db import transaction
 
 # SErializer classes
 
@@ -136,70 +137,90 @@ class ModuleSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'department', 'courses']
 
 
+class ChoiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Choice
+        fields = ['id', 'label', 'content', 'is_answer', 'image']
+
+
 class QuestionSerializer(serializers.ModelSerializer):
-    # options = serializers.JSONField()
-    choices = ChoiceSerializer(many=True)
-    image_base64 = serializers.SerializerMethodField()
+    choices = ChoiceSerializer(many=True, required=True)
+    image_url = serializers.SerializerMethodField()
 
     class Meta:
         model = Question
-        fields = ['id', 'department', 'module', 'course', 'content',  'choices', 'image', 'image_base64', 'answer', 'created_at', 'updated_at']
+        fields = [
+            'id',
+            'department',
+            'module',
+            'course',
+            'content',
+            'choices',
+            'answer',
+            'exam_year',
+            'image',
+            'image_url',
+            'created_at',
+            'updated_at',
+        ]
 
-
-    def get_image_base64(self, obj):
-        if obj.image:
-            return base64.b64encode(obj.image).decode('utf-8')
+    def get_image_url(self, obj):
+        request = self.context.get('request')
+        if obj.image and request:
+            return request.build_absolute_uri(obj.image.url)
         return None
 
     def validate(self, data):
         choices = data.get('choices', [])
+        answer = data.get('answer')
 
         if len(choices) < 2:
             raise serializers.ValidationError("At least 2 choices required.")
 
-        if not any(choice.get('is_answer') for choice in choices):
-            raise serializers.ValidationError("One choice must be correct.")
-
         labels = [c['label'] for c in choices]
-        if data.get('answer') not in labels:
-            raise serializers.ValidationError("Answer must match one of the choice labels.")
+
+        if answer not in labels:
+            raise serializers.ValidationError(
+                "Answer must match one of the choice labels."
+            )
+
+        if not any(c.get('is_answer') for c in choices):
+            raise serializers.ValidationError(
+                "At least one choice must be marked as correct."
+            )
 
         return data
-
+    
     def create(self, validated_data):
         choices_data = validated_data.pop('choices')
-        # options = choices_data 
-        question = Question.objects.create(**validated_data)
-        for choice_data in choices_data:
-            Choice.objects.create(question=question, **choice_data)
+
+        with transaction.atomic():
+            question = Question.objects.create(**validated_data)
+
+            Choice.objects.bulk_create([
+                Choice(question=question, **c)
+                for c in choices_data
+            ])
 
         return question
 
 class BulkQuestionSerializer(serializers.Serializer):
+    department = serializers.PrimaryKeyRelatedField(queryset=Department.objects.all())
     questions = QuestionSerializer(many=True)
 
     def create(self, validated_data):
-        questions_data = validated_data.get('questions', [])
+        questions_data = validated_data['questions']
+        department = validated_data['department']
         created_questions = []
-        department = validated_data.get('department')
-        for q_data in questions_data:
-            q_data['department'] = department
-            options = q_data.pop('choices', [])
-            question = Question.objects.create(**q_data, options=options)
-            for choice_data in options:
-                Choice.objects.create(question=question, **choice_data)
-
-        from django.db import transaction
 
         with transaction.atomic():
-            for q_data in questions_data:
-                serializer = QuestionSerializer(data=q_data)
+            for q in questions_data:
+                q['department'] = department.id  # Set department for each question
+                serializer = QuestionSerializer(data=q, context=self.context)
                 serializer.is_valid(raise_exception=True)
-                question = serializer.save()
-                created_questions.append(question)
+                created_questions.append(serializer.save())
 
         return created_questions
-    
 
 class QuestionUploadSerializer(serializers.Serializer):
     # department = serializers.ChoiceField(

@@ -142,6 +142,9 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
     parser_classes = [MultiPartParser, FormParser]
 
+    def get_serializer_context(self):
+        return {"request": self.request}
+    
     def get_serializer_class(self):
         if self.action == 'upload_json':
             return QuestionUploadSerializer
@@ -254,60 +257,85 @@ class QuestionsViewSet(viewsets.ModelViewSet):
             "ids": created
         }, status=status.HTTP_201_CREATED)
 
-    @action(detail=False, methods=['post'], url_path='bulk-upload', parser_classes=[MultiPartParser, FormParser], serializer_class=QuestionUploadSerializer)
+    @action(detail=False, methods=['post'], url_path='bulk-upload', serializer_class=QuestionUploadSerializer, parser_classes=[MultiPartParser, FormParser])
     def bulk_upload(self, request):
-        serializer = self.get_serializer_class()
-
         file = request.FILES.get('json_file')
-        print("Uploaded file: ", file)
+
         if not file:
-            return Response(
-                {"error": "No file uploaded"},
-                status=status.HTTP_400_BAD_REQUEST
-            )
+            return Response({"detail": "json_file required"}, status=400)
 
         try:
             data = json.load(file)
-            # print("Uploaded data: ", data)
         except Exception:
-            return Response(
-                {"error": "Invalid JSON file"},
-                status=status.HTTP_400_BAD_REQUEST
-            )
+            return Response({"detail": "Invalid JSON file"}, status=400)
 
-        # Get department
-        department_id = request.data.get('department')
-        department = get_object_or_404(Department, id=department_id)
-
-        
-        questions_data = data.get('questions', [])
-        
-        created_ids = []
-        # print(questions_data)
-        with transaction.atomic():
-            for q_data in questions_data:
-                # serializer = self.get_serializer(data=q_data)
-                serializer = BulkQuestionSerializer(
-                    data={"questions": questions_data},
-                    context={'department': department}
-                    )
-                if not serializer.is_valid():
-                    return Response(
-                        {"error": "Invalid question data", "details": serializer.errors, "question_data": q_data},
-                        status=status.HTTP_400_BAD_REQUEST
-                    )
-                serializer.is_valid(raise_exception=True)
-                question = serializer.save()
-                created_ids.append(question.id)
-
-        return Response(
-            {
-                "message": "Bulk upload successful",
-                "created_count": len(created_ids),
-                "question_ids": created_ids
-            },
-            status=status.HTTP_201_CREATED
+        serializer = BulkQuestionSerializer(
+            data=data,
+            context=self.get_serializer_context()
         )
+        serializer.is_valid(raise_exception=True)
+
+        questions = serializer.save()
+
+        return Response({
+            "created": len(questions),
+            "ids": [q.id for q in questions]
+        }, status=201)
+
+    # @action(detail=False, methods=['post'], url_path='bulk-upload', parser_classes=[MultiPartParser, FormParser], serializer_class=QuestionUploadSerializer)
+    # def bulk_upload(self, request):
+    #     serializer = self.get_serializer_class()
+
+    #     file = request.FILES.get('json_file')
+    #     print("Uploaded file: ", file)
+    #     if not file:
+    #         return Response(
+    #             {"error": "No file uploaded"},
+    #             status=status.HTTP_400_BAD_REQUEST
+    #         )
+
+    #     try:
+    #         data = json.load(file)
+    #         # print("Uploaded data: ", data)
+    #     except Exception:
+    #         return Response(
+    #             {"error": "Invalid JSON file"},
+    #             status=status.HTTP_400_BAD_REQUEST
+    #         )
+
+    #     # Get department
+    #     department_id = request.data.get('department')
+    #     department = get_object_or_404(Department, id=department_id)
+
+        
+    #     questions_data = data.get('questions', [])
+        
+    #     created_ids = []
+    #     # print(questions_data)
+    #     with transaction.atomic():
+    #         for q_data in questions_data:
+    #             # serializer = self.get_serializer(data=q_data)
+    #             serializer = BulkQuestionSerializer(
+    #                 data={"questions": questions_data},
+    #                 context={'department': department}
+    #                 )
+    #             if not serializer.is_valid():
+    #                 return Response(
+    #                     {"error": "Invalid question data", "details": serializer.errors, "question_data": q_data},
+    #                     status=status.HTTP_400_BAD_REQUEST
+    #                 )
+    #             serializer.is_valid(raise_exception=True)
+    #             question = serializer.save()
+    #             created_ids.append(question.id)
+
+    #     return Response(
+    #         {
+    #             "message": "Bulk upload successful",
+    #             "created_count": len(created_ids),
+    #             "question_ids": created_ids
+    #         },
+    #         status=status.HTTP_201_CREATED
+    #     )
 
 class OptionsViewSet(viewsets.ModelViewSet):
     queryset = Choice.objects.all().order_by('id')

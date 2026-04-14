@@ -1,7 +1,7 @@
 import base64
 from urllib import request
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, AbstractBaseUser
 # Create your models here.
 from django.db import models
 from django.utils import timezone
@@ -151,6 +151,9 @@ class Course(models.Model):
     name = models.CharField(max_length=255)
     credit_hour = models.IntegerField()
 
+    created_at = models.DateTimeField(default=timezone.now)
+    updated_at = models.DateTimeField(auto_now=True)
+
     # questions = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='course_questions')
 
     def __str__(self):
@@ -162,55 +165,63 @@ class Module(models.Model):
     department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, blank=True)
     # courses = models.ForeignKey('Course', on_delete=models.CASCADE, null=True, related_name='module_courses')
 
+    created_at = models.DateTimeField(default=timezone.now)
+    updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
         return self.name
 
 
 class Choice(models.Model):
-    question = models.ForeignKey('Question', on_delete=models.CASCADE, null=True, related_name='choices')
+    question = models.ForeignKey(
+        'Question',
+        on_delete=models.CASCADE,
+        related_name='choices',
+        null=True,
+        blank=True
+    )
+
     label = models.CharField(max_length=10)
     content = models.TextField()
     is_answer = models.BooleanField(default=False)
     image = models.ImageField(upload_to='options/', null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return f"{self.label}: {self.content[:30]}"
     
 
 class Question(models.Model):
-    department = models.ForeignKey('Department', on_delete=models.CASCADE, null=True, related_name='department')
-    course = models.ForeignKey('Course', on_delete=models.SET_NULL, null=True, blank=True)
-    module = models.ForeignKey('Module', on_delete=models.SET_NULL, null=True, blank=True)
+    department = models.ForeignKey(
+        'Department',
+        on_delete=models.CASCADE,
+        related_name='questions',
+        null=True,
+    )
+    course = models.ForeignKey(
+        'Course',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='questions'
+    )
+    module = models.ForeignKey(
+        'Module',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='questions'
+    )
+
     content = models.TextField()
-    options = models.JSONField()  # Store as JSON array
     image = models.ImageField(upload_to='questions/', null=True, blank=True)
+    options = models.JSONField(default=list, blank=True)  # Store options as a list of dictionaries
     answer = models.CharField(max_length=10)
     exam_year = models.PositiveIntegerField(null=True, blank=True)
-    created_at = models.DateTimeField(default=timezone.now)
-    updated_at = models.DateTimeField(auto_now=True)
 
-    def to_dict(self):
-        image_base64 = None
-        if self.image:
-            image_base64 = base64.b64encode(self.image).decode('utf-8')  # Convert bytes to base64 string
-        
-        if self.image and request:
-            image_url = request.build_absolute_uri(self.image.url)
-        return {
-            'id': self.id,
-            'department_id': self.department.id,
-            'content': self.content,
-            'options': self.options,  # Options are already in JSON format
-            'course_idfk': self.course.id if self.course else None,
-            'answer': self.answer,
-            'image': image_url if self.image else None,
-            'created_at': str(self.created_at),
-            'updated_at': str(self.updated_at),
-        }
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True, )
 
     def __str__(self):
-        return f"{self.id} - {self.content}"
-
+        return f"{self.id} - {self.content[:50]}"
 
 class ModelExam(models.Model):
     title = models.CharField(max_length=255)

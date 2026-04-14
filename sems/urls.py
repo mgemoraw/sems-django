@@ -45,9 +45,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
     # path('api/v2/users/', include('users.urls')),
-    path('api/v2/exams/', include('exams.urls')),
-    path('api/v2/questions/', include('questions.urls')),
-    path('api/v2/core/', include('core.urls')),
+    # path('api/v2/exams/', include('exams.urls')),
+    # path('api/v2/questions/', include('questions.urls')),
+    # path('api/v2/core/', include('core.urls')),
     # Swagger UI
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-docs-ui'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),

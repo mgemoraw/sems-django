@@ -8,7 +8,7 @@ class Question(models.Model):
     department = models.ForeignKey(
         'core.Department',
         on_delete=models.CASCADE,
-        related_name='questions'
+        related_name='questions',
     )
     course = models.ForeignKey(
         'core.Course',
@@ -43,7 +43,7 @@ class Question(models.Model):
 
 
 class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='choices')
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='choices', null=True, blank=True)
     label = models.CharField(max_length=1)  # A, B, C, D
     text = models.TextField()
 

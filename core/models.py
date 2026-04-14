@@ -5,12 +5,12 @@ from django.utils import timezone
 
 
 class University(models.Model):
-    code = models.CharField(max_length=10, unique=True)
+    code = models.CharField(max_length=10, unique=True, default="bdu")
     name = models.CharField(max_length=100, unique=True)
-    slag = models.SlugField()
-    address = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    slag = models.SlugField(null=True, blank=True)
+    address = models.TextField(null=True, blank=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
+    # updated_at = models.DateTimeField(auto_now=True)
     
     
     def __str__(self):
@@ -30,10 +30,10 @@ class College(models.Model):
     
 class School(models.Model):
     name = models.CharField(max_length=255)
-    slug = models.SlugField()
+    slug = models.SlugField(null=True, blank=True)
     university = models.ForeignKey(University, on_delete=models.CASCADE, related_name='schools')
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
+    # updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
             return self.name
@@ -42,23 +42,23 @@ class School(models.Model):
 class Faculty(models.Model):
     name = models.CharField(max_length=255, unique=True)
     code = models.CharField(max_length=50, null=True, blank=True)
-    slag = models.SlugField()
+    slag = models.SlugField(null=True, blank=True)
     college = models.ForeignKey('College', on_delete=models.CASCADE, null=True, blank=True)
     university = models.ForeignKey('University', on_delete=models.CASCADE, null=True, blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
+    # updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
 
 class Department(models.Model):
     name = models.CharField(max_length=255)
-    slug = models.SlugField()
+    slug = models.SlugField(null=True, blank=True   )
     description = models.TextField(null=True, blank=True)
 
     faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE, related_name='departments')
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
+    # updated_at = models.DateTimeField(auto_now=True)
 
 
     def __str__(self):
@@ -94,8 +94,8 @@ class Module(models.Model):
     department = models.ForeignKey(Department, on_delete=models.CASCADE, related_name='modules')
     courses = models.ManyToManyField('Course', related_name='modules')
     file = models.FileField(upload_to='module_files/', null=True, blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
+    # updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
@@ -103,14 +103,14 @@ class Module(models.Model):
 
 class Course(models.Model):
     name = models.CharField(max_length=255)
-    slug = models.SlugField()
+    slug = models.SlugField(null=True, blank=True)
     code = models.CharField(max_length=50)
     description = models.TextField(null=True, blank=True)
     department = models.ForeignKey(Department, on_delete=models.CASCADE, related_name='courses')
     module = models.ForeignKey('Module', on_delete=models.SET_NULL, null=True, blank=True)
 
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    # created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    # updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
